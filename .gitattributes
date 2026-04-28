@@ -1,0 +1,12 @@
+# GitHub Linguist hints
+#
+# EvidenceForge is primarily a documentation and agent-skill workflow repository.
+# These rules keep GitHub's language badge from over-weighting prose or
+# rendered documentation artifacts as the repository's "main language".
+
+*.md linguist-documentation
+docs/** linguist-documentation
+examples/** linguist-documentation
+skills/**/SKILL.md linguist-documentation
+skills/**/references/** linguist-documentation
+skills/**/templates/** linguist-documentation
