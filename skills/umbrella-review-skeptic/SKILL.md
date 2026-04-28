@@ -24,7 +24,10 @@ Identify:
 - overlap among reviews;
 - whether a second-order statistical synthesis is planned.
 
-Load `references/overlap-and-quality.md` for overlap and quality checks.
+Load:
+
+- `references/overlap-and-quality.md` for overlap and quality checks.
+- `references/second-order-decision-rules.md` when deciding whether review-level pooling is defensible.
 
 ## Workflow
 
@@ -34,9 +37,10 @@ Load `references/overlap-and-quality.md` for overlap and quality checks.
 4. Assess overlap and duplicate evidence.
 5. Assess review quality and search currency.
 6. Compare effect metrics and inclusion criteria.
-7. Decide: narrative umbrella synthesis, evidence map, or second-order pooling.
-8. If pooling, state dependence assumptions and model choice.
-9. Report discordance and certainty.
+7. Apply AMSTAR 2 / ROBIS-style review appraisal logic where appropriate.
+8. Decide: narrative umbrella synthesis, evidence map, or second-order pooling.
+9. If pooling, state dependence assumptions and model choice.
+10. Report discordance and certainty.
 
 Use `templates/overlap-matrix.md` for overlap tracking.
 
@@ -72,4 +76,4 @@ Interpretation limits:
 - Do not treat many reviews as many independent bodies of evidence.
 - Do not ignore older reviews being superseded by newer reviews.
 - Do not call a narrative umbrella review a second-order meta-analysis.
-
+- Do not assign a simple total score to review quality when the appraisal tool warns against it.

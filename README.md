@@ -42,6 +42,24 @@ Evidence synthesis is bigger than meta-analysis. A review may require:
 
 EvidenceForge keeps these tasks separate so that agents can assist without pretending to replace domain expertise.
 
+## Method Sources
+
+EvidenceForge is grounded in established evidence-synthesis guidance rather than ad hoc prompt patterns. The first version is aligned with:
+
+- PRISMA 2020 reporting guidance;
+- Cochrane Handbook methods for reviews and meta-analysis;
+- JBI Manual methods for systematic, scoping, mixed-methods, and umbrella reviews;
+- Collaboration for Environmental Evidence standards for environmental systematic reviews and maps;
+- AMSTAR 2 and ROBIS for review appraisal;
+- ASReview-style human-in-the-loop machine-learning screening;
+- standard meta-analysis texts and R workflows.
+
+See:
+
+- [`docs/method-sources.md`](docs/method-sources.md)
+- [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
+- [`docs/reading-list.md`](docs/reading-list.md)
+
 ## Inspired By
 
 This project is inspired by the workflow logic in *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis* by Yiqing Xu and Leo Yang Yang.

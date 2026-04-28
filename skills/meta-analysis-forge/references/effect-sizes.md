@@ -1,5 +1,7 @@
 # Effect Sizes
 
+Method anchors: Cochrane effect-measure guidance, standard meta-analysis texts by Borenstein et al. and Hedges & Olkin, and practical R workflows such as Harrer et al.'s *Doing Meta-Analysis with R*.
+
 ## Common Metrics
 
 - mean difference;
@@ -55,3 +57,15 @@ Multiple effect sizes may come from:
 
 Do not treat them as independent without a plan.
 
+## Extraction Source Requirement
+
+Every extracted estimate should point to a source:
+
+- table number;
+- figure number;
+- page;
+- appendix;
+- dataset/code output;
+- extraction note if the value was computed from reported statistics.
+
+Do not use a number just because it appears plausible in an abstract or AI extraction.

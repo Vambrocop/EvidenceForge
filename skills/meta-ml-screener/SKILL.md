@@ -45,7 +45,8 @@ Load `references/ml-assisted-review.md` for task-specific guidance.
 5. Record scores, labels, and decisions.
 6. Validate recall or extraction accuracy.
 7. Escalate uncertain records to human review.
-8. Report ML use transparently.
+8. Export decisions, model scores, prompts/schemas, and human adjudication.
+9. Report ML use transparently.
 
 Use `templates/screening-log.md` for logging.
 
@@ -80,4 +81,4 @@ Human verification:
 - Do not use LLM-extracted numbers without source anchors and verification.
 - Do not treat ML-discovered moderators as confirmatory.
 - Do not hide prompt/model/version details if they affect review decisions.
-
+- Do not let automation erase exclusion reasons or reviewer accountability.

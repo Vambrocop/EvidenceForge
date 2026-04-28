@@ -13,6 +13,8 @@ ML can help with:
 - clustering topics;
 - discovering candidate moderators.
 
+Tools such as ASReview and Rayyan show the practical model: AI prioritizes, suggests, classifies, or accelerates, while humans keep final responsibility for inclusion/exclusion decisions.
+
 ## Validation
 
 For screening:
@@ -21,6 +23,8 @@ For screening:
 - validate recall on a held-out set or through dual screening;
 - keep uncertain records for human review;
 - report stopping rule.
+- export model scores and human decisions;
+- preserve exclusion reasons.
 
 For extraction:
 
@@ -46,3 +50,11 @@ Report:
 - human verification;
 - how disagreements were resolved.
 
+## Failure Modes
+
+- automation excludes relevant studies without human review;
+- model learns from inconsistent eligibility labels;
+- LLM extracts plausible but unsupported numbers;
+- model scores are not exported;
+- prompt/model version is not recorded;
+- ML-discovered moderators are reported as confirmed findings.

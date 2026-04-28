@@ -43,9 +43,13 @@ If the user is unsure, propose a review type and explain the tradeoff.
 5. Define extraction fields and coding rules.
 6. Choose synthesis type: narrative, evidence map, first-order meta-analysis, umbrella review, or second-order meta-analysis.
 7. Specify risk-of-bias or quality assessment.
-8. Add reproducibility artifacts: search log, screening log, coding sheet, analysis script, protocol.
+8. Align the protocol and report with the relevant guidance source: PRISMA for reporting, Cochrane for intervention reviews, JBI for broader review types, CEE for environmental evidence.
+9. Add reproducibility artifacts: search log, screening log, coding sheet, analysis script, protocol.
 
-Load `references/review-types.md` when the user needs help choosing review type or question framework.
+Load:
+
+- `references/review-types.md` when the user needs help choosing review type or question framework.
+- `references/protocol-reporting-crosswalk.md` when the user needs PRISMA/Cochrane/JBI/CEE alignment.
 
 ## Routing
 
@@ -97,4 +101,4 @@ When reviewing an existing protocol or review, focus on:
 - Do not invent effect sizes.
 - Do not recommend statistical pooling when constructs or estimands are incompatible.
 - Do not let machine learning replace final inclusion decisions without explicit protocol justification.
-
+- Do not write conclusions before the protocol, search, screening, extraction, and appraisal logic are clear.

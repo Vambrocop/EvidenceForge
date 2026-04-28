@@ -26,7 +26,10 @@ Identify:
 - measurement method;
 - expected heterogeneity.
 
-Load `references/environmental-life-science.md`.
+Load:
+
+- `references/environmental-life-science.md` for domain heterogeneity.
+- `references/cee-alignment.md` for environmental evidence standards.
 
 ## Workflow
 
@@ -36,8 +39,9 @@ Load `references/environmental-life-science.md`.
 4. Specify eligible designs.
 5. Identify heterogeneity sources.
 6. Plan risk-of-bias or study quality appraisal.
-7. Decide narrative, evidence map, or meta-analysis.
-8. Build domain-specific extraction table.
+7. Plan grey-literature and supplementary search if relevant.
+8. Decide narrative, evidence map, or meta-analysis.
+9. Build domain-specific extraction table.
 
 Use `templates/peco-framework.md`.
 
@@ -74,4 +78,4 @@ Include:
 - Do not pool across species, exposure windows, or outcome constructs without a biological or environmental rationale.
 - Do not collapse mechanistic, observational, and experimental evidence without design labels.
 - Do not hide geography, climate zone, tissue type, or measurement platform when they drive heterogeneity.
-
+- Do not use vote-counting as evidence of effect direction or strength.

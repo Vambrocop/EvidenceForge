@@ -39,6 +39,7 @@ Load:
 
 - `references/effect-sizes.md` for effect metrics and extraction.
 - `references/synthesis-models.md` for model choice and diagnostics.
+- `references/meta-analysis-quality-gates.md` for pre-pooling checks.
 
 ## Workflow
 
@@ -46,11 +47,12 @@ Load:
 2. Build the coding sheet.
 3. Convert or preserve metrics with justification.
 4. Identify dependence: multiple outcomes, time points, samples, or models per study.
-5. Choose model: fixed, random, multilevel, robust variance, Bayesian, or narrative synthesis.
-6. Report heterogeneity: tau2, I2, prediction interval.
-7. Assess small-study effects or publication bias when feasible.
-8. Run sensitivity checks.
-9. Write interpretation with limits.
+5. Pass the quality gates before pooling.
+6. Choose model: fixed, random, multilevel, robust variance, Bayesian, or narrative synthesis.
+7. Report heterogeneity: tau2, I2, prediction interval.
+8. Assess small-study effects or publication bias when feasible.
+9. Run sensitivity checks.
+10. Write interpretation with limits.
 
 ## Output Modes
 
@@ -91,4 +93,4 @@ Flag:
 - Do not interpret meta-regression causally unless design supports it.
 - Do not ignore within-study dependence.
 - Do not treat a high pooled N as proof of high evidence quality.
-
+- Do not use vote-counting as a substitute for effect-size synthesis.

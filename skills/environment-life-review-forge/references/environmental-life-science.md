@@ -1,5 +1,7 @@
 # Environmental and Life-Science Evidence Synthesis
 
+Method anchors: CEE standards for environmental evidence, JBI review-type guidance, and ecology/evolution meta-analysis methods.
+
 ## Frameworks
 
 Use PECO for observational exposure questions:
@@ -66,3 +68,26 @@ Examples:
 
 Keep outcome families separate unless a defensible effect-size transformation exists.
 
+## Domain-Specific Extraction Fields
+
+Environmental/ecological reviews often need:
+
+- geography and climate zone;
+- habitat or ecosystem type;
+- exposure route and intensity;
+- exposure duration/window;
+- species/taxon/life stage;
+- sampling design;
+- spatial autocorrelation or clustering;
+- measurement platform/instrument;
+- confounders and co-exposures.
+
+Life-science reviews often need:
+
+- organism/model system;
+- tissue or cell type;
+- assay platform;
+- dose and timing;
+- batch/platform effects;
+- disease state or phenotype;
+- endpoint definition.

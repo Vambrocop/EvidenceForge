@@ -1,5 +1,7 @@
 # Synthesis Models and Diagnostics
 
+Method anchors: Cochrane meta-analysis chapters, standard meta-analysis textbooks, and R implementations such as `metafor`, `meta`, `clubSandwich`, and `robumeta`.
+
 ## Model Choice
 
 **Fixed effect**: assumes one common true effect. Use rarely and only with clear justification.
@@ -39,3 +41,15 @@ Consider:
 
 Avoid overinterpreting tests when the number of studies is small.
 
+## Reporting Minimum
+
+Report:
+
+- model choice and why;
+- estimator/software if known;
+- number of studies and effects;
+- whether effects are independent;
+- pooled estimate and uncertainty;
+- heterogeneity and prediction interval where possible;
+- sensitivity analysis;
+- limitations and certainty caveat.

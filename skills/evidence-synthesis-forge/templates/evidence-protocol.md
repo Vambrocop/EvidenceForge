@@ -24,6 +24,15 @@
 
 ## Search Strategy
 
+## Search Transparency
+
+- Exact search strings:
+- Search dates:
+- Databases/platforms:
+- Grey literature:
+- Search restrictions and justification:
+- Search comprehensiveness check:
+
 ## Screening Workflow
 
 ## Exclusion Reasons
@@ -34,9 +43,10 @@
 
 ## Synthesis Plan
 
+## Certainty / Confidence in Evidence
+
 ## Machine-Learning Assistance
 
 ## Reproducibility Artifacts
 
 ## Limitations
-
