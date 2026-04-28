@@ -19,6 +19,24 @@ The project separates:
 - ML assistance from human judgment;
 - first-order meta-analysis from second-order/umbrella review.
 
+## Human Explanation of Evidence
+
+In this repository, evidence means the organized research base behind a claim. A single paper is one piece of evidence. A meta-analysis is one way to synthesize evidence. An umbrella review is a way to compare multiple syntheses. Machine learning may help handle the literature volume, but it is not itself the evidence.
+
+EvidenceForge is therefore named broadly: it covers more than statistical meta-analysis. It covers the full pathway from scattered studies to an auditable conclusion.
+
+## Relation to Scaling Reproducibility
+
+The project borrows the workflow pattern from *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis*:
+
+- orchestrator vs deterministic execution;
+- skill descriptions as interface contracts;
+- failure patterns as reusable knowledge;
+- explicit intermediate artifacts;
+- human review for scientific judgment.
+
+EvidenceForge adapts this pattern to systematic review and evidence synthesis.
+
 ## Initial Scope
 
 The first version covers:
@@ -33,4 +51,3 @@ The first version covers:
 - environmental and life-science review design.
 
 Full omics analysis workflows are deliberately out of scope for now. Omics evidence synthesis may be added later as a domain extension.
-

@@ -8,6 +8,25 @@ EvidenceForge turns scattered studies, review protocols, search records, effect 
 
 EvidenceForge 不是一个泛泛的“文献总结 prompt 集”。它的目标是把系统综述、Meta 分析、二阶 Meta、机器学习辅助筛选、环境与生命科学证据综合，锻造成可安装、可复用、可审计的 `SKILL.md` 工作流。
 
+## What Does "Evidence" Mean?
+
+Here, **evidence** means the body of research that supports or challenges a claim. It includes:
+
+- individual studies;
+- systematic reviews;
+- effect sizes and uncertainty;
+- methods and samples;
+- risk-of-bias judgments;
+- study quality;
+- consistency across results;
+- heterogeneity;
+- publication bias;
+- strength of conclusions.
+
+In plain language: EvidenceForge helps turn many scattered papers into a transparent answer to a research question. Sometimes that answer is a meta-analysis. Sometimes it is an evidence map, a systematic review, an umbrella review, or a careful explanation of why the evidence cannot be pooled.
+
+中文理解：这里的 evidence 不是“证据截图”，而是“研究证据体系”。它包括很多论文、效应量、样本、方法、偏倚风险、研究质量和结论一致性。EvidenceForge 的意思是：把分散研究锻造成可审计、可复现、可更新的证据工作流。
+
 ## Why EvidenceForge
 
 Evidence synthesis is bigger than meta-analysis. A review may require:
@@ -22,6 +41,22 @@ Evidence synthesis is bigger than meta-analysis. A review may require:
 - machine-learning assistance without hiding human judgment.
 
 EvidenceForge keeps these tasks separate so that agents can assist without pretending to replace domain expertise.
+
+## Inspired By
+
+This project is inspired by the workflow logic in *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis* by Yiqing Xu and Leo Yang Yang.
+
+The key idea we borrow is not any single statistic. It is the architecture:
+
+- use agent skills as task contracts;
+- keep knowledge in concise `SKILL.md` files and focused references;
+- separate AI orchestration from deterministic analysis;
+- keep human judgment visible;
+- make logs, templates, and outputs auditable.
+
+EvidenceForge applies that idea to evidence synthesis instead of paper replication.
+
+Related companion project: [EmpiriForge](https://github.com/Vambrocop/EmpiriForge), which focuses on primary empirical research, economics writing, causal inference, and reproducibility packages.
 
 ## Quick Demo
 
@@ -134,4 +169,3 @@ They are companion projects: one helps produce empirical research, the other hel
 ## Status
 
 Initial scaffold. The first version focuses on skills, references, templates, and demos. Deterministic scripts for `metafor`, PRISMA diagrams, screening logs, or extraction validation can be added later.
-
