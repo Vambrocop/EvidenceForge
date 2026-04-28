@@ -25,7 +25,9 @@ In this repository, evidence means the organized research base behind a claim. A
 
 EvidenceForge is therefore named broadly: it covers more than statistical meta-analysis. It covers the full pathway from scattered studies to an auditable conclusion.
 
-## Relation to Scaling Reproducibility
+## Origin and Relation to Scaling Reproducibility
+
+The substantive meta-analysis direction comes from the author's research experience: meta-analysis was once viewed by many researchers as mainly a medical method, but it has since spread widely into ecology, environment, life science, policy, and social-science evidence work. EvidenceForge treats that trend as a reason to build clearer, auditable workflows for systematic review and evidence synthesis.
 
 The project borrows the workflow pattern from *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis*:
 
@@ -34,6 +36,8 @@ The project borrows the workflow pattern from *Scaling Reproducibility: An AI-As
 - failure patterns as reusable knowledge;
 - explicit intermediate artifacts;
 - human review for scientific judgment.
+
+The paper is an architecture inspiration, not the source of the meta-analysis idea.
 
 EvidenceForge adapts this pattern to systematic review and evidence synthesis.
 

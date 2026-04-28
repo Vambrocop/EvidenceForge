@@ -6,7 +6,7 @@ EvidenceForge is a skill/workflow project, not a replacement for formal methods 
 
 - Xu, Yiqing and Leo Yang Yang. *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis*.
 
-EvidenceForge borrows the workflow architecture: skill contracts, explicit intermediate artifacts, AI orchestration separated from deterministic analysis, and human judgment kept visible.
+EvidenceForge borrows the workflow architecture: skill contracts, explicit intermediate artifacts, AI orchestration separated from deterministic analysis, and human judgment kept visible. The meta-analysis and evidence-synthesis direction itself comes from the author's research experience and from the broader spread of meta-analysis beyond medicine into ecology, environment, life science, policy, and social science.
 
 ## Core Evidence-Synthesis Guidance
 
@@ -151,4 +151,3 @@ EvidenceForge implication: platform-specific workflows should still export decis
 - Koricheva, Gurevitch, and Mengersen, *Handbook of Meta-analysis in Ecology and Evolution*.
 
 EvidenceForge implication: future deterministic scripts should likely begin with R workflows around `metafor`, `meta`, `clubSandwich`, `robumeta`, and related packages, while preserving the skill layer as the human-readable contract.
-

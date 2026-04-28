@@ -60,11 +60,13 @@ See:
 - [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
 - [`docs/reading-list.md`](docs/reading-list.md)
 
-## Inspired By
+## Origin and Workflow Inspiration
 
-This project is inspired by the workflow logic in *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis* by Yiqing Xu and Leo Yang Yang.
+The meta-analysis direction in EvidenceForge comes from research experience rather than from the reproducibility paper. Years ago, meta-analysis was still seen by many people as something used mostly in medicine. In my research group, a senior colleague was already applying meta-analysis to soil ecology. Today, meta-analysis has become widely used across ecology, environment, life science, medicine, policy, and social science.
 
-The key idea we borrow is not any single statistic. It is the architecture:
+EvidenceForge is a way to update that older intuition for the current AI-agent moment: systematic review, meta-analysis, umbrella review, second-order evidence synthesis, and ML-assisted screening all need clearer workflows, reusable templates, and auditable judgment.
+
+The project is also inspired by the workflow logic in *Scaling Reproducibility: An AI-Assisted Workflow for Large-Scale Replication and Reanalysis* by Yiqing Xu and Leo Yang Yang. The key idea borrowed from that paper is not the topic of meta-analysis itself, but the architecture:
 
 - use agent skills as task contracts;
 - keep knowledge in concise `SKILL.md` files and focused references;
@@ -72,7 +74,7 @@ The key idea we borrow is not any single statistic. It is the architecture:
 - keep human judgment visible;
 - make logs, templates, and outputs auditable.
 
-EvidenceForge applies that idea to evidence synthesis instead of paper replication.
+EvidenceForge applies that architecture to evidence synthesis instead of paper replication. I hope it can be useful for researchers who want to do meta-analysis and systematic review in a more transparent, reproducible, and AI-assisted way.
 
 Related companion project: [EmpiriForge](https://github.com/Vambrocop/EmpiriForge), which focuses on primary empirical research, economics writing, causal inference, and reproducibility packages.
 
