@@ -1,0 +1,75 @@
+---
+name: umbrella-review-skeptic
+description: Reviews umbrella reviews and second-order meta-analyses. Use when synthesizing existing systematic reviews/meta-analyses, assessing primary-study overlap, duplicate evidence, review quality, AMSTAR/ROBIS-style concerns, discordant conclusions, and whether review-level statistical pooling is defensible.
+---
+
+# Umbrella Review Skeptic
+
+Use this skill when the evidence base already contains reviews or meta-analyses and the user wants to synthesize the syntheses.
+
+## Core Principle
+
+Do not simply average meta-analyses. Existing reviews often reuse the same primary studies, use different inclusion rules, and report non-comparable pooled effects.
+
+## Intake
+
+Identify:
+
+- included reviews/meta-analyses;
+- review questions;
+- search dates;
+- primary studies included in each review;
+- pooled effects and metrics;
+- quality assessment method;
+- overlap among reviews;
+- whether a second-order statistical synthesis is planned.
+
+Load `references/overlap-and-quality.md` for overlap and quality checks.
+
+## Workflow
+
+1. Classify the project: umbrella review, review of reviews, or second-order meta-analysis.
+2. Extract review-level characteristics.
+3. Build a primary-study by review matrix.
+4. Assess overlap and duplicate evidence.
+5. Assess review quality and search currency.
+6. Compare effect metrics and inclusion criteria.
+7. Decide: narrative umbrella synthesis, evidence map, or second-order pooling.
+8. If pooling, state dependence assumptions and model choice.
+9. Report discordance and certainty.
+
+Use `templates/overlap-matrix.md` for overlap tracking.
+
+## Output Modes
+
+### Umbrella Audit
+
+```text
+Review set:
+Overlap risk:
+Quality concerns:
+Effect comparability:
+Can pool statistically?
+Preferred synthesis:
+Main caution:
+```
+
+### Second-Order Meta Plan
+
+```text
+Review-level effect:
+Primary-study overlap:
+Dependence handling:
+Quality weighting/sensitivity:
+Model:
+Interpretation limits:
+```
+
+## Guardrails
+
+- Do not double count the same primary studies.
+- Do not pool reviews with incompatible effect metrics without justification.
+- Do not treat many reviews as many independent bodies of evidence.
+- Do not ignore older reviews being superseded by newer reviews.
+- Do not call a narrative umbrella review a second-order meta-analysis.
+
