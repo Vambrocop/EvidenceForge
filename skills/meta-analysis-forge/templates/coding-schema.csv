@@ -1,0 +1,25 @@
+field_name,required,type,allowed_values,description,validation_rule
+study_id,yes,string,,Stable identifier for the primary study,Must not be blank
+effect_id,yes,string,,Stable identifier for the extracted effect within study,Must be unique within study_id
+citation,yes,string,,Short citation or DOI,Should allow source trace-back
+population,yes,string,,Population sample or species/system studied,Should match eligibility criteria
+design,yes,string,"RCT;quasi-experimental;observational;case-control;cohort;cross-sectional;other",Study design category,Must be pre-defined before pooling
+exposure_intervention,yes,string,,Intervention exposure or treatment,Must match PICO/PECO
+comparator,no,string,,Comparator/control condition,Required for comparative effects
+outcome,yes,string,,Outcome construct and measurement,Do not pool incompatible outcome constructs
+effect_metric,yes,string,"SMD;MD;ROM;OR;RR;HR;r;z;lnOR;lnRR;lnROM;other",Effect-size metric,Must be harmonized or filtered before pooling
+estimate,yes,number,,Effect estimate on effect_metric scale,Must be numeric
+se,conditional,number,,Standard error of estimate,Required by minimal R script
+vi,conditional,number,,Sampling variance,Use if se is unavailable and script is adapted
+ci_low,no,number,,Lower confidence interval,Can be used to derive SE with documented formula
+ci_high,no,number,,Upper confidence interval,Can be used to derive SE with documented formula
+p_value,no,number,,Reported p value,Must not replace uncertainty extraction if SE/CI available
+n,no,integer,,Total sample size,Must be nonnegative integer if present
+n_treat,no,integer,,Treatment/exposed sample size,Useful for conversions and checks
+n_control,no,integer,,Control/comparator sample size,Useful for conversions and checks
+adjusted,yes,string,"yes;no;unclear",Whether effect is adjusted for covariates,Do not mix adjusted/unadjusted effects without justification
+dependency_group,no,string,,Group identifier for dependent effects,Required when multiple effects share sample/study
+moderators,no,string,,Predefined moderator values,Separate exploratory from confirmatory moderators
+risk_of_bias,yes,string,"low;some concerns;high;unclear;not assessed",Risk-of-bias judgment,Must be human-verifiable
+extraction_source,yes,string,,Page table figure or supplement location,Must anchor extracted number to source
+notes,no,string,,Extraction notes,Use for caveats not captured elsewhere

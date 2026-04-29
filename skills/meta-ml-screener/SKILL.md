@@ -48,7 +48,11 @@ Load `references/ml-assisted-review.md` for task-specific guidance.
 8. Export decisions, model scores, prompts/schemas, and human adjudication.
 9. Report ML use transparently.
 
-Use `templates/screening-log.md` for logging.
+Use:
+
+- `templates/screening-log.md` for a human-readable log.
+- `templates/screening-log-schema.csv` for machine-readable logging.
+- `templates/example-screening-log.csv` for a minimal example.
 
 ## Output Modes
 
@@ -82,3 +86,4 @@ Human verification:
 - Do not treat ML-discovered moderators as confirmatory.
 - Do not hide prompt/model/version details if they affect review decisions.
 - Do not let automation erase exclusion reasons or reviewer accountability.
+- Do not accept a screening log as auditable unless human decisions and exclusion reasons are recorded.

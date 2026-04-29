@@ -5,9 +5,9 @@ This file maps EvidenceForge skills to the methods sources they should draw from
 | Skill | Main job | Primary sources | Key guardrail |
 |---|---|---|---|
 | `evidence-synthesis-forge` | Orchestrate review design from question to protocol/report | PRISMA 2020, Cochrane Handbook, JBI Manual | Do not jump to meta-analysis before defining question, eligibility, search, screening, extraction, and appraisal |
-| `meta-analysis-forge` | First-order statistical synthesis of primary studies | Cochrane Handbook, Borenstein et al., Hedges & Olkin, Harrer et al. | Do not pool incompatible outcomes/effect metrics; handle dependent effects |
+| `meta-analysis-forge` | First-order statistical synthesis of primary studies | Cochrane Handbook, Borenstein et al., Hedges & Olkin, Harrer et al. | Use machine-readable coding sheets and validation checks before running the minimal R script; do not pool incompatible outcomes/effect metrics or ignore dependent effects |
 | `umbrella-review-skeptic` | Review of reviews, umbrella review, second-order meta-analysis | JBI umbrella review methods, Cochrane overviews, AMSTAR 2, ROBIS | Do not double-count primary studies or treat overlapping reviews as independent |
-| `meta-ml-screener` | ML-assisted screening/extraction/classification | ASReview, Rayyan, AI-assisted review literature | Keep human-in-the-loop decisions and export audit logs |
+| `meta-ml-screener` | ML-assisted screening/extraction/classification | ASReview, Rayyan, AI-assisted review literature | Keep human-in-the-loop decisions and export machine-readable audit logs |
 | `environment-life-review-forge` | Environmental/ecological/life-science adaptation | CEE standards, JBI, ecology/evolution meta-analysis handbook | Do not pool across incompatible species, exposures, endpoints, geography, or measurement platforms |
 
 ## Development Rule

@@ -123,8 +123,13 @@ skills/
 │   ├── references/
 │   │   ├── effect-sizes.md
 │   │   └── synthesis-models.md
+│   ├── scripts/
+│   │   └── run_meta_analysis.R
 │   └── templates/
-│       └── coding-sheet.md
+│       ├── coding-sheet.md
+│       ├── coding-schema.csv
+│       ├── example-coding-sheet.csv
+│       └── validation-rules.md
 ├── umbrella-review-skeptic/
 │   ├── SKILL.md
 │   ├── references/
@@ -136,7 +141,9 @@ skills/
 │   ├── references/
 │   │   └── ml-assisted-review.md
 │   └── templates/
-│       └── screening-log.md
+│       ├── screening-log.md
+│       ├── screening-log-schema.csv
+│       └── example-screening-log.csv
 └── environment-life-review-forge/
     ├── SKILL.md
     ├── references/
@@ -148,10 +155,22 @@ skills/
 ## Skill Map
 
 - `evidence-synthesis-forge`: the general orchestrator for systematic reviews, scoping reviews, rapid reviews, evidence maps, and synthesis reports.
-- `meta-analysis-forge`: first-order meta-analysis, effect-size extraction, random/multilevel models, heterogeneity, publication bias, and sensitivity checks.
+- `meta-analysis-forge`: first-order meta-analysis, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
-- `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification.
+- `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification and machine-readable screening logs.
 - `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis.
+
+## v0.2 Executable Pieces
+
+EvidenceForge is still a method-grounded skill toolkit, not a fully automated meta-analysis system. The v0.2 direction adds a small reproducible spine:
+
+- machine-readable meta-analysis coding schema;
+- example coding sheet;
+- minimal `metafor` R script for one harmonized effect metric;
+- machine-readable ML screening log schema;
+- golden examples under `examples/golden/`.
+
+The deterministic script is intentionally narrow. It demonstrates how to connect a validated coding sheet to a reproducible analysis output, while keeping effect conversion, dependence handling, risk of bias, and certainty assessment under explicit human review.
 
 ## Install Locally
 
@@ -188,4 +207,4 @@ They are companion projects: one helps produce empirical research, the other hel
 
 ## Status
 
-Initial scaffold. The first version focuses on skills, references, templates, and demos. Deterministic scripts for `metafor`, PRISMA diagrams, screening logs, or extraction validation can be added later.
+Early scaffold with v0.2 executable resources. The current version includes skills, references, templates, machine-readable schemas, golden examples, and a minimal `metafor` R script. Future deterministic scripts can add effect-size conversion, PRISMA diagrams, screening-log validation, and robust or multilevel synthesis.

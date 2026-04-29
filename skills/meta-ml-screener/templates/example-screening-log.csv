@@ -1,0 +1,5 @@
+record_id,source_database,source_record_id,title,abstract_available,dedup_status,ml_task,ml_model,ml_version,prompt_or_feature_set,ml_score,ml_label,human_decision,exclusion_reason,reviewer,second_reviewer,decision_timestamp,source_anchor,notes
+R001,Web of Science,WOS:000001,"Biochar effects on soil carbon in temperate cropland",yes,unique,screening,ASReview,1.x,tfidf-title-abstract,0.94,likely_include,retrieve_full_text,,reviewer_a,,2026-04-29,abstract,"mock example"
+R002,Scopus,SCOPUS:000002,"Compost and crop yield: a field synthesis",yes,unique,screening,ASReview,1.x,tfidf-title-abstract,0.41,uncertain,maybe,,reviewer_a,reviewer_b,2026-04-29,abstract,"different intervention"
+R003,PubMed,PMID000003,"Clinical trial of dietary supplement in adults",yes,unique,screening,ASReview,1.x,tfidf-title-abstract,0.08,likely_exclude,exclude,wrong population,reviewer_a,,2026-04-29,abstract,"not environmental soil system"
+R004,Google Scholar,GS004,"Biochar and soil microbial diversity meta-analysis",yes,duplicate,screening,ASReview,1.x,tfidf-title-abstract,0.67,likely_include,exclude,duplicate,reviewer_a,,2026-04-29,abstract,"duplicate of R001 cluster"

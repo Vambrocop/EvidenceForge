@@ -40,6 +40,8 @@ Load:
 - `references/effect-sizes.md` for effect metrics and extraction.
 - `references/synthesis-models.md` for model choice and diagnostics.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.
+- `templates/coding-schema.csv` and `templates/validation-rules.md` for machine-readable coding-sheet structure and validation.
+- `scripts/run_meta_analysis.R` only after coding validity and pooling appropriateness have been checked.
 
 ## Workflow
 
@@ -58,7 +60,11 @@ Load:
 
 ### Coding Sheet
 
-Use `templates/coding-sheet.md`.
+Use:
+
+- `templates/coding-sheet.md` for a human-readable table.
+- `templates/coding-schema.csv` for field definitions.
+- `templates/example-coding-sheet.csv` for a minimal machine-readable example.
 
 ### Analysis Plan
 
@@ -72,6 +78,18 @@ Bias diagnostics:
 Sensitivity checks:
 Software:
 Interpretation limits:
+```
+
+### Minimal R Run
+
+Use `scripts/run_meta_analysis.R` for a small reproducible demonstration when the coding sheet has one harmonized effect metric and valid standard errors.
+
+```text
+Input CSV:
+Output directory:
+Effect metric:
+Pre-pooling checks passed:
+Known limits:
 ```
 
 ### Audit
@@ -94,3 +112,4 @@ Flag:
 - Do not ignore within-study dependence.
 - Do not treat a high pooled N as proof of high evidence quality.
 - Do not use vote-counting as a substitute for effect-size synthesis.
+- Do not treat the minimal R script as a full meta-analysis pipeline; it does not solve effect conversion, dependence, or certainty assessment.

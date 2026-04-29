@@ -1,0 +1,20 @@
+field_name,required,type,allowed_values,description,validation_rule
+record_id,yes,string,,Stable record identifier,Must not be blank
+source_database,yes,string,,Database or source name,Should match search log
+source_record_id,no,string,,Database-specific identifier,Use DOI PMID accession or source key where available
+title,yes,string,,Record title,Must allow human trace-back
+abstract_available,yes,string,"yes;no",Whether abstract text was available,Must be yes or no
+dedup_status,yes,string,"unique;duplicate;unclear",Deduplication status,Duplicate decisions must be traceable
+ml_task,yes,string,"screening;prioritization;classification;extraction_triage;other",Role of ML assistance,Must not obscure final human decision
+ml_model,no,string,,Model tool or platform name,Required if ML score affects workflow order
+ml_version,no,string,,Model or software version,Record when available
+prompt_or_feature_set,no,string,,Prompt schema or feature set identifier,Required for LLM-assisted workflows
+ml_score,no,number,,Model score or priority value,Must be interpretable in protocol
+ml_label,no,string,,Model-proposed label,Must not be treated as final inclusion decision
+human_decision,yes,string,"include;exclude;maybe;retrieve_full_text;pending",Final or current human decision,Required for audit
+exclusion_reason,conditional,string,,Reason for exclusion,Required when human_decision is exclude
+reviewer,yes,string,,Human reviewer identifier,Must not be blank
+second_reviewer,no,string,,Second reviewer or adjudicator,Recommended for contested records
+decision_timestamp,no,string,,Decision date/time,Use ISO 8601 where possible
+source_anchor,no,string,,PDF page abstract field or database link,Required for extraction assistance
+notes,no,string,,Review notes,Use for uncertainty and adjudication
