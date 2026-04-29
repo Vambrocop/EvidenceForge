@@ -34,10 +34,12 @@ Identify:
 - expected heterogeneity;
 - moderators;
 - field norms.
+- whether raw, participant-level, sample-level, or harmonized derived data are available.
 
 Load:
 
 - `references/effect-sizes.md` for effect metrics and extraction.
+- `references/ipd-and-mega-analysis.md` when the task involves individual participant data, multi-site raw/derived data harmonization, small-sample dataset integration, or mega-analysis.
 - `references/synthesis-models.md` for model choice and diagnostics.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.
 - `templates/coding-schema.csv` and `templates/validation-rules.md` for machine-readable coding-sheet structure and validation.
@@ -58,6 +60,8 @@ Load:
 8. Assess small-study effects or publication bias when feasible.
 9. Run sensitivity checks.
 10. Write interpretation with limits.
+
+For IPD or mega-analysis, first build a dataset inventory, harmonization plan, quality-control ledger, and study/site heterogeneity model before any pooled interpretation.
 
 ## Output Modes
 
@@ -101,6 +105,14 @@ Use `scripts/validate_coding_sheet.py` to check required fields, numeric estimat
 
 Use `scripts/effect_size_helpers.R` only for transparent mechanical helpers such as CI-to-SE, log-ratio transforms, Fisher z, approximate SMD SE, and lnROM. Record formulas and assumptions in the coding sheet notes.
 
+### IPD / Mega-Analysis
+
+Use:
+
+- `references/ipd-and-mega-analysis.md` for workflow and guardrails.
+- `templates/mega-analysis-dataset-inventory.csv` for data access and harmonization.
+- `templates/mega-analysis-audit-report.md` for audit output.
+
 ### Audit
 
 Flag:
@@ -123,3 +135,4 @@ Flag:
 - Do not use vote-counting as a substitute for effect-size synthesis.
 - Do not treat the minimal R script as a full meta-analysis pipeline; it does not solve effect conversion, dependence, or certainty assessment.
 - Do not run effect-size helper conversions without preserving original reported values and source anchors.
+- Do not call a project a mega-analysis unless raw, participant-level, sample-level, or harmonized derived data are reprocessed or remodeled under a common framework.

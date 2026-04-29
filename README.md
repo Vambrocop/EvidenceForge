@@ -126,6 +126,7 @@ skills/
 │   ├── SKILL.md
 │   ├── references/
 │   │   ├── effect-sizes.md
+│   │   ├── ipd-and-mega-analysis.md
 │   │   └── synthesis-models.md
 │   ├── scripts/
 │   │   ├── effect_size_helpers.R
@@ -136,6 +137,8 @@ skills/
 │       ├── coding-sheet.md
 │       ├── coding-schema.csv
 │       ├── example-coding-sheet.csv
+│       ├── mega-analysis-audit-report.md
+│       ├── mega-analysis-dataset-inventory.csv
 │       └── validation-rules.md
 ├── umbrella-review-skeptic/
 │   ├── SKILL.md
@@ -164,7 +167,7 @@ skills/
 ## Skill Map
 
 - `evidence-synthesis-forge`: the general orchestrator for systematic reviews, scoping reviews, rapid reviews, evidence maps, and synthesis reports.
-- `meta-analysis-forge`: first-order meta-analysis, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
+- `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
 - `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis.
@@ -188,6 +191,7 @@ The current repository now also includes:
 - coding-sheet validator;
 - screening-log validator;
 - effect-size helper functions for transparent mechanical conversions;
+- IPD/mega-analysis data inventory and audit templates;
 - PRISMA-style Mermaid flow generator;
 - GitHub Actions validation for examples.
 
@@ -229,4 +233,4 @@ They are companion projects: one helps produce empirical research, the other hel
 
 ## Status
 
-Early scaffold with executable resources. The current version includes skills, references, templates, machine-readable schemas, validators, golden examples, a minimal `metafor` R script, effect-size helper functions, and a PRISMA-style flow generator. Future deterministic scripts can add robust or multilevel synthesis, richer effect-size conversion, and full report generation.
+Early scaffold with executable resources. The current version includes skills, references, templates, machine-readable schemas, validators, golden examples, a minimal `metafor` R script, effect-size helper functions, IPD/mega-analysis templates, and a PRISMA-style flow generator. Future deterministic scripts can add robust or multilevel synthesis, richer effect-size conversion, and full report generation.

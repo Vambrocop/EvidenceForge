@@ -29,6 +29,12 @@ This is a practical reading list for improving EvidenceForge over time. It is no
 - Cooper, Hedges, and Valentine, *The Handbook of Research Synthesis and Meta-Analysis*.
 - Harrer, Cuijpers, Furukawa, and Ebert, [*Doing Meta-Analysis with R*](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/).
 
+## IPD and Mega-Analysis
+
+- Girn et al., [*An international mega-analysis of psychedelic drug effects on brain circuit function*](https://www.nature.com/articles/s41591-026-04287-9). Useful as an example of multi-site harmonized reanalysis, uniform preprocessing, Bayesian hierarchical modeling, and small-sample uncertainty reporting.
+- Smith, Spiegelhalter, and Thomas, Bayesian approaches to random-effects meta-analysis.
+- Spiegelhalter, Abrams, and Myles, *Bayesian Approaches to Clinical Trials and Health-Care Evaluation*.
+
 ## Environment and Ecology
 
 - Koricheva, Gurevitch, and Mengersen, *Handbook of Meta-analysis in Ecology and Evolution*.

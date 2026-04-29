@@ -46,6 +46,7 @@ Validation layer.
 - R environment notes.
 - GitHub Actions checks.
 - Effect-size helper functions.
+- IPD/mega-analysis templates for harmonized data integration.
 
 Meaning: the project can reject some bad inputs before analysis.
 
@@ -89,4 +90,5 @@ Meaning: the project is no longer only an experimental scaffold.
 EvidenceForge is moving from v0.2 toward v0.4:
 
 - it now has schemas, validators, golden examples, a minimal R script, effect-size helpers, and a PRISMA-style flow generator;
+- it also has an IPD/mega-analysis reference and audit templates inspired by small-sample multi-site synthesis workflows;
 - it still needs richer effect-size conversion, robust/multilevel model templates, PRISMA/report export polish, and real case studies before v1.0.

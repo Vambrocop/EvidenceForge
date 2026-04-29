@@ -20,6 +20,10 @@ Use meta-analysis-forge to create an effect-size coding sheet and random-effects
 Use meta-analysis-forge to validate this coding sheet against the CSV schema, then tell me whether it is safe to run the minimal R script.
 ```
 
+```text
+Use meta-analysis-forge to audit whether this project is a true mega-analysis, IPD meta-analysis, or ordinary aggregate-data meta-analysis. Build a dataset inventory and flag harmonization risks.
+```
+
 ## Umbrella Review / Second-Order Meta
 
 ```text
