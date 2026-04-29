@@ -50,6 +50,7 @@ Load:
 
 - `references/review-types.md` when the user needs help choosing review type or question framework.
 - `references/protocol-reporting-crosswalk.md` when the user needs PRISMA/Cochrane/JBI/CEE alignment.
+- `templates/prisma-flow-counts.csv` and `scripts/generate_prisma_flow.py` when the user needs a simple reproducible PRISMA-style flow diagram.
 
 ## Routing
 
@@ -81,6 +82,21 @@ Reproducibility artifacts:
 Risks:
 ```
 
+### PRISMA Flow
+
+Use `templates/prisma-flow-counts.csv` to record counts and `scripts/generate_prisma_flow.py` to generate a Mermaid diagram.
+
+```text
+Count source:
+Records identified:
+Duplicates removed:
+Records screened:
+Reports assessed:
+Studies included:
+Studies in meta-analysis:
+Known deviations:
+```
+
 ### Audit
 
 When reviewing an existing protocol or review, focus on:
@@ -102,3 +118,4 @@ When reviewing an existing protocol or review, focus on:
 - Do not recommend statistical pooling when constructs or estimands are incompatible.
 - Do not let machine learning replace final inclusion decisions without explicit protocol justification.
 - Do not write conclusions before the protocol, search, screening, extraction, and appraisal logic are clear.
+- Do not present PRISMA counts as final unless they are traceable to search, deduplication, and screening logs.

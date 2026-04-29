@@ -1,0 +1,13 @@
+stage,count,label,notes
+records_database,0,Records identified from databases,
+records_registers,0,Records identified from registers,
+records_other,0,Records identified from other sources,
+duplicates_removed,0,Duplicate records removed,
+records_screened,0,Records screened,
+records_excluded,0,Records excluded,
+reports_sought,0,Reports sought for retrieval,
+reports_not_retrieved,0,Reports not retrieved,
+reports_assessed,0,Reports assessed for eligibility,
+reports_excluded,0,Reports excluded with reasons,
+studies_included,0,Studies included in review,
+studies_meta_analysis,0,Studies included in meta-analysis,

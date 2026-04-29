@@ -53,6 +53,7 @@ Use:
 - `templates/screening-log.md` for a human-readable log.
 - `templates/screening-log-schema.csv` for machine-readable logging.
 - `templates/example-screening-log.csv` for a minimal example.
+- `scripts/validate_screening_log.py` to check required fields, exclusion reasons, duplicate record IDs, and human follow-up decisions.
 
 ## Output Modes
 

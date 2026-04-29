@@ -1,0 +1,34 @@
+name: Validate EvidenceForge Examples
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate meta-analysis coding sheet
+        run: |
+          python skills/meta-analysis-forge/scripts/validate_coding_sheet.py \
+            --input examples/golden/meta-analysis-minimal/input/coding-sheet.csv
+
+      - name: Validate ML screening log
+        run: |
+          python skills/meta-ml-screener/scripts/validate_screening_log.py \
+            --input examples/golden/ml-screening-log/input/screening-log.csv
+
+      - name: Generate PRISMA flow example
+        run: |
+          python skills/evidence-synthesis-forge/scripts/generate_prisma_flow.py \
+            --input skills/evidence-synthesis-forge/templates/prisma-flow-counts.csv \
+            --output /tmp/prisma-flow.md

@@ -59,6 +59,7 @@ See:
 - [`docs/method-sources.md`](docs/method-sources.md)
 - [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
 - [`docs/reading-list.md`](docs/reading-list.md)
+- [`docs/version-roadmap.md`](docs/version-roadmap.md)
 
 ## Origin and Workflow Inspiration
 
@@ -116,15 +117,21 @@ skills/
 │   ├── SKILL.md
 │   ├── references/
 │   │   └── review-types.md
+│   ├── scripts/
+│   │   └── generate_prisma_flow.py
 │   └── templates/
-│       └── evidence-protocol.md
+│       ├── evidence-protocol.md
+│       └── prisma-flow-counts.csv
 ├── meta-analysis-forge/
 │   ├── SKILL.md
 │   ├── references/
 │   │   ├── effect-sizes.md
 │   │   └── synthesis-models.md
 │   ├── scripts/
-│   │   └── run_meta_analysis.R
+│   │   ├── effect_size_helpers.R
+│   │   ├── install_r_packages.R
+│   │   ├── run_meta_analysis.R
+│   │   └── validate_coding_sheet.py
 │   └── templates/
 │       ├── coding-sheet.md
 │       ├── coding-schema.csv
@@ -140,6 +147,8 @@ skills/
 │   ├── SKILL.md
 │   ├── references/
 │   │   └── ml-assisted-review.md
+│   ├── scripts/
+│   │   └── validate_screening_log.py
 │   └── templates/
 │       ├── screening-log.md
 │       ├── screening-log-schema.csv
@@ -155,9 +164,9 @@ skills/
 ## Skill Map
 
 - `evidence-synthesis-forge`: the general orchestrator for systematic reviews, scoping reviews, rapid reviews, evidence maps, and synthesis reports.
-- `meta-analysis-forge`: first-order meta-analysis, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, and a minimal `metafor` R script template.
+- `meta-analysis-forge`: first-order meta-analysis, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
-- `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification and machine-readable screening logs.
+- `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
 - `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis.
 
 ## v0.2 Executable Pieces
@@ -171,6 +180,19 @@ EvidenceForge is still a method-grounded skill toolkit, not a fully automated me
 - golden examples under `examples/golden/`.
 
 The deterministic script is intentionally narrow. It demonstrates how to connect a validated coding sheet to a reproducible analysis output, while keeping effect conversion, dependence handling, risk of bias, and certainty assessment under explicit human review.
+
+## v0.3/v0.4 Direction
+
+The current repository now also includes:
+
+- coding-sheet validator;
+- screening-log validator;
+- effect-size helper functions for transparent mechanical conversions;
+- PRISMA-style Mermaid flow generator;
+- GitHub Actions validation for examples.
+
+See [`docs/r-environment.md`](docs/r-environment.md) for the minimal R setup.
+See [`docs/version-roadmap.md`](docs/version-roadmap.md) for what v0, v0.2, v0.3, and v1.0 mean.
 
 ## Install Locally
 
@@ -207,4 +229,4 @@ They are companion projects: one helps produce empirical research, the other hel
 
 ## Status
 
-Early scaffold with v0.2 executable resources. The current version includes skills, references, templates, machine-readable schemas, golden examples, and a minimal `metafor` R script. Future deterministic scripts can add effect-size conversion, PRISMA diagrams, screening-log validation, and robust or multilevel synthesis.
+Early scaffold with executable resources. The current version includes skills, references, templates, machine-readable schemas, validators, golden examples, a minimal `metafor` R script, effect-size helper functions, and a PRISMA-style flow generator. Future deterministic scripts can add robust or multilevel synthesis, richer effect-size conversion, and full report generation.

@@ -6,6 +6,10 @@
 Use evidence-synthesis-forge to design a protocol for a systematic review on air pollution exposure and cardiovascular outcomes. Include PECO, eligibility criteria, databases, screening process, extraction fields, risk-of-bias assessment, and synthesis plan.
 ```
 
+```text
+Use evidence-synthesis-forge to create a PRISMA-style flow-count CSV and generate a Mermaid flow diagram from the current screening counts.
+```
+
 ## Meta-Analysis
 
 ```text

@@ -41,7 +41,10 @@ Load:
 - `references/synthesis-models.md` for model choice and diagnostics.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.
 - `templates/coding-schema.csv` and `templates/validation-rules.md` for machine-readable coding-sheet structure and validation.
+- `scripts/validate_coding_sheet.py` before statistical execution.
+- `scripts/effect_size_helpers.R` for transparent mechanical conversions during extraction.
 - `scripts/run_meta_analysis.R` only after coding validity and pooling appropriateness have been checked.
+- `scripts/install_r_packages.R` when setting up the minimal R environment.
 
 ## Workflow
 
@@ -92,6 +95,12 @@ Pre-pooling checks passed:
 Known limits:
 ```
 
+### Validation and Conversion
+
+Use `scripts/validate_coding_sheet.py` to check required fields, numeric estimates, positive standard errors, duplicate effect IDs, and mixed effect metrics.
+
+Use `scripts/effect_size_helpers.R` only for transparent mechanical helpers such as CI-to-SE, log-ratio transforms, Fisher z, approximate SMD SE, and lnROM. Record formulas and assumptions in the coding sheet notes.
+
 ### Audit
 
 Flag:
@@ -113,3 +122,4 @@ Flag:
 - Do not treat a high pooled N as proof of high evidence quality.
 - Do not use vote-counting as a substitute for effect-size synthesis.
 - Do not treat the minimal R script as a full meta-analysis pipeline; it does not solve effect conversion, dependence, or certainty assessment.
+- Do not run effect-size helper conversions without preserving original reported values and source anchors.

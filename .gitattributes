@@ -10,3 +10,4 @@ examples/** linguist-documentation
 skills/**/SKILL.md linguist-documentation
 skills/**/references/** linguist-documentation
 skills/**/templates/** linguist-documentation
+examples/golden/** linguist-documentation

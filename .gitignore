@@ -6,7 +6,7 @@ __pycache__/
 .venv/
 node_modules/
 outputs/
+examples/golden/**/output/
 tmp/
 data/private/
 data/raw/
-
