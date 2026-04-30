@@ -12,6 +12,7 @@ Method anchors: Cochrane effect-measure guidance, standard meta-analysis texts b
 - correlation / Fisher z;
 - regression coefficient;
 - elasticity;
+- log response ratio / percent change;
 - incidence rate ratio;
 - prevalence;
 - diagnostic accuracy metrics.
@@ -43,6 +44,13 @@ Before conversion, ask:
 - Are models adjusted for similar confounders?
 - Are time horizons comparable?
 - Are effects from experimental and observational designs mixed?
+
+For ecology and agroecosystem reviews, keep response ratios transparent:
+
+- preserve original treatment and comparator means;
+- record whether the reported effect is `lnRR`, percent change, or a back-transformed value;
+- use `100 * (exp(lnRR) - 1)` for percent-change interpretation only when the log response ratio is the coded metric;
+- do not pool different outcome families such as yield, soil organic carbon, and emissions as one effect.
 
 ## Dependence
 

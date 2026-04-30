@@ -47,5 +47,9 @@ Use environment-life-review-forge to build a PECO framework and extraction table
 ```
 
 ```text
+Use environment-life-review-forge to design an agroecosystem nutrient meta-analysis on potassium fertilization, cereal yield, and soil organic carbon. Build a dual-outcome audit and a nutrient-meta extraction schema, and flag duration, soil-depth, baseline nutrient status, and climate moderators.
+```
+
+```text
 Use environment-life-review-forge to audit a paper that compiles field-study measurements, trains machine-learning models, maps national environmental risk, and simulates policy scenarios. Build a scenario-model audit and a policy scenario matrix that separate policy coverage from implementation quality.
 ```

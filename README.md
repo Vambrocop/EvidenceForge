@@ -159,10 +159,13 @@ skills/
 └── environment-life-review-forge/
     ├── SKILL.md
     ├── references/
+    │   ├── agroecosystem-nutrient-meta-analysis.md
     │   ├── cee-alignment.md
     │   ├── environmental-life-science.md
     │   └── environmental-scenario-synthesis.md
     └── templates/
+        ├── dual-outcome-meta-audit.md
+        ├── nutrient-meta-extraction-schema.csv
         ├── peco-framework.md
         ├── policy-scenario-matrix.csv
         └── scenario-model-audit.md
@@ -174,7 +177,7 @@ skills/
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
-- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including scenario-model audits for policy trade-offs, spatial extrapolation, and implementation-sensitive claims.
+- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including agroecosystem nutrient meta-analysis, scenario-model audits for policy trade-offs, spatial extrapolation, and implementation-sensitive claims.
 
 ## v0.2 Executable Pieces
 
@@ -196,6 +199,7 @@ The current repository now also includes:
 - screening-log validator;
 - effect-size helper functions for transparent mechanical conversions;
 - IPD/mega-analysis data inventory and audit templates;
+- agroecosystem nutrient meta-analysis extraction and dual-outcome audit templates;
 - environmental scenario-model audit templates;
 - PRISMA-style Mermaid flow generator;
 - GitHub Actions validation for examples.

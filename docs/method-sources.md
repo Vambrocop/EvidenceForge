@@ -78,6 +78,21 @@ Use for:
 
 EvidenceForge implication: environmental and ecological reviews need explicit search transparency, geography/context fields, effect modifiers, study validity appraisal, and caution against vote-counting.
 
+### Agroecosystem Nutrient Meta-Analysis Examples
+
+Source: Liang and Schlesinger (2026), [*Potassium fertilization enhances both cereal yield and soil organic carbon: a meta-analysis*](https://doi.org/10.1038/s41467-026-71154-z), Nature Communications.
+
+Use for:
+
+- agricultural nutrient-management meta-analysis;
+- crop yield and soil organic carbon as separate but policy-linked endpoints;
+- response-ratio and percent-change interpretation;
+- moderator extraction for climate, baseline soil status, and experimental duration;
+- long-term evidence gates for soil-carbon claims;
+- open data/code audit practices.
+
+EvidenceForge implication: environmental meta-analysis often needs dual-outcome interpretation. A review may show a positive yield response and a smaller or slower soil-carbon response; the skill should keep time horizon, soil depth, baseline nutrient limitation, and study dependence visible.
+
 ### Environmental Scenario Modeling Examples
 
 Source: Ba et al. (2026), [*Full Manure Recycling Risks an 18% Rise in China's Cropland N2O Emissions Without Improved Management*](https://doi.org/10.1111/gcb.70837), Global Change Biology.

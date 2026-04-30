@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, environmental scenario modeling, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, agroecosystem nutrient meta-analysis, environmental scenario modeling, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -30,6 +30,7 @@ Load:
 
 - `references/environmental-life-science.md` for domain heterogeneity.
 - `references/cee-alignment.md` for environmental evidence standards.
+- `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
 
 ## Workflow
@@ -45,6 +46,7 @@ Load:
 9. Build domain-specific extraction table.
 
 Use `templates/peco-framework.md`.
+Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 
 ## Output Modes
@@ -75,6 +77,24 @@ Include:
 - confounders;
 - study quality.
 
+### Agroecosystem Nutrient Meta-Analysis
+
+Use this mode for fertilizer, manure, compost, liming, biochar, and nutrient-management reviews with crop, soil, emission, or microbial outcomes.
+
+Include:
+
+- intervention nutrient form and rate;
+- comparator nutrient background;
+- crop or ecosystem;
+- soil baseline status;
+- climate and geography;
+- experiment duration;
+- yield endpoint;
+- soil-carbon or soil-health endpoint;
+- response-ratio or percent-change metric;
+- moderator plan;
+- dual-outcome trade-off interpretation.
+
 ### Environmental Scenario Audit
 
 Use this mode when papers combine study extraction, model prediction, spatial extrapolation, and policy scenarios.
@@ -96,5 +116,7 @@ Include:
 - Do not collapse mechanistic, observational, and experimental evidence without design labels.
 - Do not hide geography, climate zone, tissue type, or measurement platform when they drive heterogeneity.
 - Do not use vote-counting as evidence of effect direction or strength.
+- Do not interpret short-term yield gains as soil-carbon sequestration evidence without duration, baseline SOC, depth, and measurement-method checks.
+- Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.
 - Do not treat a machine-learning scenario projection as causal proof unless the design supports causal interpretation.
 - Do not present a policy lever, such as recycling rate or intervention coverage, as sufficient without auditing implementation quality and compensating inputs.

@@ -1,0 +1,36 @@
+field,required,type,description,example
+study_id,yes,string,Stable identifier for the paper or dataset,liang_2026_k_soc
+effect_id,yes,string,Stable identifier for each treatment-comparator-outcome effect,liang_2026_yield_001
+citation,yes,string,Short citation,Liang and Schlesinger 2026
+doi_or_url,no,string,DOI or source URL,https://doi.org/10.1038/s41467-026-71154-z
+country_or_region,no,string,Country region or climate zone,global
+coordinates_or_site,no,string,Coordinates site name or spatial unit,
+crop_group,yes,string,Crop or crop group,cereal
+crop_species,no,string,Species if available,wheat
+intervention_nutrient,yes,string,Nutrient or amendment,potassium
+intervention_form,no,string,Fertilizer or amendment form,K fertilizer
+intervention_rate,no,number,Nutrient or amendment rate,
+intervention_rate_unit,no,string,Rate unit,kg K ha-1 yr-1
+comparator,yes,string,Control or background treatment,no potassium fertilization
+co_applied_inputs,no,string,N P manure irrigation residue or other co-inputs,
+outcome_family,yes,string,Yield SOC emissions microbial soil_health,crop_yield
+outcome_name,yes,string,Specific endpoint,cereal grain yield
+effect_metric,yes,string,lnRR percent_change MD SMD correlation slope,percent_change
+effect_estimate,yes,number,Effect estimate in stated metric,19.3
+standard_error,no,number,Standard error if available,
+ci_lower,no,number,Lower confidence interval,
+ci_upper,no,number,Upper confidence interval,
+n_treatment,no,integer,Treatment sample size,
+n_control,no,integer,Control sample size,
+duration_years,no,number,Experiment or treatment duration in years,
+soil_depth_cm,no,string,Soil sampling depth for SOC or soil endpoints,0-20
+baseline_soc,no,number,Baseline SOC or SOM if available,
+baseline_available_k,no,number,Baseline potassium availability if available,
+mean_annual_precipitation,no,number,Mean annual precipitation,
+mean_annual_temperature,no,number,Mean annual temperature,
+soil_texture,no,string,Soil texture class,
+soil_ph,no,number,Soil pH,
+study_design,no,string,Field experiment observational pot greenhouse,field experiment
+moderator_notes,no,string,Notes on moderator coding,
+source_anchor,yes,string,Table figure appendix dataset or extraction note,abstract and Zenodo dataset
+risk_of_bias_notes,no,string,Internal validity or extraction concerns,
