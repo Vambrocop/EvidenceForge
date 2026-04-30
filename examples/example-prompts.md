@@ -47,6 +47,10 @@ Use environment-life-review-forge to build a PECO framework and extraction table
 ```
 
 ```text
+Use environment-life-review-forge to audit a review on bidirectional effects between global food production and the environment. Build a food-system nexus map, separate food-to-environment pressures from environment-to-food feedbacks, and include trade displacement, diets, crops, livestock, blue foods, mitigation, adaptation, and circularity strategies.
+```
+
+```text
 Use environment-life-review-forge to design an agroecosystem nutrient meta-analysis on potassium fertilization, cereal yield, and soil organic carbon. Build a dual-outcome audit and a nutrient-meta extraction schema, and flag duration, soil-depth, baseline nutrient status, and climate moderators.
 ```
 

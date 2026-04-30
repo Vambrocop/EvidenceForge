@@ -78,6 +78,21 @@ Use for:
 
 EvidenceForge implication: environmental and ecological reviews need explicit search transparency, geography/context fields, effect modifiers, study validity appraisal, and caution against vote-counting.
 
+### Food-System Nexus Review Examples
+
+Source: Mogollón et al. (2026), [*Broad bidirectional effects of global food production on the environment*](https://doi.org/10.1038/s43017-026-00778-y), Nature Reviews Earth & Environment.
+
+Use for:
+
+- food-system environmental pressure mapping;
+- bidirectional links between production impacts and environmental feedbacks;
+- separating crop, livestock, and aquatic/blue-food receptors;
+- production-based and consumption-based accounting;
+- trade displacement and embodied environmental impacts;
+- supply-side, demand-side, adaptation, and circularity strategy maps.
+
+EvidenceForge implication: food-system evidence synthesis should not stop at footprint accounting. Agents should map both directions: food production pressures on the environment and environmental degradation feedbacks on future production and food security.
+
 ### Agroecosystem Nutrient Meta-Analysis Examples
 
 Source: Liang and Schlesinger (2026), [*Potassium fertilization enhances both cereal yield and soil organic carbon: a meta-analysis*](https://doi.org/10.1038/s41467-026-71154-z), Nature Communications.
