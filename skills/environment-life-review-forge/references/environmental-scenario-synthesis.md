@@ -10,6 +10,7 @@ Use this pattern for questions such as:
 - Does an intervention create trade-offs across emissions, yield, biodiversity, pollution, or health?
 - Can a database extracted from many field studies support spatial or future projections?
 - Which assumptions drive the difference between an apparent benefit and a risk?
+- What is the modeled option space when food, water, carbon, biodiversity, or other ecosystem services are optimized jointly?
 
 This is common in nutrient recycling, agricultural mitigation, land-use change, ecological restoration, biochar, water pollution control, biodiversity policy, and environmental health.
 
@@ -18,6 +19,8 @@ This is common in nutrient recycling, agricultural mitigation, land-use change, 
 Ba et al. (2026), "Full Manure Recycling Risks an 18% Rise in China's Cropland N2O Emissions Without Improved Management," Global Change Biology, is a useful model article for this pattern.
 
 The study compiled N2O-N flux evidence from 443 Chinese field studies and 2186 measurements, including 689 manure-N observations. It compared machine-learning models, used environmental and management predictors, reconstructed gridded cropland emissions, and simulated 2050 manure-recycling scenarios. Its key workflow lesson is that a circular-economy policy target can become environmentally risky when implementation quality is weak. Full recycling alone is not the same as effective nutrient management.
+
+Bayer, Lautenbach, and Arneth (2023), "Benefits and trade-offs of optimizing global land use for food, water, and carbon," PNAS, is a useful example of a different scenario family: multiobjective land-use optimization. It combines LPJ-GUESS ecosystem modeling with NSGA-II optimization to estimate a Pareto frontier for carbon storage, crop production, and available runoff. Its key workflow lesson is that theoretical option-space evidence can reveal where large gains are biogeophysically possible, while also making implementation realism, local welfare, trade, biodiversity, and transition costs impossible to ignore.
 
 Method details worth emulating:
 
@@ -34,6 +37,8 @@ Source links:
 - Bangor open-access record: https://research.bangor.ac.uk/en/publications/full-manure-recycling-risks-an-18-rise-in-chinas-cropland-n2o-emi/
 - Data: https://doi.org/10.5281/zenodo.19144029
 - Code: https://doi.org/10.5281/zenodo.19144282
+- Land-use optimization example: https://doi.org/10.1073/pnas.2220371120
+- Land-use code/data: https://github.com/slautenb/lpjguessOptim
 
 ## Workflow
 

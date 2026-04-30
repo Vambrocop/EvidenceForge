@@ -108,6 +108,21 @@ Use for:
 
 EvidenceForge implication: environmental evidence synthesis sometimes needs a scenario-model audit rather than a pooled effect estimate. Agents should track database construction, model validation, spatial assumptions, scenario levers, uncertainty, and policy trade-offs.
 
+### Land-Use Optimization and Pareto-Frontier Examples
+
+Source: Bayer, Lautenbach, and Arneth (2023), [*Benefits and trade-offs of optimizing global land use for food, water, and carbon*](https://doi.org/10.1073/pnas.2220371120), PNAS.
+
+Use for:
+
+- multiobjective ecosystem-service optimization;
+- Pareto-frontier / production-possibility frontier interpretation;
+- dynamic vegetation model outputs as optimization inputs;
+- food-water-carbon trade-off mapping;
+- spatial priority maps and solution-agreement audits;
+- separating theoretical biogeophysical option space from feasible policy pathways.
+
+EvidenceForge implication: some environmental evidence projects should ask what the modeled option space is, not just what one scenario predicts. Agents should audit objective definitions, units, baselines, constraints, optimization algorithms, transition costs, omitted social constraints, and local-vs-global interpretation.
+
 ## Appraisal and Certainty
 
 ### AMSTAR 2

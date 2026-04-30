@@ -53,3 +53,7 @@ Use environment-life-review-forge to design an agroecosystem nutrient meta-analy
 ```text
 Use environment-life-review-forge to audit a paper that compiles field-study measurements, trains machine-learning models, maps national environmental risk, and simulates policy scenarios. Build a scenario-model audit and a policy scenario matrix that separate policy coverage from implementation quality.
 ```
+
+```text
+Use environment-life-review-forge to audit a land-use optimization paper that estimates a Pareto frontier for food, water, and carbon. Build a pareto-frontier audit, a multi-objective trade-off schema, and guardrails separating theoretical option space from feasible policy pathways.
+```

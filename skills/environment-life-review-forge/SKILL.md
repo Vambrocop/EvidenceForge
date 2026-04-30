@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, agroecosystem nutrient meta-analysis, environmental scenario modeling, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, agroecosystem nutrient meta-analysis, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -32,6 +32,7 @@ Load:
 - `references/cee-alignment.md` for environmental evidence standards.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
+- `references/land-use-optimization-tradeoffs.md` when a study uses multiobjective optimization, Pareto frontiers, land-use allocation, or food-water-carbon trade-off modeling.
 
 ## Workflow
 
@@ -48,6 +49,7 @@ Load:
 Use `templates/peco-framework.md`.
 Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
+Use `templates/pareto-frontier-audit.md` and `templates/multi-objective-tradeoff-schema.csv` for multiobjective optimization and land-use trade-off studies.
 
 ## Output Modes
 
@@ -110,6 +112,23 @@ Include:
 - uncertainty and sensitivity checks;
 - policy claim and limits.
 
+### Pareto-Frontier Trade-Off Audit
+
+Use this mode when a study optimizes across multiple environmental or ecosystem-service objectives.
+
+Include:
+
+- decision unit;
+- land-use or management options;
+- objectives and units;
+- baseline/reference;
+- constraints and excluded areas;
+- model used to generate objective values;
+- optimization algorithm;
+- frontier interpretation;
+- priority maps and consensus;
+- transition costs, emissions, biodiversity, governance, and realism limits.
+
 ## Guardrails
 
 - Do not pool across species, exposure windows, or outcome constructs without a biological or environmental rationale.
@@ -120,3 +139,5 @@ Include:
 - Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.
 - Do not treat a machine-learning scenario projection as causal proof unless the design supports causal interpretation.
 - Do not present a policy lever, such as recycling rate or intervention coverage, as sufficient without auditing implementation quality and compensating inputs.
+- Do not treat a Pareto-efficient frontier as a politically feasible pathway without social, economic, governance, biodiversity, and transition-cost constraints.
+- Do not collapse global objective gains into local welfare claims without regional supply, trade, livelihood, water-access, and justice checks.
