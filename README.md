@@ -160,6 +160,7 @@ skills/
     ├── SKILL.md
     ├── references/
     │   ├── agroecosystem-nutrient-meta-analysis.md
+    │   ├── agricultural-ml-yield-prediction.md
     │   ├── cee-alignment.md
     │   ├── environmental-life-science.md
     │   ├── environmental-scenario-synthesis.md
@@ -169,6 +170,8 @@ skills/
         ├── dual-outcome-meta-audit.md
         ├── food-environment-bidirectional-audit.md
         ├── food-environment-pressure-schema.csv
+        ├── ml-yield-feature-schema.csv
+        ├── ml-yield-prediction-audit.md
         ├── multi-objective-tradeoff-schema.csv
         ├── nutrient-meta-extraction-schema.csv
         ├── pareto-frontier-audit.md
@@ -183,7 +186,7 @@ skills/
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
-- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including food-system environmental nexus reviews, agroecosystem nutrient meta-analysis, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
+- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including food-system environmental nexus reviews, agroecosystem nutrient meta-analysis, crop-yield ML prediction, genotype-environment modeling, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
 
 ## v0.2 Executable Pieces
 
@@ -207,6 +210,7 @@ The current repository now also includes:
 - IPD/mega-analysis data inventory and audit templates;
 - food-system bidirectional environmental nexus audit templates;
 - agroecosystem nutrient meta-analysis extraction and dual-outcome audit templates;
+- agricultural ML yield-prediction audit templates;
 - environmental scenario-model audit templates;
 - land-use optimization and Pareto-frontier trade-off audit templates;
 - PRISMA-style Mermaid flow generator;

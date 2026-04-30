@@ -1,0 +1,28 @@
+field,required,type,description,example
+study_id,yes,string,Stable identifier for the study or model,wang_2025_maize_ml
+record_id,yes,string,Stable row or observation identifier,site01_hybrid01_2016
+crop,yes,string,Crop species or group,maize
+region,yes,string,Study region,Huang-Huai-Hai Plain China
+year,yes,integer,Trial or harvest year,2019
+site_id,yes,string,Trial site or location identifier,loc_001
+genotype_id,yes,string,Hybrid cultivar genotype or line identifier,hybrid_01
+replicate_id,no,string,Replicate or block identifier,rep_1
+yield_value,yes,number,Observed yield,target numeric value
+yield_unit,yes,string,Yield unit,kg/ha
+breeding_value,no,number,BLUP or breeding value used as model input,
+breeding_value_source,no,string,How the breeding value was estimated,lme4 BLUP from multilocation trials
+weather_window,yes,string,Weather aggregation window,growth period
+weather_source,yes,string,Weather station reanalysis or sensor source,county weather station
+temperature_features,no,string,Temperature variables used,T2M TMAX TMIN TRANGE
+precipitation_features,no,string,Precipitation or moisture variables used,PRECTOT PETP VPD
+radiation_features,no,string,Radiation or sunshine variables used,ASKLW ASKSW sunshine_duration
+wind_humidity_features,no,string,Wind humidity dew point or vapor variables used,WS2M RH2M T2MDEW SPV
+soil_features,no,string,Soil variables used,
+management_features,no,string,Management variables used,planting density fertilizer irrigation
+remote_sensing_features,no,string,Remote sensing variables used,
+model_family,yes,string,RF XGBoost SVR GPR CNN LSTM baseline,RF
+validation_group,no,string,Random year site genotype external,leave_year_out
+performance_metric,no,string,R2 RMSE MAE MAPE RRMSE,R2
+performance_value,no,number,Metric value,
+source_anchor,yes,string,Table figure appendix or extraction note,Frontiers abstract and Table 2
+risk_notes,no,string,Leakage representativeness or reproducibility issues,

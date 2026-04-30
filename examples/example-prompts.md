@@ -51,6 +51,10 @@ Use environment-life-review-forge to audit a review on bidirectional effects bet
 ```
 
 ```text
+Use environment-life-review-forge to audit a maize yield machine-learning paper that integrates meteorological variables and BLUP breeding values. Build an ML yield-prediction audit, a feature schema, and validation guardrails for site, year, genotype, weather-window leakage, feature importance, and future-yield forecasting.
+```
+
+```text
 Use environment-life-review-forge to design an agroecosystem nutrient meta-analysis on potassium fertilization, cereal yield, and soil organic carbon. Build a dual-outcome audit and a nutrient-meta extraction schema, and flag duration, soil-depth, baseline nutrient status, and climate moderators.
 ```
 

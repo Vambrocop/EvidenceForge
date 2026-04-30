@@ -93,6 +93,22 @@ Use for:
 
 EvidenceForge implication: food-system evidence synthesis should not stop at footprint accounting. Agents should map both directions: food production pressures on the environment and environmental degradation feedbacks on future production and food security.
 
+### Agricultural ML Yield-Prediction Examples
+
+Source: Wang et al. (2025), [*Integrating meteorological and breeding data to predict maize yields using machine learning algorithms*](https://doi.org/10.3389/fpls.2025.1722068), Frontiers in Plant Science.
+
+Use for:
+
+- crop-yield prediction with meteorological and breeding data;
+- genotype-by-environment data integration;
+- BLUP breeding values as model inputs;
+- comparing Random Forest, XGBoost, SVR, and GPR;
+- validation split and leakage auditing;
+- feature-importance and partial-dependence interpretation;
+- distinguishing operational prediction from causal agronomic explanation.
+
+EvidenceForge implication: agricultural ML papers need model-audit templates that track site, year, genotype, weather windows, validation groups, and deployment claims. Random train/test accuracy is not enough when the claim involves new sites, years, genotypes, or future climates.
+
 ### Agroecosystem Nutrient Meta-Analysis Examples
 
 Source: Liang and Schlesinger (2026), [*Potassium fertilization enhances both cereal yield and soil organic carbon: a meta-analysis*](https://doi.org/10.1038/s41467-026-71154-z), Nature Communications.

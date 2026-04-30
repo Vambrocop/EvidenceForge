@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, food-system environmental nexus reviews, agroecosystem nutrient meta-analysis, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, food-system environmental nexus reviews, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -32,6 +32,7 @@ Load:
 - `references/environmental-life-science.md` for domain heterogeneity.
 - `references/cee-alignment.md` for environmental evidence standards.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
+- `references/agricultural-ml-yield-prediction.md` for crop-yield prediction studies integrating meteorological, breeding, genomic, remote-sensing, or field-trial data.
 - `references/food-system-bidirectional-nexus.md` for food-system reviews linking environmental pressures, feedbacks, trade, diets, crops, livestock, and aquatic foods.
 - `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
 - `references/land-use-optimization-tradeoffs.md` when a study uses multiobjective optimization, Pareto frontiers, land-use allocation, or food-water-carbon trade-off modeling.
@@ -51,6 +52,7 @@ Load:
 Use `templates/peco-framework.md`.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
 Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
+Use `templates/ml-yield-prediction-audit.md` and `templates/ml-yield-feature-schema.csv` for agricultural ML yield-prediction studies.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 Use `templates/pareto-frontier-audit.md` and `templates/multi-objective-tradeoff-schema.csv` for multiobjective optimization and land-use trade-off studies.
 
@@ -116,6 +118,23 @@ Include:
 - regional vulnerability and equity concerns;
 - evidence certainty and data-source limits.
 
+### Crop-Yield ML Prediction Audit
+
+Use this mode when a study predicts crop yield from weather, genotype, breeding value, trial, remote-sensing, soil, or management inputs.
+
+Include:
+
+- crop, region, years, sites, genotypes, and trial design;
+- input data families and temporal aggregation;
+- target yield definition and unit;
+- model families compared;
+- hyperparameter tuning and validation split;
+- leakage risks across site, year, genotype, and repeated trials;
+- performance metrics;
+- interpretability method;
+- extrapolation and future-climate assumptions;
+- reproducibility and data-access status.
+
 ### Environmental Scenario Audit
 
 Use this mode when papers combine study extraction, model prediction, spatial extrapolation, and policy scenarios.
@@ -158,6 +177,9 @@ Include:
 - Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.
 - Do not describe food-system impacts in only one direction when the review question is bidirectional; map both pressure and feedback pathways.
 - Do not treat global average food footprints as local risk without tracing trade, geography, vulnerability, and production-system context.
+- Do not treat random train/test performance in crop trials as proof of generalization to new years, sites, or genotypes; require grouped or out-of-domain validation where the claim needs it.
+- Do not interpret variable importance, PDPs, or SHAP values causally unless the design supports causal interpretation.
+- Do not present future yield forecasts without explicit weather/climate inputs, scenario assumptions, and extrapolation checks.
 - Do not treat a machine-learning scenario projection as causal proof unless the design supports causal interpretation.
 - Do not present a policy lever, such as recycling rate or intervention coverage, as sufficient without auditing implementation quality and compensating inputs.
 - Do not treat a Pareto-efficient frontier as a politically feasible pathway without social, economic, governance, biodiversity, and transition-cost constraints.
