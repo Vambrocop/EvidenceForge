@@ -51,6 +51,10 @@ Use environment-life-review-forge to audit a review on bidirectional effects bet
 ```
 
 ```text
+Use environment-life-review-forge to audit a geospatial machine-learning study forecasting county-level food waste in U.S. retail markets. Build a food-waste forecast audit, a geospatial feature schema, and guardrails for spatial leakage, high-waste counties, feature importance, and translation into waste-to-bioproduct logistics.
+```
+
+```text
 Use environment-life-review-forge to audit a maize yield machine-learning paper that integrates meteorological variables and BLUP breeding values. Build an ML yield-prediction audit, a feature schema, and validation guardrails for site, year, genotype, weather-window leakage, feature importance, and future-yield forecasting.
 ```
 

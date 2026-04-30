@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, food-system environmental nexus reviews, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -23,6 +23,7 @@ Identify:
 - outcomes/endpoints;
 - study design;
 - spatial and temporal scale;
+- spatial unit and aggregation boundary, if geospatial prediction is in scope;
 - measurement method;
 - bidirectional pathways, if impacts and feedbacks are both in scope;
 - expected heterogeneity.
@@ -34,6 +35,7 @@ Load:
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/agricultural-ml-yield-prediction.md` for crop-yield prediction studies integrating meteorological, breeding, genomic, remote-sensing, or field-trial data.
 - `references/food-system-bidirectional-nexus.md` for food-system reviews linking environmental pressures, feedbacks, trade, diets, crops, livestock, and aquatic foods.
+- `references/food-waste-geospatial-ml.md` for county, city, supply-chain, or market-level food-waste forecasting with geospatial analytics and machine learning.
 - `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
 - `references/land-use-optimization-tradeoffs.md` when a study uses multiobjective optimization, Pareto frontiers, land-use allocation, or food-water-carbon trade-off modeling.
 
@@ -51,6 +53,7 @@ Load:
 
 Use `templates/peco-framework.md`.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
+Use `templates/food-waste-forecast-audit.md` and `templates/food-waste-geospatial-feature-schema.csv` for geospatial food-waste forecasting.
 Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
 Use `templates/ml-yield-prediction-audit.md` and `templates/ml-yield-feature-schema.csv` for agricultural ML yield-prediction studies.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
@@ -118,6 +121,22 @@ Include:
 - regional vulnerability and equity concerns;
 - evidence certainty and data-source limits.
 
+### Food-Waste Geospatial ML Forecast
+
+Use this mode when a study predicts food waste or organic waste across counties, cities, markets, facilities, or supply-chain regions.
+
+Include:
+
+- waste stream and supply-chain boundary;
+- spatial unit and resolution;
+- target estimate source and measurement limits;
+- demographic, retail, expenditure, income, policy, and access predictors;
+- model families and hyperparameter tuning;
+- spatial validation and leakage checks;
+- feature importance and uncertainty;
+- logistics, facility siting, circular bioeconomy, or waste-to-resource interpretation;
+- limits on translating predicted waste into collectible feedstock.
+
 ### Crop-Yield ML Prediction Audit
 
 Use this mode when a study predicts crop yield from weather, genotype, breeding value, trial, remote-sensing, soil, or management inputs.
@@ -177,6 +196,9 @@ Include:
 - Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.
 - Do not describe food-system impacts in only one direction when the review question is bidirectional; map both pressure and feedback pathways.
 - Do not treat global average food footprints as local risk without tracing trade, geography, vulnerability, and production-system context.
+- Do not treat county-level predicted food waste as directly collectible waste without collection participation, contamination, hauling cost, facility capacity, and policy constraints.
+- Do not ignore spatial autocorrelation, adjacency leakage, urban-rural imbalance, or high-waste outliers when auditing geospatial ML forecasts.
+- Do not interpret store counts, restaurant counts, population, income, or social-program access as causal drivers unless the design supports causal inference.
 - Do not treat random train/test performance in crop trials as proof of generalization to new years, sites, or genotypes; require grouped or out-of-domain validation where the claim needs it.
 - Do not interpret variable importance, PDPs, or SHAP values causally unless the design supports causal interpretation.
 - Do not present future yield forecasts without explicit weather/climate inputs, scenario assumptions, and extrapolation checks.

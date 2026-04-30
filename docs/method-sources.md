@@ -93,6 +93,20 @@ Use for:
 
 EvidenceForge implication: food-system evidence synthesis should not stop at footprint accounting. Agents should map both directions: food production pressures on the environment and environmental degradation feedbacks on future production and food security.
 
+### Food-Waste Geospatial ML Examples
+
+Source: Uen and Rodriguez (2026), [*Geospatial analytics and machine learning for forecasting county-level food waste in U.S. Retail markets*](https://doi.org/10.1016/j.resconrec.2026.108906), Resources, Conservation and Recycling.
+
+Use for:
+
+- county-level food-waste forecasting;
+- geospatial machine-learning audit;
+- feature-importance interpretation for demographic, retail, expenditure, income, and social-program predictors;
+- spatial validation and high-waste outlier checks;
+- translating predictions into logistics, facility siting, waste-to-bioproduct systems, and circular bioeconomy planning.
+
+EvidenceForge implication: food-waste ML studies need a planning-translation layer. Agents should distinguish generated waste from collectible and usable feedstock, and should not treat county-level model performance as enough for routing, facility siting, or policy claims without spatial and logistical validation.
+
 ### Agricultural ML Yield-Prediction Examples
 
 Source: Wang et al. (2025), [*Integrating meteorological and breeding data to predict maize yields using machine learning algorithms*](https://doi.org/10.3389/fpls.2025.1722068), Frontiers in Plant Science.

@@ -1,0 +1,29 @@
+field,required,type,description,example
+study_id,yes,string,Stable study or model identifier,uen_2026_food_waste_ml
+record_id,yes,string,Stable spatial record identifier,county_17019_2026
+county_fips,conditional,string,County FIPS or comparable geographic identifier,17019
+county_name,no,string,County name,Champaign County
+state,no,string,State or region,Illinois
+year_or_period,yes,string,Target year or period,annual
+waste_stream,yes,string,Retail food waste household food waste organic MSW total FW,retail food waste
+target_value,yes,number,Food waste amount,
+target_unit,yes,string,Metric tons per year,t/year
+target_source,yes,string,Measurement or estimate source,EPA or modeled FW estimate
+target_measured,no,string,measured estimated imputed proxy,estimated
+population,no,number,Population predictor,
+store_count,no,number,Grocery or retail store count,
+restaurant_count,no,number,Restaurant or food-service count,
+retail_sales,no,number,Retail sales predictor,
+food_expenditure,no,number,Food expenditure predictor,
+income_feature,no,number,Income or economic feature,
+agricultural_sales,no,number,Agricultural sales feature,
+social_program_access,no,number,SNAP or other social-program access feature,
+policy_or_infrastructure,no,string,Organics diversion policy facility access or collection infrastructure,
+spatial_neighbors,no,string,Adjacent counties or spatial lag fields,
+model_family,yes,string,MLR kNN SVR RF GB AdaBoost DNN baseline,SVR
+validation_method,no,string,Random split spatial block leave-region-out external,spatial block
+performance_metric,no,string,R2 MAE RMSE MAPE,R2
+performance_value,no,number,Metric value,
+deployment_use,no,string,Facility siting logistics circular bioeconomy policy targeting,facility siting
+source_anchor,yes,string,Table figure appendix dataset or extraction note,ScienceDirect abstract
+risk_notes,no,string,Leakage spatial autocorrelation outlier or feasibility concerns,
