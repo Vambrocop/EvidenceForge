@@ -78,6 +78,21 @@ Use for:
 
 EvidenceForge implication: environmental and ecological reviews need explicit search transparency, geography/context fields, effect modifiers, study validity appraisal, and caution against vote-counting.
 
+### Environmental Scenario Modeling Examples
+
+Source: Ba et al. (2026), [*Full Manure Recycling Risks an 18% Rise in China's Cropland N2O Emissions Without Improved Management*](https://doi.org/10.1111/gcb.70837), Global Change Biology.
+
+Use for:
+
+- literature-derived environmental databases;
+- measurement-level extraction from many field studies;
+- machine-learning prediction with validation;
+- gridded spatial extrapolation;
+- future policy scenario design;
+- separating policy coverage from implementation quality.
+
+EvidenceForge implication: environmental evidence synthesis sometimes needs a scenario-model audit rather than a pooled effect estimate. Agents should track database construction, model validation, spatial assumptions, scenario levers, uncertainty, and policy trade-offs.
+
 ## Appraisal and Certainty
 
 ### AMSTAR 2

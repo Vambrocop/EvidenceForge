@@ -39,6 +39,7 @@ This is a practical reading list for improving EvidenceForge over time. It is no
 
 - Koricheva, Gurevitch, and Mengersen, *Handbook of Meta-analysis in Ecology and Evolution*.
 - Collaboration for Environmental Evidence guidelines and standards.
+- Ba et al., [*Full Manure Recycling Risks an 18% Rise in China's Cropland N2O Emissions Without Improved Management*](https://doi.org/10.1111/gcb.70837), with an [open-access record](https://research.bangor.ac.uk/en/publications/full-manure-recycling-risks-an-18-rise-in-chinas-cropland-n2o-emi/). Useful as an example of literature-derived environmental databases, machine-learning prediction, gridded spatial extrapolation, policy scenario design, and implementation-quality trade-offs.
 
 ## AI-Assisted Review
 

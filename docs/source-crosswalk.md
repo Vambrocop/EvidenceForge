@@ -8,7 +8,7 @@ This file maps EvidenceForge skills to the methods sources they should draw from
 | `meta-analysis-forge` | First-order statistical synthesis, IPD meta-analysis planning, and mega-analysis audit | Cochrane Handbook, Borenstein et al., Hedges & Olkin, Harrer et al.; Bayesian/IPD synthesis traditions | Use validators and machine-readable coding sheets before running scripts; do not pool incompatible outcomes/effect metrics, ignore dependence, or call a project mega-analysis without harmonized data reprocessing/remodeling |
 | `umbrella-review-skeptic` | Review of reviews, umbrella review, second-order meta-analysis | JBI umbrella review methods, Cochrane overviews, AMSTAR 2, ROBIS | Do not double-count primary studies or treat overlapping reviews as independent |
 | `meta-ml-screener` | ML-assisted screening/extraction/classification | ASReview, Rayyan, AI-assisted review literature | Keep human-in-the-loop decisions and export machine-readable audit logs |
-| `environment-life-review-forge` | Environmental/ecological/life-science adaptation | CEE standards, JBI, ecology/evolution meta-analysis handbook | Do not pool across incompatible species, exposures, endpoints, geography, or measurement platforms |
+| `environment-life-review-forge` | Environmental/ecological/life-science adaptation, including scenario-model evidence synthesis | CEE standards, JBI, ecology/evolution meta-analysis handbook, environmental scenario-model examples | Do not pool across incompatible species, exposures, endpoints, geography, measurement platforms, or policy scenarios; separate predictive models from causal claims |
 
 ## Development Rule
 

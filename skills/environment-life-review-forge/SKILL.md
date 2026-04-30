@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, environmental scenario modeling, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -30,6 +30,7 @@ Load:
 
 - `references/environmental-life-science.md` for domain heterogeneity.
 - `references/cee-alignment.md` for environmental evidence standards.
+- `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
 
 ## Workflow
 
@@ -44,6 +45,7 @@ Load:
 9. Build domain-specific extraction table.
 
 Use `templates/peco-framework.md`.
+Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 
 ## Output Modes
 
@@ -73,9 +75,26 @@ Include:
 - confounders;
 - study quality.
 
+### Environmental Scenario Audit
+
+Use this mode when papers combine study extraction, model prediction, spatial extrapolation, and policy scenarios.
+
+Include:
+
+- evidence database scope;
+- target variable and units;
+- model family and validation plan;
+- spatial/temporal extrapolation assumptions;
+- scenario levers;
+- management-quality assumptions;
+- uncertainty and sensitivity checks;
+- policy claim and limits.
+
 ## Guardrails
 
 - Do not pool across species, exposure windows, or outcome constructs without a biological or environmental rationale.
 - Do not collapse mechanistic, observational, and experimental evidence without design labels.
 - Do not hide geography, climate zone, tissue type, or measurement platform when they drive heterogeneity.
 - Do not use vote-counting as evidence of effect direction or strength.
+- Do not treat a machine-learning scenario projection as causal proof unless the design supports causal interpretation.
+- Do not present a policy lever, such as recycling rate or intervention coverage, as sufficient without auditing implementation quality and compensating inputs.

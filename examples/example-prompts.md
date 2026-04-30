@@ -45,3 +45,7 @@ Use meta-ml-screener to audit this screening-log CSV. Check whether every exclus
 ```text
 Use environment-life-review-forge to build a PECO framework and extraction table for a review of pesticide exposure and soil microbial diversity.
 ```
+
+```text
+Use environment-life-review-forge to audit a paper that compiles field-study measurements, trains machine-learning models, maps national environmental risk, and simulates policy scenarios. Build a scenario-model audit and a policy scenario matrix that separate policy coverage from implementation quality.
+```
