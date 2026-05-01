@@ -1,0 +1,23 @@
+reviewer_risk,pre_submission_check,manuscript_location,response_artifact
+Intervention category ambiguity,Define each practice category and explain boundary cases,Methods and supplementary taxonomy,Practice taxonomy table with examples and exclusions
+Outcome category ambiguity,Justify outcome families and flag variables reused across families,Methods and supplementary taxonomy,Outcome taxonomy with repeated-variable flags
+Effect direction mistakes,Mark all sign reversals for costs emissions losses damage and pest pressure,Methods data dictionary and supplementary table,Variable-level sign-rule column
+Search coverage gap,Map search-string blocks to every intervention and outcome family,Methods and supplementary search table,Search string audit table
+Missing snowballing,Screen relevant second-order reviews and evidence maps for missed meta-analyses,Methods and PRISMA notes,Seed review list with DOI and screening outcome
+Reproducibility opacity,Make screening extraction coding and deduplication choices auditable,Methods data availability and repository,Data/code repository plus coding ledger
+Primary-study overlap,Quantify or discuss reused primary studies across included meta-analyses,Methods and limitations,Overlap matrix or deduplication rule
+Duration coding skepticism,Explain interval and open-ended duration assumptions before modeling,Methods and sensitivity analysis,Exact-duration-only sensitivity model
+Sparse long-term evidence,Do not overstate 20-year or 50-year predictions when few records support them,Results figures and limitations,Raw-data counts by duration bin
+Linear trend assumption,Compare linear quadratic cubic quartic or other defensible duration forms,Methods and supplementary model table,AIC model-spec ledger
+Publication-bias overclaiming,Use multiple diagnostics and avoid declaring absence from one weak test,Methods results and limitations,Funnel Egger fail-safe N influence diagnostics
+Raw data hidden behind fitted curves,Show raw points where interpretable or state why categorical/model outputs prevent it,Figures and captions,Figure caption with data-density note
+Extreme percentage claims,Report effect sizes and avoid abstract claims driven by tiny baselines,Abstract and results,LnRR plus percent-change translation
+Yield comparability,Discuss single-crop annual yields versus rotation-level or system-level production,Discussion limitations,Yield interpretation paragraph
+Non-productive land scale issue,Discuss land taken by non-crop diversification and landscape-scale yield implications,Discussion limitations,Scale-up limitation paragraph
+Organic amendment scalability,Check whether amendment rates require external biomass or non-scalable inputs,Discussion limitations,Input-source and rate caveat
+Inoculant category dispute,Justify whether inoculation is diversification or input substitution,Methods and limitations,Category rationale and sensitivity note
+Geographic bias,Map regions represented in primary studies and long-term evidence,Supplementary figures and limitations,Geographic distribution map
+Landscape and social context bias,State whether landscape composition social context or climate change can moderate effects,Discussion limitations,Context-moderator gap paragraph
+Multiple testing concern,Explain model family and whether correction is appropriate,Methods or rebuttal,Multiplicity rationale or corrected sensitivity
+Overclaiming policy implications,Use support encourage inform rather than allow prove guarantee,Abstract discussion and conclusion,Claim-strength audit
+Data/code access concern,Distinguish public complete data public anonymized data private data and code availability,Data/code availability,Repository link and access limitation note

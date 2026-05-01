@@ -152,6 +152,7 @@ skills/
 │       ├── osf-r-dependency-inventory.csv
 │       ├── review-level-effect-schema.csv
 │       ├── second-order-model-spec-ledger.csv
+│       ├── second-order-peer-review-readiness-checklist.csv
 │       ├── second-order-quality-scorecard.csv
 │       ├── second-order-r-package-ledger.csv
 │       └── second-order-temporal-tradeoff-audit.md

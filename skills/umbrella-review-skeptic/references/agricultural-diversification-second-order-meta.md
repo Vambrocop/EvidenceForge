@@ -37,6 +37,7 @@ Source links:
 Nature supplies several distinct supplemental artifacts. Do not treat the reporting summary as the whole supplement.
 
 - Supplementary Information: 27-page PDF with 12 supplementary figures and 13 supplementary tables.
+- Peer Review File: reviewer reports and author rebuttals across three review rounds.
 - Reporting Summary: 5-page transparency checklist repeating the statistical, software, data, sampling, and reproducibility declarations.
 - Description of Additional Supplementary Files: 2-page file stating that Supplementary Data 1 lists all included meta-analysis studies.
 - Supplementary Data 1: spreadsheet containing the 184 included meta-analysis citations.
@@ -77,6 +78,28 @@ Use these bundled templates:
 - `templates/agricultural-diversification-taxonomy.csv` for outcome and practice coding.
 - `templates/second-order-quality-scorecard.csv` for review-level quality appraisal.
 - `templates/second-order-model-spec-ledger.csv` for random-effects and duration-form extraction.
+- `templates/second-order-peer-review-readiness-checklist.csv` for submission and revision planning.
+
+## Peer Review Lessons
+
+The peer-review history is useful as a writing checklist. Reviewers repeatedly pressed on issues that are predictable in second-order environmental meta-analysis:
+
+- define broad intervention categories tightly enough that heterogeneous practices are not hidden under one label;
+- justify outcome categories and repeated or ambiguous variables;
+- mark sign reversals for costs, losses, emissions, pest pressure, damage, and other undesirable outcomes;
+- show that search strings cover all practice categories, and use snowballing from related second-order reviews;
+- make screening, extraction, coding, and primary-study deduplication auditable;
+- explain why duration coding is defensible, then add exact-duration sensitivity checks;
+- avoid extreme percentage claims in the abstract when they come from small baselines or sparse long-term data;
+- compare linear and nonlinear duration forms before claiming temporal trends;
+- separate fitted curves from raw-data support, especially in long-duration ranges with few records;
+- discuss geographic, landscape, selection, and scale-up biases;
+- treat crop yield carefully when rotations, non-productive land, and landscape-scale production differ from single-crop annual yield comparisons;
+- discuss whether organic amendment rates and input sources are scalable;
+- avoid saying evidence "allows" upscaling when the paper only supports or encourages it;
+- acknowledge when data and code are anonymized, restricted, private during review, or incomplete.
+
+Revision lesson: strong rebuttals usually changed the paper, not just the response letter. The authors added definitions, sensitivity analyses, maps, data/code access, model-selection details, clarified language, and more explicit limitations.
 
 ## Why This Pattern Matters
 

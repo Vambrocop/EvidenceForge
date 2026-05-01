@@ -48,6 +48,7 @@ Use `templates/second-order-temporal-tradeoff-audit.md` and `templates/review-le
 Use `templates/second-order-r-package-ledger.csv` when extracting software packages and model roles from a second-order meta-analysis.
 Use `templates/osf-r-dependency-inventory.csv` when auditing OSF/GitHub R scripts beyond the packages named in the paper.
 Use `templates/second-order-quality-scorecard.csv`, `templates/second-order-model-spec-ledger.csv`, and `templates/agricultural-diversification-taxonomy.csv` when adapting agricultural diversification second-order meta-analysis protocols.
+Use `templates/second-order-peer-review-readiness-checklist.csv` before submission or revision to anticipate reviewer concerns about second-order environmental meta-analyses.
 
 ## Output Modes
 
