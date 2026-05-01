@@ -1,0 +1,20 @@
+stage,script_section,example_from_potassium_r,why_it_matters,guardrail
+1,load_packages,"terra geodata metafor patchwork cowplot gbm broom tidyverse sf rnaturalearth purrr ggplot2 stringr",Makes runtime dependencies explicit,Record package versions or session info
+2,read_raw_data,"read.table for yield and SOC CSV files",Keeps outcome families separate,Do not merge yield and SOC before effect-size calculation
+3,compute_effect_metric,"lnratio_yield = log(yield_treatment/yield_control); lnratio_SOC = log(SOC_treatment/SOC_control)",Preserves transparent treatment-control transformation,Keep original treatment/control values
+4,derive_agronomic_groups,"C3/C4 crop grouping from crop names",Adds biologically interpretable moderator,Document grouping rule and exceptions
+5,gap_fill_environment,"WorldClim MAT/MAP via geodata and terra",Completes climate moderators,Flag observed versus imputed climate values
+6,assign_geography,"sf plus rnaturalearth country region and agricultural region assignment",Supports maps and regional subgrouping,Keep missing coordinates visible
+7,summarize_dataset,"TableS1 yield and SOC summary CSV outputs",Documents data coverage before modeling,Report n and missingness by key moderator
+8,map_and_density_plots,"study distribution maps and lnRR density plots",Shows spatial and effect-size coverage,Do not let polished figures hide sparse regions
+9,prepare_model_data,"time bins; numeric duration/sample sizes; weight; vi; Study_ID; Entry_ID",Creates model-ready structure,Document approximate weight and variance formula
+10,run_multilevel_meta_analysis,"metafor::rma.mv with random = ~ 1 | Study_ID/Entry_ID",Handles multiple effects per study,Use simpler fallback only with convergence note
+11,subgroup_models,"treatment potassium.type crop.system crop C34 time region",Tests interpretable moderator strata,Do not present subgroup estimates as causal mechanisms
+12,transform_outputs,"100 * (exp(estimate) - 1) for percent change",Makes lnRR interpretable,Keep lnRR and CI alongside percent change
+13,forest_summary_plots,"forest-style category plots for yield and SOC",Communicates pooled and subgroup effects,Show number of effects behind each estimate
+14,subgroup_significance,"QM tests from model objects",Checks moderator signal,Do not rely only on p-values without heterogeneity context
+15,brt_moderator_exploration,"gbm with n.trees 12000 shrinkage 0.005 interaction.depth 2",Ranks nonlinear moderator importance,Label BRT exploratory unless validation is strong
+16,brt_performance,"broom::glance on observed vs predicted",Reports R2-style fit summary,Performance is not out-of-sample causality
+17,variable_influence_tables,"relative influence grouped into Soil Fertilizer Climate Crop",Turns ML output into domain categories,Group definitions must be declared before interpretation
+18,moderator_relationship_plots,"metafor::rma with selected moderators and weighted points",Connects moderator plots back to meta-analysis,Separate significant and nonsignificant relationships
+19,export_artifacts,"write.csv and ggsave for tables and figures",Keeps outputs reproducible,No manual editing of final numerical outputs

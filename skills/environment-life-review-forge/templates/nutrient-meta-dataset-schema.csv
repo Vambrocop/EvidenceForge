@@ -1,0 +1,35 @@
+field,required,outcome_scope,example_column_from_potassium_meta,description,unit_or_coding,audit_rule
+citation,yes,both,Citation,Short paper identifier such as first author and year,string,Must be stable enough to construct Study_ID
+title,yes,both,Title,Paper title,string,Use to disambiguate repeated first-author-year citations
+latitude,no,both,Lat,Study site latitude,decimal degrees,Required for geospatial mapping or climate gap filling
+longitude,no,both,Lon,Study site longitude,decimal degrees,Required for geospatial mapping or climate gap filling
+mean_annual_temperature,no,both,MAT,Mean annual temperature,degrees C,Flag whether observed or gap-filled
+mean_annual_precipitation,no,both,MAP,Mean annual precipitation,mm,Flag whether observed or gap-filled
+soil_clay,no,both,Clay,Soil clay content,percent,Moderator not an outcome
+baseline_soc,no,both,SOC,Baseline soil organic carbon,g/kg,Do not confuse baseline SOC with SOC outcome response
+total_nitrogen,no,both,TN,Soil total nitrogen,g/kg,Moderator
+total_phosphorus,no,both,TP,Soil total phosphorus,g/kg,Moderator
+total_potassium,no,both,TK,Soil total potassium,g/kg,Moderator
+available_nitrogen,no,both,AN,Soil available nitrogen,mg/kg,Moderator
+available_phosphorus,no,both,AP,Soil available phosphorus,mg/kg,Moderator
+available_potassium,no,both,AK,Soil available potassium,mg/kg,Important for baseline K limitation
+bulk_density,no,both,BD,Soil bulk density,g/cm3,Needed for SOC stock conversion if available
+soil_ph,no,both,pH,Soil pH,pH units,Moderator
+duration_years,yes,both,Duration,Experiment duration,years,Keep numeric and create time bins in code
+potassium_type,yes,both,potassium type,Fertilizer form or K source,string,Standardize spelling before subgrouping
+potassium_rate,no,both,potassium rate,K application rate,usually kg K ha-1 or reported unit,Record unit and conversion assumptions
+treatment,yes,both,treatment,Nutrient treatment background such as K NK NPK OK PK,categorical,Defines comparator context and co-applied inputs
+crop,yes,both,crop,Crop species or crop group,string,Can derive C3/C4 grouping if agronomically justified
+crop_system,no,both,crop system,Rotation monoculture or other system,categorical,Keep separate from crop species
+n_control,no,both,cksize,Control sample size or replication,count,Used in approximate weight calculation
+n_treatment,no,both,nsize,Treatment sample size or replication,count,Used in approximate weight calculation
+yield_control,conditional,yield,yield_control,Control yield value,reported yield unit,Preserve before lnRR conversion
+yield_treatment,conditional,yield,yield_treatment,Treatment yield value,reported yield unit,Preserve before lnRR conversion
+soc_control,conditional,soc,SOC_control,Control SOC value,reported SOC unit,Preserve before lnRR conversion
+soc_treatment,conditional,soc,SOC_treatment,Treatment SOC value,reported SOC unit,Preserve before lnRR conversion
+lnrr_yield,derived,yield,lnratio_yield,Log response ratio for yield,log(treatment/control),Calculate in code rather than hand entry
+lnrr_soc,derived,soc,lnratio_SOC,Log response ratio for SOC,log(treatment/control),Calculate in code rather than hand entry
+study_id,derived,both,Study_ID,Numeric or string study-level cluster ID,derived from citation or citation-title,Needed for multilevel random effects
+entry_id,derived,both,Entry_ID,Effect-level row ID,unique per row,Needed for nested random effects
+weight,derived,both,weight,Analysis weight from duration and replication,project-specific formula,Formula must be documented and sensitivity checked
+variance,derived,both,vi,Approximate sampling variance or inverse weight,positive numeric,Do not hide approximate variance assumptions

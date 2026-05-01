@@ -187,8 +187,10 @@ skills/
         ├── ml-yield-feature-schema.csv
         ├── ml-yield-prediction-audit.md
         ├── multi-objective-tradeoff-schema.csv
+        ├── nutrient-meta-dataset-schema.csv
         ├── nutrient-meta-extraction-schema.csv
         ├── nutrient-meta-reproducibility-ledger.csv
+        ├── nutrient-meta-r-workflow-blueprint.csv
         ├── pareto-frontier-audit.md
         ├── peco-framework.md
         ├── policy-scenario-matrix.csv

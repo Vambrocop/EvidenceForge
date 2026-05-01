@@ -50,6 +50,19 @@ The reproducibility package exposes the data-engineering layer that the article 
 - location maps, density plots, forest-style summaries, and moderator plots using `ggplot2`, `patchwork`, and `cowplot`.
 
 Use `templates/nutrient-meta-reproducibility-ledger.csv` to audit similar repositories.
+Use `templates/nutrient-meta-dataset-schema.csv` as a field-level design pattern for yield/SOC treatment-control extraction tables.
+Use `templates/nutrient-meta-r-workflow-blueprint.csv` as a script-organization pattern for reproducible R analyses.
+
+Reusable data/code design lessons:
+
+- keep yield and SOC as separate tables when the outcome families have different sample sizes and time horizons;
+- preserve raw treatment and control values, then calculate `lnRR` in code;
+- include geography, climate, soil baseline, nutrient rate, crop, crop system, and duration before modeling;
+- create stable `Study_ID` and `Entry_ID` fields before multilevel models;
+- record any imputed or gap-filled covariates, especially MAT/MAP from WorldClim;
+- separate `metafor` synthesis from BRT moderator exploration;
+- treat BRT relative influence as exploratory variable ranking, not causal proof;
+- export summary tables and figures from code, not by hand.
 
 ## What To Extract
 
