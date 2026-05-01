@@ -21,6 +21,7 @@ This is a practical reading list for improving EvidenceForge over time. It is no
 - [AMSTAR 2](https://www.amstar.ca/Amstar-2.php)
 - [ROBIS](https://www.riskofbias.info/welcome/robis-tool)
 - [GRADE Handbook via Cochrane](https://training.cochrane.org/resource/grade-handbook)
+- Raveloaritiana and Wanger, [*Long-term agricultural diversification increases financial profitability, biodiversity, and ecosystem services: a second-order meta-analysis*](https://doi.org/10.1038/s41467-025-67757-7). Useful as an example of review-level temporal meta-regression, yield-service trade-off analysis, and second-order synthesis of 184 meta-analyses.
 
 ## Meta-Analysis Books
 

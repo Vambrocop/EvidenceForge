@@ -1,0 +1,24 @@
+field,required,type,description,example
+review_id,yes,string,Stable identifier for the included meta-analysis,review_001
+effect_id,yes,string,Stable identifier for the review-level effect,effect_001
+citation,yes,string,Short citation,Raveloaritiana_Wanger_2026
+doi_or_url,no,string,DOI or URL,https://doi.org/10.1038/s41467-025-67757-7
+review_type,yes,string,Meta-analysis systematic review umbrella review second-order record,meta-analysis
+diversification_practice,no,string,Crop diversification non-crop diversification organic amendments reduced tillage organic farming,organic amendments
+outcome_family,yes,string,Yield profitability biodiversity pollination pest_control water_regulation soil_fertility nutrient_cycling carbon_sequestration climate_regulation,biodiversity
+effect_metric,yes,string,LnRR SMD OR RR correlation percent_change,LnRR
+effect_estimate,yes,number,Review-level effect estimate,
+standard_error,no,number,Standard error if available,
+ci_lower,no,number,Lower confidence interval,
+ci_upper,no,number,Upper confidence interval,
+duration_years,no,number,Duration of practice or mean duration,
+duration_category,no,string,short term long term or custom bin,long term
+underlying_comparisons,no,integer,Number of primary comparisons behind the effect,
+underlying_primary_studies,no,integer,Number of primary studies behind the review effect,
+search_end_year,no,integer,Last search year of the included review,
+quality_rating,no,string,AMSTAR ROBIS or custom review quality judgment,
+overlap_cluster,no,string,Cluster identifier for overlapping primary-study sets,
+paired_yield_effect_id,no,string,Effect ID for paired yield-service trade-off,
+tradeoff_category,no,string,win_yield_win_service win_yield_lose_service lose_yield_win_service lose_yield_lose_service,
+weight_used,no,number,Weight used in second-order model,
+source_anchor,yes,string,Table figure appendix dataset or extraction note,Nature Communications Methods and Supplementary Data

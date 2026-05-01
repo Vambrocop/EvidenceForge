@@ -208,6 +208,21 @@ Use for:
 
 EvidenceForge implication: second-order synthesis must evaluate bias in the review process, not only bias in primary studies.
 
+### Agricultural Diversification Second-Order Meta-Analysis Example
+
+Source: Raveloaritiana and Wanger (2026), [*Long-term agricultural diversification increases financial profitability, biodiversity, and ecosystem services: a second-order meta-analysis*](https://doi.org/10.1038/s41467-025-67757-7), Nature Communications.
+
+Use for:
+
+- second-order synthesis of existing meta-analyses;
+- temporal meta-regression with duration as moderator;
+- review-level effect-size extraction and weighting;
+- yield vs ecosystem-service trade-off categories;
+- long-term evidence-gap mapping;
+- separating review-level evidence patterns from primary-study causal claims.
+
+EvidenceForge implication: second-order meta-analysis needs its own audit layer. Agents should track review-level units, primary-study overlap, quality, metric compatibility, duration-model choices, and whether policy claims overgeneralize from highly aggregated evidence.
+
 ### GRADE
 
 Source: [GRADE Handbook via Cochrane](https://training.cochrane.org/resource/grade-handbook)

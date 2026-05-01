@@ -30,6 +30,10 @@ Use meta-analysis-forge to audit whether this project is a true mega-analysis, I
 Use umbrella-review-skeptic to audit whether existing meta-analyses on microplastics and fish physiological outcomes can be statistically synthesized. Focus on primary-study overlap and review quality.
 ```
 
+```text
+Use umbrella-review-skeptic to audit a second-order meta-analysis on long-term agricultural diversification. Build a temporal trade-off audit, extract review-level effects, check primary-study overlap, and separate yield, profitability, biodiversity, soil quality, and carbon-sequestration claims.
+```
+
 ## ML-Assisted Review
 
 ```text

@@ -143,9 +143,13 @@ skills/
 ├── umbrella-review-skeptic/
 │   ├── SKILL.md
 │   ├── references/
-│   │   └── overlap-and-quality.md
+│   │   ├── agricultural-diversification-second-order-meta.md
+│   │   ├── overlap-and-quality.md
+│   │   └── second-order-decision-rules.md
 │   └── templates/
-│       └── overlap-matrix.md
+│       ├── overlap-matrix.md
+│       ├── review-level-effect-schema.csv
+│       └── second-order-temporal-tradeoff-audit.md
 ├── meta-ml-screener/
 │   ├── SKILL.md
 │   ├── references/
@@ -190,7 +194,7 @@ skills/
 
 - `evidence-synthesis-forge`: the general orchestrator for systematic reviews, scoping reviews, rapid reviews, evidence maps, and synthesis reports.
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
-- `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
+- `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, temporal second-order meta-regression, ecosystem-service trade-offs, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
 - `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, genotype-environment modeling, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
 
@@ -214,6 +218,7 @@ The current repository now also includes:
 - screening-log validator;
 - effect-size helper functions for transparent mechanical conversions;
 - IPD/mega-analysis data inventory and audit templates;
+- second-order temporal trade-off audit templates;
 - small-wetland methane scale audit templates;
 - food-system bidirectional environmental nexus audit templates;
 - food-waste geospatial ML forecast audit templates;
