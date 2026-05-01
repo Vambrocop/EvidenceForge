@@ -56,6 +56,48 @@ Do review-level effects of agricultural diversification become stronger, weaker,
 10. Report research gaps by duration, geography, practice, and outcome.
 11. Interpret second-order results as synthesis-of-syntheses evidence, not direct primary-study causal evidence.
 
+## R Package And Model Workflow
+
+The article's visible methods and references identify this package workflow:
+
+| Stage | Package / tool | Role | Audit question |
+|---|---|---|---|
+| Environment | R 4.4.3 | Analysis environment | Is the R version captured in reproducibility files? |
+| Meta-regression | `metafor` | Fit second-order hierarchical meta-regression models | Are random effects, weights, moderators, and AIC comparisons reproducible? |
+| Model extraction / visualization support | `orchaRd` | Extract and visualize meta-analysis model outputs, especially orchard-style summaries | Are plotted estimates traceable to fitted model objects? |
+| Figure construction | `ggplot2` | Build manuscript figures and ribbons | Are figure data and code deposited? |
+| Trade-off classification model | `nnet` | Fit multinomial models for win/lose yield-service categories | Are outcome categories and weights defined before modeling? |
+| Bias diagnostics | `metafor` / meta-analysis diagnostics | Funnel plots, Egger tests, fail-safe N, influence checks | Are small-study bias and influential effects checked by outcome family? |
+
+In this pattern, software extraction should not stop at package names. Record the role of each package, the model object it produces, and the audit artifact it should leave behind.
+
+### Model Steps To Reproduce Conceptually
+
+1. Prepare review-level `LnRR` effect sizes and uncertainty.
+2. Weight each effect by the number of underlying comparisons.
+3. Select random effects by comparing null models with AIC.
+4. Fit non-temporal reference models for each outcome family.
+5. Add duration as moderator.
+6. Compare linear, quadratic, cubic, and quartic duration forms using AIC.
+7. Run bias diagnostics: funnel plot, Egger regression, fail-safe N, standardized residuals, and hat values.
+8. Run sensitivity datasets:
+   - no repeated responses;
+   - high-quality studies only;
+   - high-quality plus no repeated responses;
+   - exact-duration records only;
+   - excluding the single 100-year crop-yield point;
+   - soil fertility without soil pH.
+9. For yield-service trade-offs, classify paired effects into four win/lose categories.
+10. Fit multinomial trade-off models with `nnet`, duration moderator, paired yield-service structure, and comparison-based weights.
+
+### Package Guardrails
+
+- Do not cite `metafor` alone as proof of a valid second-order meta-analysis; overlap, quality, and dependence still matter.
+- Do not treat `orchaRd` plots as analysis results independent of the fitted model.
+- Do not interpret `nnet` multinomial trade-off probabilities as welfare or policy choice without a separate value framework.
+- Do not rely on package defaults without recording random-effects structure, weights, and moderator form.
+- Do not claim full reproducibility if only an anonymized dataset is public and the complete dataset is restricted.
+
 ## Outcome Families
 
 Socioeconomic:

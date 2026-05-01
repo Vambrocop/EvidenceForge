@@ -45,6 +45,7 @@ Load:
 
 Use `templates/overlap-matrix.md` for overlap tracking.
 Use `templates/second-order-temporal-tradeoff-audit.md` and `templates/review-level-effect-schema.csv` for review-level temporal meta-regression and yield-service trade-off audits.
+Use `templates/second-order-r-package-ledger.csv` when extracting software packages and model roles from a second-order meta-analysis.
 
 ## Output Modes
 

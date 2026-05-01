@@ -44,6 +44,9 @@
 - Random effects:
 - Weighting rule:
 - Dependence handling:
+- R version:
+- Packages:
+- Package-role ledger:
 - Sensitivity checks:
 - Software:
 

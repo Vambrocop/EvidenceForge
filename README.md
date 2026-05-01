@@ -149,6 +149,7 @@ skills/
 │   └── templates/
 │       ├── overlap-matrix.md
 │       ├── review-level-effect-schema.csv
+│       ├── second-order-r-package-ledger.csv
 │       └── second-order-temporal-tradeoff-audit.md
 ├── meta-ml-screener/
 │   ├── SKILL.md

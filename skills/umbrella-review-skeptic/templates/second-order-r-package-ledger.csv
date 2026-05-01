@@ -1,0 +1,8 @@
+package_or_tool,required,workflow_stage,role,audit_artifact,article_example,guardrail
+R,yes,environment,Analysis runtime and package ecosystem,sessionInfo or renv lockfile,R 4.4.3,Record exact version and package versions
+metafor,yes,meta_regression,Second-order hierarchical meta-regression and diagnostics,model objects AIC tables funnel plots Egger tests fail-safe N,Used for meta-regression models,Package use does not solve overlap or review-quality bias
+orchaRd,conditional,model_extraction_visualization,Extract and visualize meta-analysis outputs,orchard plot data fitted estimates and CIs,Used to extract model results,Plots must be traceable to model objects
+ggplot2,yes,visualization,Manuscript figures ribbons and summaries,figure scripts and exported figures,Used for visualization,Figure code must preserve model estimates and uncertainty
+nnet,conditional,tradeoff_modeling,Multinomial modeling of win/lose trade-off categories,category definitions model outputs predicted probabilities,Used for multinomial trade-off models,Probabilities are not welfare weights or policy rankings
+stats_or_base_R,yes,model_selection,AIC comparison and data handling,AIC comparison tables and scripts,Linear quadratic cubic quartic duration models,Do not hide model selection choices
+OSF,yes,reproducibility,Data and code repository,DOI and file inventory,10.17605/OSF.IO/ZPR6A,Distinguish anonymized reproducibility dataset from complete restricted dataset
