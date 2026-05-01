@@ -58,6 +58,7 @@ Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-ge
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
 Use `templates/food-waste-forecast-audit.md` and `templates/food-waste-geospatial-feature-schema.csv` for geospatial food-waste forecasting.
 Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
+Use `templates/nutrient-meta-reproducibility-ledger.csv` when a nutrient meta-analysis provides Zenodo/OSF/GitHub data and code.
 Use `templates/ml-yield-prediction-audit.md` and `templates/ml-yield-feature-schema.csv` for agricultural ML yield-prediction studies.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 Use `templates/pareto-frontier-audit.md` and `templates/multi-objective-tradeoff-schema.csv` for multiobjective optimization and land-use trade-off studies.

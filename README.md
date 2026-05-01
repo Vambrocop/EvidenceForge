@@ -188,6 +188,7 @@ skills/
         ├── ml-yield-prediction-audit.md
         ├── multi-objective-tradeoff-schema.csv
         ├── nutrient-meta-extraction-schema.csv
+        ├── nutrient-meta-reproducibility-ledger.csv
         ├── pareto-frontier-audit.md
         ├── peco-framework.md
         ├── policy-scenario-matrix.csv

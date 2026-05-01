@@ -1,0 +1,13 @@
+artifact,expected_content,example_from_potassium_meta,audit_question
+repository_record,DOI landing page and license,Zenodo DOI 10.5281/zenodo.18839011 under CC-BY-4.0,Is the data/code repository citable and reusable?
+data_yield,Raw or harmonized crop-yield extraction table,Crop yield.csv with 897 observations and 26 columns,Can yield effect sizes be recalculated from treatment and control values?
+data_soc,Raw or harmonized soil-carbon extraction table,SOC.csv with 288 observations and 26 columns,Can SOC effect sizes be recalculated separately from yield?
+metadata_readme,Column dictionary and run instructions,Readme.xlsx with column descriptions and run steps,Are units and column meanings documented?
+analysis_script,Executable analysis workflow,Potassium fertilization.R,Does code cover data import cleaning models and figures?
+effect_metric,Transparent effect-size calculation,log(treatment/control) for yield and SOC,Are original values preserved before transformation?
+climate_gap_fill,External environmental covariate source,WorldClim MAT and MAP via geodata and terra,Are missing climate covariates filled reproducibly?
+geospatial_assignment,Region or country coding workflow,sf plus rnaturalearth for country region and agricultural region,Are spatial joins and coordinate assumptions visible?
+meta_model,Meta-analysis model code,metafor rma.mv with Study_ID and Entry_ID random effects,Is within-study dependence handled?
+moderator_model,Nonlinear or machine-learning moderator model,gbm boosted regression tree,Are moderator importance claims separated from causal claims?
+figures,Code-generated maps forest plots density plots and moderator plots,ggplot2 patchwork cowplot outputs,Can plotted claims be traced to data and code?
+package_inventory,All R packages needed to run code,terra geodata metafor patchwork cowplot gbm broom tidyverse sf rnaturalearth purrr ggplot2 stringr,Are package versions or session info captured?

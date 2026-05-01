@@ -25,6 +25,32 @@ Source links:
 - Zenodo data/code: https://doi.org/10.5281/zenodo.18839011
 - Mendeley dataset record: https://data.mendeley.com/datasets/n7jmsbh9w6
 
+## Zenodo Data And Code Package
+
+The Zenodo record is not just a citation placeholder. It contains the working data and R script for the article:
+
+- `Crop yield.csv`: 897 yield observations from 144 citations; key fields include citation, title, coordinates, MAT, MAP, soil chemistry, duration, potassium type, potassium rate, treatment, crop, crop system, replication, yield control, and yield treatment.
+- `SOC.csv`: 288 SOC observations from 71 citations; key fields mirror the yield dataset but end with SOC control and SOC treatment.
+- `Readme.xlsx`: metadata for raw dataset columns and a short run instruction sheet.
+- `Potassium fertilization.R`: R workflow for data import, gap-filling climate variables, assigning agricultural regions, mapping study locations, computing log response ratios, running multilevel meta-analysis, boosted regression trees, and plotting moderator relationships.
+
+The R script calculates:
+
+```text
+lnratio_yield = log(yield_treatment / yield_control)
+lnratio_SOC = log(SOC_treatment / SOC_control)
+```
+
+The reproducibility package exposes the data-engineering layer that the article only summarizes:
+
+- climate gap-filling with WorldClim via `geodata` and `terra`;
+- geographic region assignment using `sf` and `rnaturalearth`;
+- multilevel meta-analysis using `metafor::rma.mv`;
+- BRT moderator analysis using `gbm`;
+- location maps, density plots, forest-style summaries, and moderator plots using `ggplot2`, `patchwork`, and `cowplot`.
+
+Use `templates/nutrient-meta-reproducibility-ledger.csv` to audit similar repositories.
+
 ## What To Extract
 
 A nutrient meta-analysis should extract both treatment-comparison statistics and context variables.
