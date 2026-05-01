@@ -32,6 +32,52 @@ Source links:
 - Open article mirror: https://pmc.ncbi.nlm.nih.gov/articles/PMC12847752/
 - OSF data/code: https://doi.org/10.17605/OSF.IO/ZPR6A
 
+## Supplementary Material Inventory
+
+Nature supplies several distinct supplemental artifacts. Do not treat the reporting summary as the whole supplement.
+
+- Supplementary Information: 27-page PDF with 12 supplementary figures and 13 supplementary tables.
+- Reporting Summary: 5-page transparency checklist repeating the statistical, software, data, sampling, and reproducibility declarations.
+- Description of Additional Supplementary Files: 2-page file stating that Supplementary Data 1 lists all included meta-analysis studies.
+- Supplementary Data 1: spreadsheet containing the 184 included meta-analysis citations.
+
+Reusable Supplementary Information items:
+
+- Figures 1-4: systematic-review overview, exact-duration sensitivity, vote counts for second-order meta-analysis, and vote counts for trade-off analysis.
+- Figures 5-6: geographic distribution maps for all included meta-analyses and long-term records over 20 years; map source used `rnaturalearth`.
+- Figure 7: PRISMA flow for search, screening, and extraction.
+- Figures 8-9: funnel plots and influence/outlier checks.
+- Figures 10-12: sensitivity analyses for repeated responses, high-quality-only data, exact-duration-only data, excluding a 100-year crop-yield point, and soil fertility without soil pH.
+- Tables 1-5: model estimates, duration contrasts, practice-specific models, and multinomial yield-service trade-off models.
+- Table 6: Web of Science and Scopus search string blocks.
+- Table 7: seed second-order reviews/meta-analyses used for snowballing.
+- Table 8: response-variable taxonomy for socioeconomic, biodiversity, soil, nutrient, carbon, and climate outcomes.
+- Table 9: diversification-practice taxonomy.
+- Table 10: eight-item meta-analysis quality scorecard.
+- Table 11: selected random-effects structures and duration fixed-effect forms by outcome family.
+- Tables 12-13: Egger regression and Rosenthal fail-safe N diagnostics.
+
+## Supplementary Extraction Rules
+
+When adapting this article into another environmental or agricultural second-order meta-analysis:
+
+1. Start from a review-level protocol, not from individual primary-study pooling.
+2. Keep the search blocks separable: intervention/practice terms, outcome/service terms, and study-type terms.
+3. Require four inclusion anchors: meta-analysis design, eligible diversification practice, eligible outcome, and reported practice duration.
+4. Convert `RR` and percent change to `LnRR` when mathematically defensible.
+5. If SMD or Hedges' d cannot be converted to `LnRR` without original data, extract only direction and significance for vote-count or trade-off support.
+6. For duration intervals, use the mean duration when exact durations are unavailable.
+7. For open-ended durations such as `>x`, record the assumption explicitly; this article used `x + 2` years.
+8. Assign repeated response variables to the closest primary outcome family and flag any repeated secondary use.
+9. Check overlap before pooling: this article flagged meta-analyses sharing more than 30% of original studies and retained the most recent study when response variable and duration overlapped.
+10. Treat the anonymized reproducibility dataset as reproducibility support, not as proof that the complete project dataset is public.
+
+Use these bundled templates:
+
+- `templates/agricultural-diversification-taxonomy.csv` for outcome and practice coding.
+- `templates/second-order-quality-scorecard.csv` for review-level quality appraisal.
+- `templates/second-order-model-spec-ledger.csv` for random-effects and duration-form extraction.
+
 ## Why This Pattern Matters
 
 This pattern is more than a conventional umbrella review. It asks whether the conclusions of many meta-analyses change when time is modeled explicitly.

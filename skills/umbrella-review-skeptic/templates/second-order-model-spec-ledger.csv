@@ -1,0 +1,11 @@
+outcome_family,random_effects_for_all_models,duration_fixed_effect,notes
+crop_yield,"~ 1 | eff.size_id/study.id","~ Duration","Linear duration form selected in the article"
+financial_profitability,"~ 1 | eff.size_id","~ Duration","Linear duration form selected in the article"
+biodiversity,"~ 1 | eff.size_id/study.id","~ Duration","Linear duration form selected in the article"
+pollination,"list(~ 1 | study.id, ~ 1 | eff.size_id)","~ poly(Duration, degree = 2)","Quadratic duration form selected in the article"
+pest_control,"~ 1 | study.id/eff.size_id","~ poly(Duration, degree = 2)","Quadratic duration form selected in the article"
+water_regulation,"~ 1 | study.id/eff.size_id","~ Duration","Linear duration form selected in the article"
+soil_fertility,"~ 1 | study.id/eff.size_id","~ Duration","Linear duration form selected in the article"
+nutrient_cycling,"~ 1 | study.id/eff.size_id","~ Duration","Linear duration form selected in the article"
+carbon_sequestration,"~ 1 | eff.size_id/study.id","~ Duration","Linear duration form selected in the article"
+climate_regulation,"~ 1 | study.id/eff.size_id","~ Duration","Linear duration form selected in the article"

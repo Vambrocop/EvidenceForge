@@ -147,8 +147,11 @@ skills/
 │   │   ├── overlap-and-quality.md
 │   │   └── second-order-decision-rules.md
 │   └── templates/
+│       ├── agricultural-diversification-taxonomy.csv
 │       ├── overlap-matrix.md
 │       ├── review-level-effect-schema.csv
+│       ├── second-order-model-spec-ledger.csv
+│       ├── second-order-quality-scorecard.csv
 │       ├── second-order-r-package-ledger.csv
 │       └── second-order-temporal-tradeoff-audit.md
 ├── meta-ml-screener/

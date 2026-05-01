@@ -1,0 +1,9 @@
+domain,item,score_1_absent_or_low,score_2_present_or_high,why_it_matters
+methods,literature_search_method,No research method or search strings provided,Research method and search strings provided,Search reproducibility and coverage
+methods,inclusion_exclusion_criteria,Original-study inclusion and exclusion criteria not reported,Original-study inclusion and exclusion criteria reported,Eligibility comparability across meta-analyses
+methods,control_and_treatments,Control groups and treatments not defined,Control groups and treatments defined,Intervention-comparator clarity
+methods,heterogeneity_assessment,Heterogeneity assessment not provided,Clear heterogeneity analysis reported,Whether pooled effects hide important moderators
+methods,weighting_procedure,Effect-size weighting procedure not included,Weighting procedure and formula reported,Whether estimates reflect uncertainty and evidence volume
+methods,number_of_original_studies,Number of included original studies not reported,Number of original studies reported,Overlap and evidence-base size audit
+results,effect_size_average_and_ci,Predicted effect sizes and precision not reported,Predicted effect sizes and precision reported,Whether results can be re-used quantitatively
+results,sensitivity_analysis,Sensitivity or robustness details not reported,Sensitivity or robustness details reported,Whether conclusions depend on fragile assumptions
