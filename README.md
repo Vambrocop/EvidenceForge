@@ -166,7 +166,8 @@ skills/
     │   ├── environmental-scenario-synthesis.md
     │   ├── food-system-bidirectional-nexus.md
     │   ├── food-waste-geospatial-ml.md
-    │   └── land-use-optimization-tradeoffs.md
+    │   ├── land-use-optimization-tradeoffs.md
+    │   └── small-wetland-methane-scaling.md
     └── templates/
         ├── dual-outcome-meta-audit.md
         ├── food-environment-bidirectional-audit.md
@@ -180,7 +181,9 @@ skills/
         ├── pareto-frontier-audit.md
         ├── peco-framework.md
         ├── policy-scenario-matrix.csv
-        └── scenario-model-audit.md
+        ├── scenario-model-audit.md
+        ├── wetland-methane-geospatial-schema.csv
+        └── wetland-methane-scale-audit.md
 ```
 
 ## Skill Map
@@ -189,7 +192,7 @@ skills/
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
-- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, genotype-environment modeling, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
+- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, genotype-environment modeling, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
 
 ## v0.2 Executable Pieces
 
@@ -211,6 +214,7 @@ The current repository now also includes:
 - screening-log validator;
 - effect-size helper functions for transparent mechanical conversions;
 - IPD/mega-analysis data inventory and audit templates;
+- small-wetland methane scale audit templates;
 - food-system bidirectional environmental nexus audit templates;
 - food-waste geospatial ML forecast audit templates;
 - agroecosystem nutrient meta-analysis extraction and dual-outcome audit templates;

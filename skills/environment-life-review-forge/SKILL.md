@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -24,6 +24,7 @@ Identify:
 - study design;
 - spatial and temporal scale;
 - spatial unit and aggregation boundary, if geospatial prediction is in scope;
+- minimum mapping unit and detection threshold, if small-patch systems are in scope;
 - measurement method;
 - bidirectional pathways, if impacts and feedbacks are both in scope;
 - expected heterogeneity.
@@ -32,6 +33,7 @@ Load:
 
 - `references/environmental-life-science.md` for domain heterogeneity.
 - `references/cee-alignment.md` for environmental evidence standards.
+- `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/agricultural-ml-yield-prediction.md` for crop-yield prediction studies integrating meteorological, breeding, genomic, remote-sensing, or field-trial data.
 - `references/food-system-bidirectional-nexus.md` for food-system reviews linking environmental pressures, feedbacks, trade, diets, crops, livestock, and aquatic foods.
@@ -52,6 +54,7 @@ Load:
 9. Build domain-specific extraction table.
 
 Use `templates/peco-framework.md`.
+Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-geospatial-schema.csv` for small-wetland methane and scale-sensitive upscaling studies.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
 Use `templates/food-waste-forecast-audit.md` and `templates/food-waste-geospatial-feature-schema.csv` for geospatial food-waste forecasting.
 Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
@@ -86,6 +89,22 @@ Include:
 - assay/measurement method;
 - confounders;
 - study quality.
+
+### Small-Wetland Methane Scaling Audit
+
+Use this mode when a study estimates emissions from small wetlands, ponds, small water bodies, or patchy ecosystems where spatial resolution and minimum mapping unit change the global or regional budget.
+
+Include:
+
+- wetland or water-body size class;
+- mapping resolution and minimum detectable area;
+- forested/non-forested domain boundary;
+- wetland inventory or remote-sensing product;
+- flux model or emission-factor source;
+- annual trend window;
+- contribution to total emissions;
+- uncertainty, double-counting, and omission risks;
+- implications for methane budgets and restoration policy.
 
 ### Agroecosystem Nutrient Meta-Analysis
 
@@ -191,6 +210,9 @@ Include:
 - Do not pool across species, exposure windows, or outcome constructs without a biological or environmental rationale.
 - Do not collapse mechanistic, observational, and experimental evidence without design labels.
 - Do not hide geography, climate zone, tissue type, or measurement platform when they drive heterogeneity.
+- Do not treat coarse-resolution wetland products as scale neutral; audit which small features are omitted.
+- Do not compare methane budgets without checking double-counting between wetlands, lakes, rivers, reservoirs, and inundated vegetation.
+- Do not turn methane emissions alone into a wetland management recommendation without carbon storage, biodiversity, hydrology, and ecosystem-service trade-offs.
 - Do not use vote-counting as evidence of effect direction or strength.
 - Do not interpret short-term yield gains as soil-carbon sequestration evidence without duration, baseline SOC, depth, and measurement-method checks.
 - Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.

@@ -1,0 +1,22 @@
+field,required,type,description,example
+study_id,yes,string,Stable identifier for the study or dataset,li_2026_small_wetlands_ch4
+record_id,yes,string,Stable feature grid or size-class identifier,global_small_0001_1km2
+feature_class,yes,string,Wetland pond lake reservoir river or mixed,wetland
+size_class,yes,string,Feature size class,0.001-1 km2
+minimum_mapping_unit,yes,string,Smallest mapped feature or threshold,0.001 km2
+spatial_resolution,yes,string,Remote-sensing or model resolution,30 m
+spatial_domain,yes,string,Geographic or land-cover domain,non-forested regions worldwide
+time_window,yes,string,Analysis period,2003-2022
+wetland_inventory,yes,string,Remote-sensing product or inventory,GWL_FCS30
+exclusion_rule,no,string,Features or regions excluded,forested wetlands excluded
+feature_count,no,number,Number of mapped features,160000000
+area_estimate,no,number,Area estimate if available,
+area_unit,no,string,Area unit,km2
+flux_model,no,string,Flux model emission factor or process model,
+emission_metric,yes,string,CH4 emission metric,Tg CH4 yr-1 or percent total
+emission_estimate,no,number,Emission estimate if available,
+contribution_to_total,no,string,Share of total emissions,24 percent of total wetland CH4 emissions
+trend_estimate,no,string,Temporal trend result,significant increase over 2003-2022
+uncertainty_source,no,string,Mapping classification flux model temporal or extrapolation uncertainty,
+double_counting_risk,no,string,Risk of overlap with lakes rivers reservoirs or inundated vegetation,
+source_anchor,yes,string,Table figure appendix dataset or extraction note,Nature abstract and data availability

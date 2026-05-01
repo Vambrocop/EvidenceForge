@@ -47,6 +47,10 @@ Use environment-life-review-forge to build a PECO framework and extraction table
 ```
 
 ```text
+Use environment-life-review-forge to audit a Nature Climate Change paper on small wetlands and global methane emissions. Build a wetland methane scale audit, a geospatial schema, and guardrails for 30 m mapping, size classes, double-counting, trend claims, and methane-budget interpretation.
+```
+
+```text
 Use environment-life-review-forge to audit a review on bidirectional effects between global food production and the environment. Build a food-system nexus map, separate food-to-environment pressures from environment-to-food feedbacks, and include trade displacement, diets, crops, livestock, blue foods, mitigation, adaptation, and circularity strategies.
 ```
 

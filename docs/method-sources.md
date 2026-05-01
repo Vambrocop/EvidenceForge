@@ -78,6 +78,21 @@ Use for:
 
 EvidenceForge implication: environmental and ecological reviews need explicit search transparency, geography/context fields, effect modifiers, study validity appraisal, and caution against vote-counting.
 
+### Wetland Methane and Small-Patch Upscaling Examples
+
+Source: Li et al. (2026), [*The underappreciated importance of small wetlands in global methane emissions*](https://doi.org/10.1038/s41558-026-02609-w), Nature Climate Change.
+
+Use for:
+
+- small-wetland and small-water-body emission synthesis;
+- fine-resolution remote sensing and minimum-mapping-unit audits;
+- wetland methane budget corrections;
+- size-class accounting for 0.001-1 km2 and <0.1 km2 features;
+- trend analysis for 2003-2022;
+- data/code availability checks for geospatial emission studies.
+
+EvidenceForge implication: scale is part of the evidence claim. Agents should audit what coarse maps omit, how size classes are defined, whether double-counting occurs across wetlands/lakes/rivers/reservoirs, and whether methane-only results are being overextended to wetland management.
+
 ### Food-System Nexus Review Examples
 
 Source: Mogollón et al. (2026), [*Broad bidirectional effects of global food production on the environment*](https://doi.org/10.1038/s43017-026-00778-y), Nature Reviews Earth & Environment.
