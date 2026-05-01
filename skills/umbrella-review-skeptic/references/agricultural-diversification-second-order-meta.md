@@ -117,6 +117,21 @@ The article's visible methods and references identify this package workflow:
 
 In this pattern, software extraction should not stop at package names. Record the role of each package, the model object it produces, and the audit artifact it should leave behind.
 
+### OSF Code Dependency Inventory
+
+A static scan of the OSF `R-scripts` folder found 12 R scripts. The declared active `library()` / `require()` calls are concentrated in `0-0-Packages.R`. No active `source()` calls were found, so script execution order should be inferred from file names and documented manually.
+
+Use `templates/osf-r-dependency-inventory.csv` for the full dependency ledger.
+
+Dependency tiers:
+
+- paper-declared core packages: `metafor`, `orchaRd`, `ggplot2`, and `nnet`;
+- OSF active declared packages: `R.rsp`, `cowplot`, `data.table`, `dplyr`, `effects`, `emmeans`, `ggeffects`, `ggplot2`, `ggpubr`, `glmmTMB`, `gridExtra`, `lme4`, `metafor`, `nnet`, `openxlsx`, `orchaRd`, `pacman`, `parameters`, `patchwork`, `performance`, `readxl`, `sjPlot`, `stringr`, `tidyr`, `tidyverse`, and `weightr`;
+- namespace-only dependency detected in scripts: `broom`, via `broom::tidy()` and `broom::glance()`;
+- commented or experimental packages not active in the loader: `brms`, `bayesplot`, `bayesmeta`, `rstanarm`, and `MetaSynthesis`; commented installation notes also mention `devtools` for installing `orchaRd` from GitHub.
+
+Guardrail: an active package load is not the same as a confirmed function call in every downstream script. Treat this as a reproducibility dependency inventory, not as a minimal package set.
+
 ### Model Steps To Reproduce Conceptually
 
 1. Prepare review-level `LnRR` effect sizes and uncertainty.

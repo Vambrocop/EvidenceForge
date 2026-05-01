@@ -1,0 +1,35 @@
+package,status,evidence,workflow_role,audit_note
+R,paper_declared_environment,"Methods and reporting summary: R version 4.4.3",Runtime environment,Record R version and package versions when reproducing
+ggplot2,active_library,"0-0-Packages.R:2",Core plotting and figure construction,Paper also names this package explicitly
+data.table,active_library,"0-0-Packages.R:3",Data handling for larger tabular objects,Check whether code depends on data.table syntax or only loads it
+metafor,active_library,"0-0-Packages.R:4",Second-order multilevel meta-regression and diagnostics,Core package for rma.mv models
+glmmTMB,active_require,"0-0-Packages.R:5",Generalized mixed models for categorical or binary review summaries,Loaded in OSF code but not named in article methods
+cowplot,active_library,"0-0-Packages.R:6",Plot assembly and publication figure layout,Check overlap with patchwork and ggpubr roles
+dplyr,active_require,"0-0-Packages.R:7",Data wrangling filtering grouping and mutation,Also included through tidyverse
+tidyr,active_require,"0-0-Packages.R:8",Data reshaping and tidying,Also included through tidyverse
+readxl,active_require,"0-0-Packages.R:10",Excel data import,Needed for anonymized spreadsheet inputs
+stringr,active_require,"0-0-Packages.R:11",String cleaning and pattern handling,Also included through tidyverse
+patchwork,active_require,"0-0-Packages.R:12",Combining ggplot panels,Check final multi-panel figure scripts
+sjPlot,active_require,"0-0-Packages.R:15",Model summaries and model plotting,Loaded dependency; verify whether outputs are used
+emmeans,active_require,"0-0-Packages.R:16",Estimated marginal means and contrasts,Loaded dependency; useful for model interpretation
+openxlsx,active_require,"0-0-Packages.R:18",Excel export or workbook manipulation,Check generated tables and reproducibility artifacts
+pacman,active_require,"0-0-Packages.R:19",Package management helper,Loaded but no active pacman p_load call detected in static scan
+R.rsp,active_require,"0-0-Packages.R:20",Report or dynamic document support,Loaded dependency; verify rendering use before requiring
+tidyverse,active_require,"0-0-Packages.R:21",Convenience bundle for wrangling and plotting,Creates overlap with dplyr tidyr stringr ggplot2
+orchaRd,active_require,"0-0-Packages.R:24",Extracting and visualizing meta-analysis model outputs,Paper names this package explicitly
+gridExtra,active_require,"0-0-Packages.R:25",Grid-based plot and table layout,Check final figure assembly scripts
+ggpubr,active_require,"0-0-Packages.R:32",Publication-ready ggplot helpers and ggarrange,Used for arranging trade-off panels
+ggeffects,active_require,"0-0-Packages.R:35",Predicted marginal effects for models,Loaded dependency for effect plotting
+effects,active_require,"0-0-Packages.R:36",Model effect extraction such as allEffects,Detected through allEffects calls
+lme4,active_require,"0-0-Packages.R:37",Mixed-model infrastructure,Loaded dependency; no namespace-qualified calls detected
+nnet,active_require,"0-0-Packages.R:38",Multinomial models for win/lose outcome categories,Paper names this package explicitly
+parameters,active_require,"0-0-Packages.R:41",Model parameter extraction and reporting,Detected through model_parameters calls
+performance,active_require,"0-0-Packages.R:42",Model performance diagnostics,Loaded dependency; verify exact diagnostic functions
+weightr,active_require,"0-0-Packages.R:44",Weight-function or publication-bias sensitivity methods,Loaded dependency; not named in article methods
+broom,namespace_only,"3-Trade off - Over time .R: broom::tidy and broom::glance",Tidy model summaries for trade-off models,Hidden dependency because it is not loaded in 0-0-Packages.R
+brms,commented_inactive,"0-0-Packages.R commented require",Bayesian model experiment or alternative,Do not list as required unless code is reactivated
+bayesplot,commented_inactive,"0-0-Packages.R commented require",Bayesian plotting experiment or alternative,Do not list as required unless code is reactivated
+bayesmeta,commented_inactive,"0-0-Packages.R commented require",Bayesian meta-analysis experiment or alternative,Do not list as required unless code is reactivated
+rstanarm,commented_inactive,"0-0-Packages.R commented require",Bayesian regression experiment or alternative,Do not list as required unless code is reactivated
+MetaSynthesis,commented_inactive,"0-0-Packages.R commented require",Alternative meta-synthesis package,Do not list as required unless code is reactivated
+devtools,commented_install_note,"0-0-Packages.R commented install_github",Installing development version of orchaRd from GitHub,Installation helper rather than runtime dependency

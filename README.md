@@ -149,6 +149,7 @@ skills/
 │   └── templates/
 │       ├── agricultural-diversification-taxonomy.csv
 │       ├── overlap-matrix.md
+│       ├── osf-r-dependency-inventory.csv
 │       ├── review-level-effect-schema.csv
 │       ├── second-order-model-spec-ledger.csv
 │       ├── second-order-quality-scorecard.csv
