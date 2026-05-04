@@ -27,6 +27,37 @@ Source links:
 - Article: https://doi.org/10.1016/j.envres.2026.123916
 - ScienceDirect page: https://www.sciencedirect.com/science/article/pii/S0013935126002446
 
+## Urban Heat DML Extension
+
+Use this extension for papers or review questions about urban heat, heatwaves, cooling interventions, greening, thermal exposure, and heat-related behavior or health outcomes.
+
+The reusable distinction is:
+
+```text
+Ordinary ML asks whether the model can predict heat, activity, or risk.
+DML asks whether a specific exposure or intervention has a net effect after adjusting for high-dimensional confounders.
+```
+
+Typical elements:
+
+- treatment/exposure: heatwave event, green-space fraction, NDVI, impervious surface, tree shade, cool roof, ventilation corridor, policy adoption, or cooling infrastructure;
+- outcome: land surface temperature (LST), surface urban heat island intensity (SUHI), air temperature, heat exposure, nighttime lights, nighttime activity, energy demand, mortality, morbidity, or resilience indicator;
+- controls: weather, seasonality, urban morphology, building density or height, road network, land cover, albedo, population, income, economic activity, mobility, infrastructure, and geography;
+- estimand: ATE, ATT, CATE, direct effect, mediated effect, or event-time effect;
+- nuisance models: Lasso, random forest, boosting, neural network, MLP, GNN, or ensemble learners;
+- design checks: DAG, treatment timing, cross-fitting, overlap, cluster or spatial bootstrap, panel structure, spillovers, and hidden-confounding sensitivity.
+
+Running-example family:
+
+- Debnath et al. (2025), "Heatwave increases nighttime light intensity in hyperdense cities of the Global South: a double machine learning study," uses DML to estimate heatwave effects on nighttime-light radiance in Delhi, Guangzhou, Cairo, and Sao Paulo while controlling local climatic confounding.
+- A 2026 spatial-DML urban greening study in Sustainable Cities and Society uses polygon-year panels and spatial nuisance learning to study city-core greening, heat resilience, and nighttime-light economic activity.
+
+Useful source links:
+
+- Heatwave DML article: https://pmc.ncbi.nlm.nih.gov/articles/PMC12590167/
+- Heatwave DML preprint: https://arxiv.org/abs/2503.00557
+- Spatial urban greening DML article: https://doi.org/10.1016/j.scs.2026.107418
+
 ## Why This Pattern Matters
 
 This pattern is not a systematic review and not a standard prediction study. It is a causal-ML environmental exposure workflow.
@@ -50,6 +81,7 @@ Can high-dimensional pollutant, microbial, infrastructure, and socioeconomic dat
 9. Report CATE/heterogeneity as conditional evidence and separate it from policy targeting.
 10. Run robustness checks: alternative feature sets, pollutant-class grouping, geography controls, treatment-process controls, and hidden-confounding sensitivity.
 11. Interpret environmental mechanisms with domain knowledge: co-selection, integron-mediated spread, treatment-process confounding, and socioeconomic proxies.
+12. For urban heat studies, audit spatial autocorrelation, neighborhood spillovers, temporal aggregation, event definitions, and whether nighttime-light or activity proxies really match the claimed outcome.
 
 ## Extraction Fields
 
@@ -84,3 +116,6 @@ Can high-dimensional pollutant, microbial, infrastructure, and socioeconomic dat
 - Socioeconomic variables can be proxies for infrastructure, treatment quality, monitoring intensity, or industrial activity.
 - Mechanistic claims about micropollutants and ARG proliferation need biological plausibility and sensitivity checks.
 - Policy recommendations should distinguish monitoring priority, risk assessment, and intervention feasibility.
+- In urban heat studies, do not treat SHAP, PDP, or variable importance as evidence that greening, shade, or cool roofs causally reduce heat without a credible causal design.
+- In spatial DML, do not assume independence across polygons, neighborhoods, or stations; require clustered or spatially aware inference when dependence is plausible.
+- Heatwave treatment definitions should state threshold, duration, lag, season, and city-specific baseline.

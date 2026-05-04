@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, interpretable exposure-response modeling, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -36,6 +36,7 @@ Load:
 - `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/agricultural-ml-yield-prediction.md` for crop-yield prediction studies integrating meteorological, breeding, genomic, remote-sensing, or field-trial data.
+- `references/agricultural-irrigation-optimization.md` for brackish-water irrigation, water-salt-yield-emission trade-offs, GAM nonlinear response modeling, NSGA-II optimization, and decision ranges such as ECw management windows.
 - `references/environmental-causal-ml.md` for environmental causal machine learning studies using DML, CATE, AutoML, SHAP/PDP-style interpretation, high-dimensional pollutant exposure data, socioeconomic covariates, ARGs, drinking-water safety, or One Health outcomes.
 - `references/food-system-bidirectional-nexus.md` for food-system reviews linking environmental pressures, feedbacks, trade, diets, crops, livestock, and aquatic foods.
 - `references/food-waste-geospatial-ml.md` for county, city, supply-chain, or market-level food-waste forecasting with geospatial analytics and machine learning.
@@ -63,6 +64,7 @@ Use `templates/nutrient-meta-reproducibility-ledger.csv` when a nutrient meta-an
 Use `templates/nutrient-meta-dataset-schema.csv` and `templates/nutrient-meta-r-workflow-blueprint.csv` when designing data tables and R scripts for nutrient meta-analysis.
 Use `templates/ml-yield-prediction-audit.md` and `templates/ml-yield-feature-schema.csv` for agricultural ML yield-prediction studies.
 Use `templates/environmental-causal-ml-audit.md` and `templates/environmental-causal-ml-feature-schema.csv` for environmental causal ML studies.
+Use `templates/irrigation-optimization-audit.md` and `templates/irrigation-optimization-schema.csv` for brackish-water irrigation and water-salt-yield-emission optimization studies.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 Use `templates/pareto-frontier-audit.md` and `templates/multi-objective-tradeoff-schema.csv` for multiobjective optimization and land-use trade-off studies.
 
@@ -193,6 +195,28 @@ Include:
 - sensitivity to hidden confounding, spatial dependence, and multiple testing;
 - policy or risk-assessment claim and limits.
 
+For urban heat DML, also include:
+
+- treatment or exposure such as heatwave event, green space, impervious surface, shade, cool roof, ventilation, or adaptation policy;
+- outcome such as LST, SUHI, air temperature, heat exposure, nighttime lights, activity, energy use, or health;
+- remote-sensing, morphology, meteorology, population, income, activity, and infrastructure confounders;
+- spatial autocorrelation, spillover, clustered inference, and panel/event-study structure;
+- whether the claim is average effect, heterogeneous effect, or mediation.
+
+### Irrigation Salinity Optimization Audit
+
+Use this mode when a study combines field trials, statistical response curves, and multiobjective optimization to choose irrigation or nutrient-management windows.
+
+Include:
+
+- crop, region, irrigation method, salinity or nutrient treatments;
+- response variables: yield, quality, soil properties, GHG emissions, water use, salt balance;
+- model used to estimate nonlinear responses, such as GAM;
+- optimizer used to define compromise ranges, such as NSGA-II;
+- objectives, constraints, units, and direction of improvement;
+- decision range and whether it is site-specific;
+- risks from short time windows, salinity accumulation, unmeasured costs, and extrapolation.
+
 ### Environmental Scenario Audit
 
 Use this mode when papers combine study extraction, model prediction, spatial extrapolation, and policy scenarios.
@@ -236,6 +260,8 @@ Include:
 - Do not use vote-counting as evidence of effect direction or strength.
 - Do not treat SHAP, feature importance, PDP, or AutoML performance as causal evidence without a separate identification strategy.
 - Do not call DML or CATE estimates causal unless treatment timing, confounder adjustment, overlap, and hidden-confounding risks are explicit.
+- Do not treat DML as a generic prediction method; it estimates causal parameters only under stated identification assumptions.
+- Do not treat spatial DML as solved by adding coordinates; audit spatial dependence, spillovers, clustered inference, and validation boundaries.
 - Do not interpret short-term yield gains as soil-carbon sequestration evidence without duration, baseline SOC, depth, and measurement-method checks.
 - Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.
 - Do not describe food-system impacts in only one direction when the review question is bidirectional; map both pressure and feedback pathways.
@@ -250,3 +276,4 @@ Include:
 - Do not present a policy lever, such as recycling rate or intervention coverage, as sufficient without auditing implementation quality and compensating inputs.
 - Do not treat a Pareto-efficient frontier as a politically feasible pathway without social, economic, governance, biodiversity, and transition-cost constraints.
 - Do not collapse global objective gains into local welfare claims without regional supply, trade, livelihood, water-access, and justice checks.
+- Do not generalize an irrigation salinity decision range across regions without soil texture, groundwater depth, climate, crop variety, irrigation method, and long-term salt-balance checks.
