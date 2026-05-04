@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, interpretable exposure-response modeling, genotype-environment modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -36,6 +36,7 @@ Load:
 - `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/agricultural-ml-yield-prediction.md` for crop-yield prediction studies integrating meteorological, breeding, genomic, remote-sensing, or field-trial data.
+- `references/environmental-causal-ml.md` for environmental causal machine learning studies using DML, CATE, AutoML, SHAP/PDP-style interpretation, high-dimensional pollutant exposure data, socioeconomic covariates, ARGs, drinking-water safety, or One Health outcomes.
 - `references/food-system-bidirectional-nexus.md` for food-system reviews linking environmental pressures, feedbacks, trade, diets, crops, livestock, and aquatic foods.
 - `references/food-waste-geospatial-ml.md` for county, city, supply-chain, or market-level food-waste forecasting with geospatial analytics and machine learning.
 - `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
@@ -61,6 +62,7 @@ Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extracti
 Use `templates/nutrient-meta-reproducibility-ledger.csv` when a nutrient meta-analysis provides Zenodo/OSF/GitHub data and code.
 Use `templates/nutrient-meta-dataset-schema.csv` and `templates/nutrient-meta-r-workflow-blueprint.csv` when designing data tables and R scripts for nutrient meta-analysis.
 Use `templates/ml-yield-prediction-audit.md` and `templates/ml-yield-feature-schema.csv` for agricultural ML yield-prediction studies.
+Use `templates/environmental-causal-ml-audit.md` and `templates/environmental-causal-ml-feature-schema.csv` for environmental causal ML studies.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 Use `templates/pareto-frontier-audit.md` and `templates/multi-objective-tradeoff-schema.csv` for multiobjective optimization and land-use trade-off studies.
 
@@ -175,6 +177,22 @@ Include:
 - extrapolation and future-climate assumptions;
 - reproducibility and data-access status.
 
+### Environmental Causal ML Audit
+
+Use this mode when a study claims causal effects from high-dimensional environmental, pollutant, socioeconomic, microbial, omics, health, or infrastructure data using DML, causal forests, meta-learners, AutoML-plus-causal-inference, or interpretable ML.
+
+Include:
+
+- unit of observation and sampling frame;
+- treatment/exposure definitions;
+- outcome endpoint and measurement platform;
+- covariate timing and confounder set;
+- predictive model and causal estimator;
+- nuisance-model, cross-fitting, and overlap checks;
+- interpretability method and whether it is causal or predictive;
+- sensitivity to hidden confounding, spatial dependence, and multiple testing;
+- policy or risk-assessment claim and limits.
+
 ### Environmental Scenario Audit
 
 Use this mode when papers combine study extraction, model prediction, spatial extrapolation, and policy scenarios.
@@ -216,6 +234,8 @@ Include:
 - Do not compare methane budgets without checking double-counting between wetlands, lakes, rivers, reservoirs, and inundated vegetation.
 - Do not turn methane emissions alone into a wetland management recommendation without carbon storage, biodiversity, hydrology, and ecosystem-service trade-offs.
 - Do not use vote-counting as evidence of effect direction or strength.
+- Do not treat SHAP, feature importance, PDP, or AutoML performance as causal evidence without a separate identification strategy.
+- Do not call DML or CATE estimates causal unless treatment timing, confounder adjustment, overlap, and hidden-confounding risks are explicit.
 - Do not interpret short-term yield gains as soil-carbon sequestration evidence without duration, baseline SOC, depth, and measurement-method checks.
 - Do not collapse fertilizer form, nutrient rate, baseline nutrient limitation, crop type, and climate into one pooled effect without moderator or subgroup logic.
 - Do not describe food-system impacts in only one direction when the review question is bidirectional; map both pressure and feedback pathways.

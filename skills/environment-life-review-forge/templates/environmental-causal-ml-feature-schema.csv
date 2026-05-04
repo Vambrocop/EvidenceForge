@@ -1,0 +1,25 @@
+field,required,type,description,example
+study_id,yes,string,Stable study identifier,zhao_2026_arg_drinking_water
+unit_id,yes,string,Sampling unit region city site or sample identifier,city_001
+geography,yes,string,City region country or coordinates,Chinese urban drinking-water region
+time_window,no,string,Sampling date season or study period,July-August 2017
+outcome_name,yes,string,ARG biomarker health endpoint or environmental endpoint,sul1
+outcome_family,yes,string,Outcome class such as ARG integron pathogen exposure health,ARG
+exposure_name,yes,string,Treatment exposure pollutant or socioeconomic variable,Sulfaphenazole
+exposure_family,yes,string,Antibiotic PAH PCB PFAS OPE treatment_process socioeconomic geography,antibiotic
+exposure_unit,no,string,Measurement unit,ng/L
+exposure_timing,no,string,Whether exposure is measured before concurrently or after outcome,concurrent
+covariate_set,yes,string,Pre-treatment confounders used in causal model,water treatment geography GDP population density
+possible_mediator,no,string,Variables that may sit on pathway rather than confound,integron genes
+causal_estimand,yes,string,ATE ATT CATE ITE marginal effect or contrast,CATE
+predictive_model,no,string,AutoML or prediction model family,H2O AutoML
+causal_estimator,yes,string,DML causal forest meta-learner or other,double machine learning
+interpretability_method,no,string,SHAP feature importance PDP ALE or related,feature importance or SHAP
+cross_fitting,no,string,Cross-fitting or sample-splitting design,
+overlap_check,no,string,How support/positivity was assessed,
+spatial_control,no,string,Geography region spatial random effect or cluster control,geographical location
+sensitivity_check,no,string,Robustness or hidden confounding checks,
+effect_estimate,no,number,Reported causal effect estimate,
+uncertainty,no,string,SE CI p-value bootstrap interval or posterior interval,
+interpretation_limit,yes,string,Main caveat for causal interpretation,observational concurrent exposure data
+source_anchor,yes,string,Section table figure or data source,abstract and ScienceDirect page
