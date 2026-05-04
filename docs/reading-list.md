@@ -40,6 +40,8 @@ This is a practical reading list for improving EvidenceForge over time. It is no
 
 - Koricheva, Gurevitch, and Mengersen, *Handbook of Meta-analysis in Ecology and Evolution*.
 - Collaboration for Environmental Evidence guidelines and standards.
+- pls package manual: https://cran.r-project.org/package=pls
+- rchemo VIP documentation: https://search.r-project.org/CRAN/refmans/rchemo/html/vip.html
 - Li et al., [*The underappreciated importance of small wetlands in global methane emissions*](https://doi.org/10.1038/s41558-026-02609-w), with a [Duke publication record](https://scholars.duke.edu/publication/1816464). Useful as an example of small-patch geospatial upscaling, 30 m wetland mapping, methane-budget omission risk, size-class accounting, and code/data availability auditing.
 - Wang, Ran, Li, et al., [*Near-surface ground ice map of the Northern Hemisphere*](https://doi.org/10.1016/j.scib.2026.02.028), with related [T5mVIC data](https://doi.org/10.12072/ncdc.nieer.db7052.2025). Useful as an example of cryosphere map-product auditing, borehole observation inventories, 1 km permafrost mapping, ensemble machine learning, spatial validation, prediction intervals, and map-data versioning.
 - Mogollón et al., [*Broad bidirectional effects of global food production on the environment*](https://doi.org/10.1038/s43017-026-00778-y), with a [Wageningen research record](https://research.wur.nl/en/publications/broad-bidirectional-effects-of-global-food-production-on-the-envi/). Useful as an example of food-system nexus synthesis, bidirectional pressure-feedback mapping, trade displacement, and supply-side plus demand-side transformation framing.

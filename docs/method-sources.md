@@ -78,6 +78,20 @@ Use for:
 
 EvidenceForge implication: environmental and ecological reviews need explicit search transparency, geography/context fields, effect modifiers, study validity appraisal, and caution against vote-counting.
 
+### PLS/VIP Environmental Indicator Examples
+
+Source family: R `pls` package workflows and VIP-based environmental indicator modeling.
+
+Use for:
+
+- NDVI, vegetation, soil, climate, hydrology, biodiversity, and ecosystem indicator models;
+- partial least squares regression with correlated predictors and modest samples;
+- component-selection and cross-validation audits;
+- VIP ranking and coefficient-direction interpretation;
+- separating predictive variable contribution from causal or mechanistic claims.
+
+EvidenceForge implication: PLS/VIP studies should be audited as predictive or exploratory indicator models unless a separate causal design is present. Agents should require scaling, component-selection logic, validation design, residual checks, VIP tables, and direction of association before summarizing ecological meaning.
+
 ### Wetland Methane and Small-Patch Upscaling Examples
 
 Source: Li et al. (2026), [*The underappreciated importance of small wetlands in global methane emissions*](https://doi.org/10.1038/s41558-026-02609-w), Nature Climate Change.

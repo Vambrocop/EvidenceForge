@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -34,6 +34,7 @@ Load:
 
 - `references/environmental-life-science.md` for domain heterogeneity.
 - `references/cee-alignment.md` for environmental evidence standards.
+- `references/pls-vip-environmental-indicators.md` for NDVI, vegetation, soil, climate, ecological indicator, PLS regression, and VIP interpretation audits.
 - `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
 - `references/cryosphere-ground-ice-mapping.md` for permafrost, near-surface ground ice, borehole observations, geospatial predictors, ensemble machine learning, spatial autocorrelation, prediction intervals, and public map-data audits.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
@@ -58,6 +59,7 @@ Load:
 9. Build domain-specific extraction table.
 
 Use `templates/peco-framework.md`.
+Use `templates/pls-vip-environmental-audit.md` for PLS/VIP environmental indicator studies.
 Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-geospatial-schema.csv` for small-wetland methane and scale-sensitive upscaling studies.
 Use `templates/cryosphere-ground-ice-map-audit.md` and `templates/cryosphere-map-validation-schema.csv` for permafrost, near-surface ground ice, and other cryosphere map products.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
@@ -98,6 +100,23 @@ Include:
 - assay/measurement method;
 - confounders;
 - study quality.
+
+### PLS/VIP Environmental Indicator Audit
+
+Use this mode when a study links NDVI, vegetation productivity, soil quality, biodiversity, ecosystem-service, pollutant, climate, or hydrological indicators to multiple correlated predictors using partial least squares regression and VIP rankings.
+
+Include:
+
+- outcome indicator and unit;
+- predictor families and expected ecological meaning;
+- sample size, time span, site count, and clustering;
+- missing-data and scaling decisions;
+- component-count selection rule;
+- cross-validation design and whether it respects time, site, or spatial grouping;
+- RMSEP, R2/Q2, residual checks, and influential observations;
+- VIP table, VIP threshold, and coefficient direction;
+- whether VIP is interpreted as predictive importance, mechanism, or causal effect;
+- robustness checks such as alternative component count, leave-one-year/site-out validation, or baseline regression comparison.
 
 ### Small-Wetland Methane Scaling Audit
 
@@ -274,6 +293,8 @@ Include:
 - Do not pool across species, exposure windows, or outcome constructs without a biological or environmental rationale.
 - Do not collapse mechanistic, observational, and experimental evidence without design labels.
 - Do not hide geography, climate zone, tissue type, or measurement platform when they drive heterogeneity.
+- Do not treat PLS VIP rankings as causal drivers of an environmental outcome; VIP is a model-dependent predictive summary under a chosen component count and scaling.
+- Do not interpret PLS/VIP without component-selection, cross-validation, coefficient direction, and residual checks.
 - Do not treat coarse-resolution wetland products as scale neutral; audit which small features are omitted.
 - Do not treat a geospatial environmental map as ground truth; audit observation density, spatial autocorrelation, permafrost or domain masks, predictor time windows, uncertainty layers, and extrapolation zones.
 - Do not compare cryosphere maps across products or periods without checking target definition, depth convention, permafrost boundary, resolution, map vintage, and uncertainty.
