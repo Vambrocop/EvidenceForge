@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -25,6 +25,7 @@ Identify:
 - spatial and temporal scale;
 - spatial unit and aggregation boundary, if geospatial prediction is in scope;
 - minimum mapping unit and detection threshold, if small-patch systems are in scope;
+- target map variable, spatial resolution, observation inventory, predictor stack, spatial autocorrelation plan, and uncertainty layer, if an environmental map product is in scope;
 - measurement method;
 - bidirectional pathways, if impacts and feedbacks are both in scope;
 - expected heterogeneity.
@@ -34,6 +35,7 @@ Load:
 - `references/environmental-life-science.md` for domain heterogeneity.
 - `references/cee-alignment.md` for environmental evidence standards.
 - `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
+- `references/cryosphere-ground-ice-mapping.md` for permafrost, near-surface ground ice, borehole observations, geospatial predictors, ensemble machine learning, spatial autocorrelation, prediction intervals, and public map-data audits.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
 - `references/agricultural-ml-yield-prediction.md` for crop-yield prediction studies integrating meteorological, breeding, genomic, remote-sensing, or field-trial data.
 - `references/agricultural-irrigation-optimization.md` for brackish-water irrigation, water-salt-yield-emission trade-offs, GAM nonlinear response modeling, NSGA-II optimization, and decision ranges such as ECw management windows.
@@ -57,6 +59,7 @@ Load:
 
 Use `templates/peco-framework.md`.
 Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-geospatial-schema.csv` for small-wetland methane and scale-sensitive upscaling studies.
+Use `templates/cryosphere-ground-ice-map-audit.md` and `templates/cryosphere-map-validation-schema.csv` for permafrost, near-surface ground ice, and other cryosphere map products.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
 Use `templates/food-waste-forecast-audit.md` and `templates/food-waste-geospatial-feature-schema.csv` for geospatial food-waste forecasting.
 Use `templates/dual-outcome-meta-audit.md` and `templates/nutrient-meta-extraction-schema.csv` for agroecosystem nutrient meta-analysis.
@@ -111,6 +114,23 @@ Include:
 - contribution to total emissions;
 - uncertainty, double-counting, and omission risks;
 - implications for methane budgets and restoration policy.
+
+### Cryosphere Ground-Ice Map Audit
+
+Use this mode when a study creates or reuses a spatial map product for permafrost, near-surface ground ice, volumetric ice content, active-layer properties, thermokarst susceptibility, or related cryosphere hazards.
+
+Include:
+
+- target map variable and depth convention;
+- spatial domain, permafrost mask, map year/window, resolution, and grid definition;
+- field observation type, count, spatial distribution, and measurement comparability;
+- predictor stack: substrate, hydrology, topography, geology, paleoclimate, modern climate, remote sensing, and vegetation;
+- model families, ensemble strategy, calibration data, and simulation count;
+- validation design, including independent or spatially blocked validation;
+- spatial autocorrelation, sampling bias, and extrapolation checks;
+- accuracy, bias, RMSE, R-squared, prediction interval, and uncertainty maps;
+- storage, extent, hazard, infrastructure, climate, hydrology, and ecosystem interpretations;
+- data DOI, code availability, and versioning of map products.
 
 ### Agroecosystem Nutrient Meta-Analysis
 
@@ -255,6 +275,8 @@ Include:
 - Do not collapse mechanistic, observational, and experimental evidence without design labels.
 - Do not hide geography, climate zone, tissue type, or measurement platform when they drive heterogeneity.
 - Do not treat coarse-resolution wetland products as scale neutral; audit which small features are omitted.
+- Do not treat a geospatial environmental map as ground truth; audit observation density, spatial autocorrelation, permafrost or domain masks, predictor time windows, uncertainty layers, and extrapolation zones.
+- Do not compare cryosphere maps across products or periods without checking target definition, depth convention, permafrost boundary, resolution, map vintage, and uncertainty.
 - Do not compare methane budgets without checking double-counting between wetlands, lakes, rivers, reservoirs, and inundated vegetation.
 - Do not turn methane emissions alone into a wetland management recommendation without carbon storage, biodiversity, hydrology, and ecosystem-service trade-offs.
 - Do not use vote-counting as evidence of effect direction or strength.

@@ -59,6 +59,7 @@ See:
 - [`docs/method-sources.md`](docs/method-sources.md)
 - [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
 - [`docs/reading-list.md`](docs/reading-list.md)
+- [`docs/knowledge-graph-navigation.md`](docs/knowledge-graph-navigation.md)
 - [`docs/version-roadmap.md`](docs/version-roadmap.md)
 
 ## Origin and Workflow Inspiration
@@ -173,6 +174,7 @@ skills/
     │   ├── agricultural-ml-yield-prediction.md
     │   ├── agricultural-irrigation-optimization.md
     │   ├── cee-alignment.md
+    │   ├── cryosphere-ground-ice-mapping.md
     │   ├── environmental-causal-ml.md
     │   ├── environmental-life-science.md
     │   ├── environmental-scenario-synthesis.md
@@ -182,6 +184,8 @@ skills/
     │   └── small-wetland-methane-scaling.md
     └── templates/
         ├── dual-outcome-meta-audit.md
+        ├── cryosphere-ground-ice-map-audit.md
+        ├── cryosphere-map-validation-schema.csv
         ├── environmental-causal-ml-audit.md
         ├── environmental-causal-ml-feature-schema.csv
         ├── irrigation-optimization-audit.md
@@ -211,7 +215,13 @@ skills/
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, temporal second-order meta-regression, ecosystem-service trade-offs, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
-- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including wetland methane scaling, small-patch geospatial upscaling, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, environmental causal ML, urban heat DML, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation trade-offs, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
+- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including wetland methane scaling, small-patch geospatial upscaling, cryosphere and permafrost map-product audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, environmental causal ML, urban heat DML, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation trade-offs, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
+
+## Optional Knowledge Graph Navigation
+
+Graphify can be used as an optional navigation layer for large repositories, literature folders, supplements, and data/code packages. It helps an agent start from `GRAPH_REPORT.md` and focused graph queries before reading raw files. It does not replace EvidenceForge method guardrails, risk-of-bias judgment, effect-size extraction, or causal/evidence-quality assessment.
+
+See [`docs/knowledge-graph-navigation.md`](docs/knowledge-graph-navigation.md).
 
 ## v0.2 Executable Pieces
 
@@ -242,6 +252,7 @@ The current repository now also includes:
 - environmental causal ML audit templates;
 - urban heat DML and spatial causal-inference guardrails;
 - agricultural irrigation optimization templates for GAM/NSGA-II water-salt-yield-emission trade-offs;
+- cryosphere ground-ice map-product audit templates;
 - environmental scenario-model audit templates;
 - land-use optimization and Pareto-frontier trade-off audit templates;
 - PRISMA-style Mermaid flow generator;

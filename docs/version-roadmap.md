@@ -91,5 +91,5 @@ EvidenceForge is moving from v0.2 toward v0.4:
 
 - it now has schemas, validators, golden examples, a minimal R script, effect-size helpers, and a PRISMA-style flow generator;
 - it also has an IPD/mega-analysis reference and audit templates inspired by small-sample multi-site synthesis workflows;
-- it is expanding the environmental branch with urban heat DML, spatial causal-inference guardrails, and agricultural irrigation optimization templates;
+- it is expanding the environmental branch with urban heat DML, spatial causal-inference guardrails, agricultural irrigation optimization templates, and cryosphere ground-ice map-product audits;
 - it still needs richer effect-size conversion, robust/multilevel model templates, PRISMA/report export polish, and real case studies before v1.0.

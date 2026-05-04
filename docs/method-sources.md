@@ -93,6 +93,23 @@ Use for:
 
 EvidenceForge implication: scale is part of the evidence claim. Agents should audit what coarse maps omit, how size classes are defined, whether double-counting occurs across wetlands/lakes/rivers/reservoirs, and whether methane-only results are being overextended to wetland management.
 
+### Cryosphere Ground-Ice Map-Product Examples
+
+Source: Wang, Ran, Li, et al. (2026), [*Near-surface ground ice map of the Northern Hemisphere*](https://doi.org/10.1016/j.scib.2026.02.028), Science Bulletin.
+
+Use for:
+
+- permafrost and near-surface ground-ice map-product audits;
+- borehole observation inventories and depth-convention checks;
+- 1 km gridded cryosphere mapping;
+- predictor stacks that combine substrate, hydrology, topography, surficial geology, paleoclimate, modern climate, remote sensing, and vegetation;
+- ensemble machine-learning and Bayesian model-averaging workflows;
+- spatial autocorrelation, extrapolation, and validation checks;
+- prediction intervals and map-uncertainty interpretation;
+- public raster/data DOI and versioning requirements.
+
+EvidenceForge implication: environmental evidence products are not just papers; they can be maps with observation, prediction, and interpretation layers. Agents should keep those layers separate and should not translate predicted ice content into climate, hydrology, ecosystem, or infrastructure claims without uncertainty, spatial validation, and local-context checks.
+
 ### Food-System Nexus Review Examples
 
 Source: Mogollón et al. (2026), [*Broad bidirectional effects of global food production on the environment*](https://doi.org/10.1038/s43017-026-00778-y), Nature Reviews Earth & Environment.

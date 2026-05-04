@@ -41,6 +41,7 @@ This is a practical reading list for improving EvidenceForge over time. It is no
 - Koricheva, Gurevitch, and Mengersen, *Handbook of Meta-analysis in Ecology and Evolution*.
 - Collaboration for Environmental Evidence guidelines and standards.
 - Li et al., [*The underappreciated importance of small wetlands in global methane emissions*](https://doi.org/10.1038/s41558-026-02609-w), with a [Duke publication record](https://scholars.duke.edu/publication/1816464). Useful as an example of small-patch geospatial upscaling, 30 m wetland mapping, methane-budget omission risk, size-class accounting, and code/data availability auditing.
+- Wang, Ran, Li, et al., [*Near-surface ground ice map of the Northern Hemisphere*](https://doi.org/10.1016/j.scib.2026.02.028), with related [T5mVIC data](https://doi.org/10.12072/ncdc.nieer.db7052.2025). Useful as an example of cryosphere map-product auditing, borehole observation inventories, 1 km permafrost mapping, ensemble machine learning, spatial validation, prediction intervals, and map-data versioning.
 - Mogollón et al., [*Broad bidirectional effects of global food production on the environment*](https://doi.org/10.1038/s43017-026-00778-y), with a [Wageningen research record](https://research.wur.nl/en/publications/broad-bidirectional-effects-of-global-food-production-on-the-envi/). Useful as an example of food-system nexus synthesis, bidirectional pressure-feedback mapping, trade displacement, and supply-side plus demand-side transformation framing.
 - Uen and Rodriguez, [*Geospatial analytics and machine learning for forecasting county-level food waste in U.S. Retail markets*](https://doi.org/10.1016/j.resconrec.2026.108906). Useful as an example of county-level food-waste forecasting, geospatial ML, feature-importance auditing, and circular-bioeconomy infrastructure planning.
 - Wang et al., [*Integrating meteorological and breeding data to predict maize yields using machine learning algorithms*](https://doi.org/10.3389/fpls.2025.1722068). Useful as an example of crop-yield ML prediction, genotype-environment data integration, BLUP breeding values, meteorological predictors, model comparison, and validation/leakage auditing.
@@ -52,5 +53,6 @@ This is a practical reading list for improving EvidenceForge over time. It is no
 
 - [ASReview](https://asreview.nl/ai/)
 - [Rayyan](https://www.rayyan.ai/)
+- [Graphify](https://github.com/safishamsi/graphify) for optional knowledge-graph navigation across repositories, papers, supplements, and code folders.
 
 Read these with one principle in mind: AI can reduce review workload, but the review protocol, inclusion decisions, effect-size verification, and interpretation must remain auditable.
