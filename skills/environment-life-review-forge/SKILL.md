@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, ecosystem-service relationships, ESR synergy/trade-off mapping, interpretable machine learning, GWR/XGBoost spatial modeling, threshold-oriented ecological management, optimal interval identification, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, ecosystem-service relationships, ESR synergy/trade-off mapping, interpretable machine learning, GWR/XGBoost spatial modeling, threshold-oriented ecological management, optimal interval identification, air pollution crop-yield models, ozone/aerosol food-security co-benefits, SIF-based crop productivity, soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -24,6 +24,8 @@ Identify:
 - study design;
 - spatial and temporal scale;
 - ecosystem-service set, pairwise relationship definition, synergy/trade-off coding, and threshold-management target, if ecosystem-service relationships are in scope;
+- pollutant exposure, crop outcome, food-security endpoint, counterfactual air-quality target, and crop-calorie translation, if air-quality food-security modeling is in scope;
+- biodiversity dimension, stability metric, climate-stress gradient, and moderation/interaction target, if biodiversity-stability evidence is in scope;
 - spatial unit and aggregation boundary, if geospatial prediction is in scope;
 - minimum mapping unit and detection threshold, if small-patch systems are in scope;
 - target map variable, spatial resolution, observation inventory, predictor stack, spatial autocorrelation plan, and uncertainty layer, if an environmental map product is in scope;
@@ -37,6 +39,8 @@ Load:
 - `references/cee-alignment.md` for environmental evidence standards.
 - `references/pls-vip-environmental-indicators.md` for NDVI, vegetation, soil, climate, ecological indicator, PLS regression, and VIP interpretation audits.
 - `references/ecosystem-service-threshold-ml.md` for ecosystem-service relationship mapping, GWR-plus-ML workflows, nonlinear driver interpretation, threshold/optimal-interval identification, and spatial management translation.
+- `references/air-quality-food-security.md` for ozone, aerosol, SIF, crop yield, crop-calorie, counterfactual air-quality targets, and food-security co-benefit modeling.
+- `references/soil-biodiversity-aridity-stability.md` for soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, and biodiversity-function buffering claims.
 - `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
 - `references/cryosphere-ground-ice-mapping.md` for permafrost, near-surface ground ice, borehole observations, geospatial predictors, ensemble machine learning, spatial autocorrelation, prediction intervals, and public map-data audits.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
@@ -63,6 +67,8 @@ Load:
 Use `templates/peco-framework.md`.
 Use `templates/pls-vip-environmental-audit.md` for PLS/VIP environmental indicator studies.
 Use `templates/ecosystem-service-threshold-audit.md` and `templates/ecosystem-service-threshold-schema.csv` for ecosystem-service relationship threshold-management studies.
+Use `templates/air-quality-food-security-audit.md` and `templates/air-quality-food-security-schema.csv` for air-pollution, crop-yield, SIF, and food-security co-benefit studies.
+Use `templates/biodiversity-stability-climate-stress-audit.md` and `templates/biodiversity-stability-climate-stress-schema.csv` for soil biodiversity, aridity, ecosystem-stability, and climate-stress moderation studies.
 Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-geospatial-schema.csv` for small-wetland methane and scale-sensitive upscaling studies.
 Use `templates/cryosphere-ground-ice-map-audit.md` and `templates/cryosphere-map-validation-schema.csv` for permafrost, near-surface ground ice, and other cryosphere map products.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
@@ -137,6 +143,38 @@ Include:
 - optimal interval definition, probability target, and uncertainty;
 - zoning or management translation and whether it is descriptive, predictive, or causal;
 - robustness checks against alternative service models, spatial resolution, model family, and threshold rule.
+
+### Air Quality Food-Security Audit
+
+Use this mode when a study estimates how ozone, PM2.5, aerosol optical depth, diffuse radiation, SIF, temperature, or related atmospheric conditions affect crop productivity, crop yield, calories, self-sufficiency, or food-security indicators.
+
+Include:
+
+- crops, regions, years, and spatial unit;
+- pollutant exposure metrics, such as AOT40, peak-season ozone, PM2.5, AOD, or aerosol loading;
+- crop outcome: yield, SIF, productivity proxy, calorie output, or supply-demand balance;
+- statistical model, flexible functional form, crop fixed effects, spatial effects, weather controls, and trend controls;
+- counterfactual air-quality targets and whether targets are policy-based;
+- nonlinear and synergistic pollutant-response claims;
+- validation against observed yields or independent crop productivity data;
+- translation from yield to calories, self-sufficiency, imports, or food security;
+- data/code availability and uncertainty in source data, crop area, crop-calorie conversion, and counterfactual scenarios.
+
+### Biodiversity Stability Climate-Stress Audit
+
+Use this mode when a study evaluates whether biodiversity, soil biodiversity, microbial diversity, functional diversity, or community composition supports ecosystem stability under aridity, drought, warming, land-use stress, or other climate gradients.
+
+Include:
+
+- biodiversity dimension and measurement platform;
+- stability endpoint: temporal stability, resistance, resilience, multifunctionality, productivity variability, or service stability;
+- climate-stress gradient and exposure window;
+- ecosystem type, spatial domain, sampling design, and temporal depth;
+- interaction or moderation model: whether aridity weakens, strengthens, or changes the biodiversity-stability relationship;
+- controls for productivity, soil, climate, land use, management, and spatial dependence;
+- mechanism evidence from microbes, soil nutrients, plant traits, or food-web structure;
+- uncertainty, threshold, nonlinear, and subgroup evidence;
+- whether claims are observational associations, experiments, manipulations, or causal estimates.
 
 ### Small-Wetland Methane Scaling Audit
 
@@ -317,6 +355,10 @@ Include:
 - Do not interpret PLS/VIP without component-selection, cross-validation, coefficient direction, and residual checks.
 - Do not treat ESR thresholds from PDP, SHAP, ALE, or response curves as causal ecological tipping points without experimental, quasi-experimental, mechanistic, or temporal evidence.
 - Do not translate model-derived optimal intervals into zoning rules without auditing spatial leakage, resolution, service-model uncertainty, threshold uncertainty, and local feasibility.
+- Do not treat air-quality food-security counterfactuals as realized production gains without checking crop area, weather, management, prices, imports, storage, and policy implementation.
+- Do not treat SIF or remote-sensing productivity proxies as yield unless crop-specific validation and conversion logic are explicit.
+- Do not claim soil biodiversity stabilizes ecosystems under aridity without defining the stability metric, stress gradient, temporal scale, spatial dependence, and possible productivity confounding.
+- Do not interpret biodiversity-stability moderation as causal unless the design supports causal identification or experimental manipulation.
 - Do not treat coarse-resolution wetland products as scale neutral; audit which small features are omitted.
 - Do not treat a geospatial environmental map as ground truth; audit observation density, spatial autocorrelation, permafrost or domain masks, predictor time windows, uncertainty layers, and extrapolation zones.
 - Do not compare cryosphere maps across products or periods without checking target definition, depth convention, permafrost boundary, resolution, map vintage, and uncertainty.

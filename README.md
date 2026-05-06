@@ -171,6 +171,7 @@ skills/
     ├── SKILL.md
     ├── references/
     │   ├── agroecosystem-nutrient-meta-analysis.md
+    │   ├── air-quality-food-security.md
     │   ├── agricultural-ml-yield-prediction.md
     │   ├── agricultural-irrigation-optimization.md
     │   ├── cee-alignment.md
@@ -183,8 +184,13 @@ skills/
     │   ├── food-waste-geospatial-ml.md
     │   ├── land-use-optimization-tradeoffs.md
     │   ├── pls-vip-environmental-indicators.md
+    │   ├── soil-biodiversity-aridity-stability.md
     │   └── small-wetland-methane-scaling.md
     └── templates/
+        ├── air-quality-food-security-audit.md
+        ├── air-quality-food-security-schema.csv
+        ├── biodiversity-stability-climate-stress-audit.md
+        ├── biodiversity-stability-climate-stress-schema.csv
         ├── dual-outcome-meta-audit.md
         ├── cryosphere-ground-ice-map-audit.md
         ├── cryosphere-map-validation-schema.csv
@@ -220,7 +226,7 @@ skills/
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, and a minimal `metafor` R script template.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, temporal second-order meta-regression, ecosystem-service trade-offs, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
-- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including PLS/VIP environmental indicator audits, ecosystem-service relationship threshold ML audits, wetland methane scaling, small-patch geospatial upscaling, cryosphere and permafrost map-product audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, environmental causal ML, urban heat DML, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation trade-offs, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
+- `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including PLS/VIP environmental indicator audits, ecosystem-service relationship threshold ML audits, air-quality food-security co-benefit audits, biodiversity-stability climate-stress audits, wetland methane scaling, small-patch geospatial upscaling, cryosphere and permafrost map-product audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, environmental causal ML, urban heat DML, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation trade-offs, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
 
 ## Optional Knowledge Graph Navigation
 
@@ -252,6 +258,8 @@ The current repository now also includes:
 - small-wetland methane scale audit templates;
 - PLS/VIP environmental indicator audit templates;
 - ecosystem-service relationship threshold ML audit templates;
+- air-quality food-security co-benefit audit templates;
+- biodiversity-stability climate-stress audit templates;
 - food-system bidirectional environmental nexus audit templates;
 - food-waste geospatial ML forecast audit templates;
 - agroecosystem nutrient meta-analysis extraction and dual-outcome audit templates;

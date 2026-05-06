@@ -109,6 +109,34 @@ Use for:
 
 EvidenceForge implication: interpretable ML can make ecosystem-service analysis more operational, but threshold intervals should be treated as probability-oriented management heuristics unless supported by causal, temporal, experimental, or mechanistic evidence. Agents should audit service-map uncertainty, spatial leakage, model validation, threshold stability, and local feasibility before turning model-derived intervals into planning recommendations.
 
+### Air Quality and Food Security Examples
+
+Source: Liu et al. (2024), [*Air quality improvements can strengthen China's food security*](https://doi.org/10.1038/s43016-023-00882-y), Nature Food.
+
+Use for:
+
+- ozone, PM2.5, aerosol, SIF, crop productivity, and yield-response modeling;
+- satellite-based observations with flexible statistical forms;
+- counterfactual air-quality target scenarios;
+- translating crop-yield changes into crop calories and food-security implications;
+- code/data availability auditing for policy co-benefit models.
+
+EvidenceForge implication: air-quality food-security studies should be audited as a chain of linked assumptions. Agents should separately check pollutant exposure, crop productivity proxy, yield conversion, calorie conversion, and self-sufficiency or policy claims.
+
+### Biodiversity-Stability Under Climate Stress Examples
+
+Source seed: Qi et al. (2026), *Intensifying Aridity Undermines the Role of Soil Biodiversity in Supporting Ecosystem Stability*, Global Change Biology, DOI `https://doi.org/10.1111/gcb.70903` from user-provided screenshot.
+
+Use for:
+
+- biodiversity-stability relationship audits;
+- soil biodiversity and ecosystem stability evidence;
+- aridity or climate-stress moderation;
+- scale, confounding, and mechanism checks;
+- distinguishing observational, experimental, and causal claims.
+
+EvidenceForge implication: biodiversity-stability claims need the stability metric, biodiversity dimension, stress gradient, and temporal/spatial scale to be explicit. When aridity is a moderator, agents should avoid summarizing the paper as a simple biodiversity benefit unless the stress-dependent relationship is preserved.
+
 ### Wetland Methane and Small-Patch Upscaling Examples
 
 Source: Li et al. (2026), [*The underappreciated importance of small wetlands in global methane emissions*](https://doi.org/10.1038/s41558-026-02609-w), Nature Climate Change.
