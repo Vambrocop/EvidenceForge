@@ -92,6 +92,23 @@ Use for:
 
 EvidenceForge implication: PLS/VIP studies should be audited as predictive or exploratory indicator models unless a separate causal design is present. Agents should require scaling, component-selection logic, validation design, residual checks, VIP tables, and direction of association before summarizing ecological meaning.
 
+### Ecosystem-Service Threshold ML Examples
+
+Source: Ren, Liu, and Lin (2026), [*Threshold-oriented ecosystem-service relationships from interpretable machine learning to spatial management: A case from Shandong Province, China*](https://doi.org/10.1016/j.ecolind.2026.114849), Ecological Indicators.
+
+Use for:
+
+- ecosystem-service relationship mapping;
+- synergy/trade-off classification across pairwise service combinations;
+- GWR and spatial heterogeneity audits;
+- XGBoost, GBDT, GAM, and MLR model comparison;
+- nonlinear driver-response interpretation;
+- partial-response curve superposition;
+- optimal interval and threshold identification;
+- translating model patterns into zoning, agricultural upgrading, urban-rural interface control, and biodiversity-friendly conservation guidance.
+
+EvidenceForge implication: interpretable ML can make ecosystem-service analysis more operational, but threshold intervals should be treated as probability-oriented management heuristics unless supported by causal, temporal, experimental, or mechanistic evidence. Agents should audit service-map uncertainty, spatial leakage, model validation, threshold stability, and local feasibility before turning model-derived intervals into planning recommendations.
+
 ### Wetland Methane and Small-Patch Upscaling Examples
 
 Source: Li et al. (2026), [*The underappreciated importance of small wetlands in global methane emissions*](https://doi.org/10.1038/s41558-026-02609-w), Nature Climate Change.
