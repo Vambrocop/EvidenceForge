@@ -1,6 +1,6 @@
 ---
 name: meta-analysis-forge
-description: Designs and audits first-order meta-analyses of primary studies. Use for effect-size extraction, effect-size harmonization, fixed/random/multilevel models, robust variance estimation, heterogeneity, prediction intervals, meta-regression, publication-bias diagnostics, sensitivity checks, coding sheets, and reproducible meta-analysis reports.
+description: Designs and audits first-order meta-analyses of primary studies. Use for effect-size extraction, effect-size harmonization, fixed/random/multilevel models, robust variance estimation, heterogeneity, prediction intervals, meta-regression, publication-bias diagnostics, sensitivity checks, coding sheets, reproducible meta-analysis reports, ecological meta-analysis, soil-carbon meta-analysis, stock-versus-flux outcome separation, and trait-mediated moderator design.
 ---
 
 # Meta-Analysis Forge
@@ -39,6 +39,7 @@ Identify:
 Load:
 
 - `references/effect-sizes.md` for effect metrics and extraction.
+- `references/soil-fauna-carbon-meta.md` when the project pools ecological effects on both carbon stocks and carbon fluxes and needs trait or climate moderators without collapsing incompatible outcome families.
 - `references/ipd-and-mega-analysis.md` when the task involves individual participant data, multi-site raw/derived data harmonization, small-sample dataset integration, or mega-analysis.
 - `references/synthesis-models.md` for model choice and diagnostics.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.

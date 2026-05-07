@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, ecosystem-service relationships, ESR synergy/trade-off mapping, interpretable machine learning, GWR/XGBoost spatial modeling, threshold-oriented ecological management, optimal interval identification, air pollution crop-yield models, ozone/aerosol food-security co-benefits, SIF-based crop productivity, soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, ecosystem-service relationships, ESR synergy/trade-off mapping, interpretable machine learning, GWR/XGBoost spatial modeling, threshold-oriented ecological management, optimal interval identification, air pollution crop-yield models, ozone/aerosol food-security co-benefits, SIF-based crop productivity, soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, soil fauna meta-analysis, ant-mediated carbon cycling, SOC and CO2 dual-outcome synthesis, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -41,6 +41,7 @@ Load:
 - `references/ecosystem-service-threshold-ml.md` for ecosystem-service relationship mapping, GWR-plus-ML workflows, nonlinear driver interpretation, threshold/optimal-interval identification, and spatial management translation.
 - `references/air-quality-food-security.md` for ozone, aerosol, SIF, crop yield, crop-calorie, counterfactual air-quality targets, and food-security co-benefit modeling.
 - `references/soil-biodiversity-aridity-stability.md` for soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, and biodiversity-function buffering claims.
+- `references/ant-soil-carbon-meta.md` for soil-fauna meta-analysis, ecosystem-engineer effects on SOC stock and CO2 flux, trait-mediated moderators, and climate-context extraction.
 - `references/small-wetland-methane-scaling.md` for wetland methane, small water bodies, fine-resolution remote sensing, and scale-sensitive upscaling.
 - `references/cryosphere-ground-ice-mapping.md` for permafrost, near-surface ground ice, borehole observations, geospatial predictors, ensemble machine learning, spatial autocorrelation, prediction intervals, and public map-data audits.
 - `references/agroecosystem-nutrient-meta-analysis.md` for crop yield, soil organic carbon, fertilizer, amendment, and nutrient-management meta-analyses.
@@ -69,6 +70,7 @@ Use `templates/pls-vip-environmental-audit.md` for PLS/VIP environmental indicat
 Use `templates/ecosystem-service-threshold-audit.md` and `templates/ecosystem-service-threshold-schema.csv` for ecosystem-service relationship threshold-management studies.
 Use `templates/air-quality-food-security-audit.md` and `templates/air-quality-food-security-schema.csv` for air-pollution, crop-yield, SIF, and food-security co-benefit studies.
 Use `templates/biodiversity-stability-climate-stress-audit.md` and `templates/biodiversity-stability-climate-stress-schema.csv` for soil biodiversity, aridity, ecosystem-stability, and climate-stress moderation studies.
+Use `templates/soil-fauna-carbon-meta-audit.md` and `templates/soil-fauna-carbon-schema.csv` for ant, termite, earthworm, or other soil-fauna meta-analyses that separate SOC stock, CO2 flux, and organic-matter stability outcomes.
 Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-geospatial-schema.csv` for small-wetland methane and scale-sensitive upscaling studies.
 Use `templates/cryosphere-ground-ice-map-audit.md` and `templates/cryosphere-map-validation-schema.csv` for permafrost, near-surface ground ice, and other cryosphere map products.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
@@ -175,6 +177,19 @@ Include:
 - mechanism evidence from microbes, soil nutrients, plant traits, or food-web structure;
 - uncertainty, threshold, nonlinear, and subgroup evidence;
 - whether claims are observational associations, experiments, manipulations, or causal estimates.
+
+### Soil Fauna Carbon Meta-Analysis Audit
+
+Use this mode when a study synthesizes how ants or other soil fauna affect soil carbon storage, carbon fluxes, organic matter turnover, or stability across ecosystems.
+
+Include:
+
+- focal fauna and functional traits;
+- stock versus flux versus stability outcome separation;
+- effect-size family and percent-change interpretation;
+- climate, latitude, baseline SOC, or ecosystem moderators;
+- dependence plan for multiple endpoints per study;
+- whether "more storage" and "more emissions" are both present and how the paper interprets that pattern.
 
 ### Small-Wetland Methane Scaling Audit
 
@@ -359,6 +374,7 @@ Include:
 - Do not treat SIF or remote-sensing productivity proxies as yield unless crop-specific validation and conversion logic are explicit.
 - Do not claim soil biodiversity stabilizes ecosystems under aridity without defining the stability metric, stress gradient, temporal scale, spatial dependence, and possible productivity confounding.
 - Do not interpret biodiversity-stability moderation as causal unless the design supports causal identification or experimental manipulation.
+- Do not flatten soil-fauna effects into one "carbon benefit" or "carbon cost" label when stock and flux outcomes move in different directions.
 - Do not treat coarse-resolution wetland products as scale neutral; audit which small features are omitted.
 - Do not treat a geospatial environmental map as ground truth; audit observation density, spatial autocorrelation, permafrost or domain masks, predictor time windows, uncertainty layers, and extrapolation zones.
 - Do not compare cryosphere maps across products or periods without checking target definition, depth convention, permafrost boundary, resolution, map vintage, and uncertainty.
