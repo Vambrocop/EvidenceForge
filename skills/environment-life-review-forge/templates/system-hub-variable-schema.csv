@@ -1,0 +1,20 @@
+field_name,description,example_value
+paper_id,Unique paper identifier,GU_2026_NGEO_01
+focal_variable,System hub variable,nitrogen
+domain,Main domain,agriculture and environment
+direct_outcome,Primary environmental endpoint,reactive nitrogen waste
+coupled_outcome,Secondary linked endpoint,SDG performance
+translation_layer,Whether coupled outcome is measured modeled or translated,translated
+boundary_or_target,Boundary threshold or target definition,halving nitrogen waste
+sector_scope,Sectors included,crop production livestock wastewater industry
+spatial_scope,Geographic coverage,global
+time_horizon,Study time frame,2030 to 2050
+hotspot_or_hidden_layer,Dominant layer region or sector,subsoil enhanced nitrification layer
+co_benefit_claim,Main co-benefit statement,waste reduction improves multiple SDGs
+tradeoff_claim,Main trade-off statement,technical options alone do not reach full target
+scenario_family,Scenario or policy family,portfolio scenarios
+technical_measures,Technical interventions considered,improved nutrient management
+structural_measures,Non-technical interventions considered,diet waste and circularity changes
+uncertainty_source,Main uncertainty source,scenario assumptions and cross-sector coupling
+policy_translation,How results are translated to policy,priority portfolio design
+dominant_caveat,Main interpretation limit,policy benefit depends on portfolio assumptions

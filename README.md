@@ -59,6 +59,7 @@ See:
 - [`docs/method-sources.md`](docs/method-sources.md)
 - [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
 - [`docs/reading-list.md`](docs/reading-list.md)
+- [`docs/gu-baojing-method-extraction.md`](docs/gu-baojing-method-extraction.md)
 - [`docs/knowledge-graph-navigation.md`](docs/knowledge-graph-navigation.md)
 - [`docs/version-roadmap.md`](docs/version-roadmap.md)
 
@@ -221,6 +222,8 @@ skills/
 ```
 
 ## Skill Map
+
+Recent additions also support system-hub environmental evidence patterns: papers that use nitrogen, carbon, water, air pollution, biodiversity pressure, or another focal variable to connect environmental burdens with food, health, welfare, SDGs, or policy portfolios. See `skills/environment-life-review-forge/references/system-hub-policy-synthesis.md` and the paired `system-hub-variable-*` templates.
 
 - `evidence-synthesis-forge`: the general orchestrator for systematic reviews, scoping reviews, rapid reviews, evidence maps, and synthesis reports.
 - `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, a minimal `metafor` R script template, and stock-versus-flux ecological meta-analysis guardrails.

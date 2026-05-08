@@ -1,6 +1,6 @@
 ---
 name: environment-life-review-forge
-description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, ecosystem-service relationships, ESR synergy/trade-off mapping, interpretable machine learning, GWR/XGBoost spatial modeling, threshold-oriented ecological management, optimal interval identification, air pollution crop-yield models, ozone/aerosol food-security co-benefits, SIF-based crop productivity, soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, soil fauna meta-analysis, ant-mediated carbon cycling, SOC and CO2 dual-outcome synthesis, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, and domain-specific systematic review protocols.
+description: Adapts evidence synthesis workflows for environmental, ecological, biomedical, and life-science questions. Use for PECO/PICO frameworks, exposure-outcome reviews, ecological heterogeneity, dose-response evidence, risk-of-bias planning, environmental indicators, NDVI or vegetation-index models, partial least squares regression, PLS VIP audits, ecosystem-service relationships, ESR synergy/trade-off mapping, interpretable machine learning, GWR/XGBoost spatial modeling, threshold-oriented ecological management, optimal interval identification, air pollution crop-yield models, ozone/aerosol food-security co-benefits, SIF-based crop productivity, soil biodiversity, aridity gradients, ecosystem stability, climate-stress moderation, soil fauna meta-analysis, ant-mediated carbon cycling, SOC and CO2 dual-outcome synthesis, organism/tissue/time-scale coding, wetland methane scaling, small-patch geospatial upscaling, cryosphere or permafrost evidence products, near-surface ground ice mapping, geospatial environmental maps, spatial autocorrelation audits, map uncertainty audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield machine-learning prediction, environmental causal machine learning, double machine learning, spatial DML, urban heat causal inference, interpretable exposure-response modeling, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation, GAM or NSGA-II trade-off modeling, environmental scenario modeling, land-use optimization, Pareto-frontier trade-off synthesis, policy trade-off synthesis, system-hub environmental variables, nitrogen-SDG coupling, safe-boundary synthesis, hotspot-layer identification, and domain-specific systematic review protocols.
 ---
 
 # Environment Life Review Forge
@@ -52,6 +52,7 @@ Load:
 - `references/food-waste-geospatial-ml.md` for county, city, supply-chain, or market-level food-waste forecasting with geospatial analytics and machine learning.
 - `references/environmental-scenario-synthesis.md` when a review builds a literature-derived database, machine-learning/spatial model, or policy scenario simulation.
 - `references/land-use-optimization-tradeoffs.md` when a study uses multiobjective optimization, Pareto frontiers, land-use allocation, or food-water-carbon trade-off modeling.
+- `references/system-hub-policy-synthesis.md` when a paper uses one focal variable, such as nitrogen, carbon, water, phosphorus, air pollution, or biodiversity pressure, to connect multiple environmental, production, health, or policy outcomes under a boundary or scenario framework.
 
 ## Workflow
 
@@ -83,6 +84,7 @@ Use `templates/environmental-causal-ml-audit.md` and `templates/environmental-ca
 Use `templates/irrigation-optimization-audit.md` and `templates/irrigation-optimization-schema.csv` for brackish-water irrigation and water-salt-yield-emission optimization studies.
 Use `templates/scenario-model-audit.md` and `templates/policy-scenario-matrix.csv` for scenario-model evidence synthesis.
 Use `templates/pareto-frontier-audit.md` and `templates/multi-objective-tradeoff-schema.csv` for multiobjective optimization and land-use trade-off studies.
+Use `templates/system-hub-variable-audit.md` and `templates/system-hub-variable-schema.csv` for papers that organize evidence around a system hub variable, safe boundary, hotspot layer, co-benefit structure, or policy-portfolio translation.
 
 ## Output Modes
 
@@ -257,6 +259,22 @@ Include:
 - circularity or redesign strategies;
 - regional vulnerability and equity concerns;
 - evidence certainty and data-source limits.
+
+### System-Hub Variable Audit
+
+Use this mode when a paper treats nitrogen, carbon, water, phosphorus, potassium, air pollution, biodiversity pressure, or another focal variable as a systems connector linking environmental burdens, productivity, health, food security, ecosystem function, or policy goals.
+
+Include:
+
+- focal system variable and why it is treated as a hub;
+- coupled outcome families and which are measured versus translated;
+- boundary, threshold, or target definition;
+- sectors, regions, or layers included;
+- hotspot or hidden-layer logic;
+- co-benefit and trade-off pattern;
+- scenario or policy-portfolio structure;
+- uncertainty in the translation from biophysical result to policy claim;
+- cross-domain lesson that could transfer to other nexus variables.
 
 ### Food-Waste Geospatial ML Forecast
 
