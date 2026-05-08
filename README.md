@@ -61,6 +61,7 @@ See:
 - [`docs/reading-list.md`](docs/reading-list.md)
 - [`docs/gu-baojing-method-extraction.md`](docs/gu-baojing-method-extraction.md)
 - [`docs/knowledge-graph-navigation.md`](docs/knowledge-graph-navigation.md)
+- [`docs/scansci-pdf-setup-and-workflow.md`](docs/scansci-pdf-setup-and-workflow.md)
 - [`docs/version-roadmap.md`](docs/version-roadmap.md)
 
 ## Origin and Workflow Inspiration
