@@ -17,7 +17,17 @@
 | Biodiversity | | | | |
 | Ecosystem stability | | | | |
 | Climate stress | | | | |
+| Network complexity | | | | |
 | Mechanism indicator | | | | |
+
+## Evidence Layers
+
+- Field gradient dataset:
+- Spatial extent:
+- Site count:
+- Global synthesis dataset:
+- Site or study count:
+- Cross-scale consistency:
 
 ## Model Design
 
@@ -30,6 +40,13 @@
 - Nonlinearity/threshold:
 - Subgroups:
 - Experimental or observational status:
+
+## Mechanism Layer
+
+- Network-complexity result:
+- Metagenomic or trait-strategy result:
+- Stress-tolerance versus growth/resource-acquisition shift:
+- Whether mechanism is partial or central:
 
 ## Interpretation
 
