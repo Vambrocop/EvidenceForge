@@ -101,3 +101,11 @@ To reach **v0.5**, at least two or three representative case studies should be r
 - one first-order treatment-control meta-analysis with open CSV/R code;
 - one ecological meta-analysis with multilevel dependence, ML ranking, and path modeling;
 - one second-order meta-analysis with overlap, quality, duration, and trade-off modeling.
+
+The current recommended v0.5 case-study package is:
+
+- potassium fertilization and yield/SOC, for a first-order treatment-control nutrient meta-analysis;
+- riparian buffers and biodiversity, for an ecological meta-analysis where processed effect-size data and R code are public even when raw species-by-site data are protected;
+- agricultural diversification, for second-order meta-analysis and trade-off modeling.
+
+See `docs/v0.5-reproducible-case-study-candidates.md`.

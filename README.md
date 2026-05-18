@@ -61,6 +61,7 @@ See:
 - [`docs/reading-list.md`](docs/reading-list.md)
 - [`docs/high-value-article-paradigm-index.md`](docs/high-value-article-paradigm-index.md)
 - [`docs/local-meta-literature-reproducibility-inventory.md`](docs/local-meta-literature-reproducibility-inventory.md)
+- [`docs/v0.5-reproducible-case-study-candidates.md`](docs/v0.5-reproducible-case-study-candidates.md)
 - [`docs/gu-baojing-method-extraction.md`](docs/gu-baojing-method-extraction.md)
 - [`docs/journal-figure-format-notes.md`](docs/journal-figure-format-notes.md)
 - [`docs/knowledge-graph-navigation.md`](docs/knowledge-graph-navigation.md)
