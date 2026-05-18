@@ -41,6 +41,7 @@ Load:
 - `references/effect-sizes.md` for effect metrics and extraction.
 - `references/soil-fauna-carbon-meta.md` when the project pools ecological effects on both carbon stocks and carbon fluxes and needs trait or climate moderators without collapsing incompatible outcome families.
 - `references/ecological-meta-ml-path-model-paradigm.md` when the project combines meta-analysis, mixed-effects meta-regression, random forest variable ranking, and PLS-PM/SEM-family path modeling.
+- `references/high-value-paper-reproducibility-audit.md` when a strong published meta-analysis should become a reusable template and the task requires checking code, data-table structure, `rma.mv`, random forest, PLS-PM/SEM-family modeling, and reproducibility.
 - `references/ipd-and-mega-analysis.md` when the task involves individual participant data, multi-site raw/derived data harmonization, small-sample dataset integration, or mega-analysis.
 - `references/synthesis-models.md` for model choice and diagnostics.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.
@@ -141,6 +142,34 @@ Main reuse lesson:
 Main overclaim risk:
 ```
 
+### High-Value Paper Reproducibility Audit
+
+Use `templates/high-value-paper-reproducibility-audit.md` when the user wants to learn from a strong article, especially a Nature Communications or similar paper with public data/code. Do not stop at a paper summary.
+
+Extract:
+
+- file and repository inventory;
+- data table structure;
+- effect-size and uncertainty logic;
+- `metafor::rma.mv()` implementation;
+- shared-control VCV or other dependence handling;
+- random forest or machine-learning layer;
+- `plspm`, PLS-PM, PLS-SEM, or other path-model layer;
+- peer-review lessons;
+- reproducibility gaps;
+- reusable skill rules.
+
+```text
+Article logic:
+Data table structure:
+Effect-size logic:
+rma.mv / dependence implementation:
+Random forest layer:
+PLS-PM / path-model layer:
+Reproducibility verdict:
+Reusable rule:
+```
+
 ## Guardrails
 
 - Do not invent effect sizes.
@@ -153,3 +182,4 @@ Main overclaim risk:
 - Do not treat the minimal R script as a full meta-analysis pipeline; it does not solve effect conversion, dependence, or certainty assessment.
 - Do not run effect-size helper conversions without preserving original reported values and source anchors.
 - Do not call a project a mega-analysis unless raw, participant-level, sample-level, or harmonized derived data are reprocessed or remodeled under a common framework.
+- Do not call a high-value paper reproducible until its public code/data files, data schema, package versions, and model scripts have been inspected.
