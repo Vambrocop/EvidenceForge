@@ -6,7 +6,7 @@ Use this reference when a meta-analysis studies how soil fauna or ecosystem engi
 
 Wang et al. (2026), "A meta-analysis of ant-mediated effects on soil carbon cycling and organic matter stability," Nature Communications, is a strong template for this pattern.
 
-Core extractable facts from the article page and abstract:
+Core extractable facts from the article page, abstract, and supplementary information:
 
 - domain: soil ecology and biogeochemistry;
 - focal engineer: ants;
@@ -17,6 +17,7 @@ Core extractable facts from the article page and abstract:
 - key moderators: ant species, nesting strategy, climate, and initial SOC;
 - context cue: stronger SOC effects in mid-latitude ecosystems with low initial SOC;
 - open-science cue: the Nature Communications page provides Supplementary Information, Reporting Summary, and a Transparent Peer Review file.
+- method-stack cue: the supplementary information reports mixed-effects meta-regressions, nested random-effects structure selection, funnel plots, Egger tests, fail-safe numbers, sensitivity analyses, linear/nonlinear AIC comparisons, random forest relative importance, and PLS-PM path-model outputs.
 
 Source:
 
@@ -64,6 +65,14 @@ Dependence structure:
 - repeated depth layers or time points;
 - whether dependence is modeled or ignored.
 
+Method stack:
+
+- effect-size metric for each endpoint family, including whether `LnRR` or standardized effect sizes are used;
+- random-effects structure, including whether `reference/obs` or a similar nested structure is used;
+- whether a VCV matrix, robust variance estimation, or sensitivity analysis is needed;
+- random-forest variables and relative-importance rankings;
+- path-model type, such as PLS-PM, and whether it is interpreted as exploratory, mechanistic, or causal.
+
 ## Quality Gates
 
 Before pooling, check:
@@ -80,4 +89,5 @@ Before pooling, check:
 - Do not write "ants increase soil carbon" as a single undifferentiated conclusion.
 - Do not merge SOC stock and CO2 emission effects into one ecological score.
 - Do not interpret functional-trait moderators as proof of mechanism unless the evidence supports that leap.
+- Do not treat random forest variable importance or PLS-PM paths as causal proof without design support.
 - Do not treat stronger effects at low baseline SOC or mid-latitudes as universal across ecosystems.

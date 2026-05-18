@@ -1,0 +1,15 @@
+field_name,description,example_value
+paper_id,Unique paper identifier,wang_2026_ant_carbon
+effect_size_family,Effect-size metric family,LnRR and possibly Hedges d depending on endpoint
+outcome_family,Outcome family,SOC stock or CO2 flux
+random_effects_structure,Nested or multilevel random effects,reference/obs
+dependence_handling,How within-study dependence is handled,multilevel model plus sensitivity analysis
+vcv_matrix_used,Whether VCV matrix is used or needed,to_be_verified
+moderator_model,Moderator model type,mixed-effects meta-regression
+nonlinear_check,Whether linear vs nonlinear forms are compared,AIC and AICc comparison
+publication_bias_check,Publication-bias or small-study diagnostic,funnel plot Egger test fail-safe number
+sensitivity_check,Sensitivity or leave-one-study analysis,study influence sensitivity
+ml_driver_ranking,Machine-learning driver ranking method,random forest relative importance
+path_model,Path-model framework,PLS-PM path model
+path_model_interpretation,How path model should be interpreted,mechanism-structuring not causal proof
+main_guardrail,Main interpretation guardrail,do not collapse stock flux and stability into one carbon benefit

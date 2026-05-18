@@ -71,7 +71,7 @@ Use `templates/pls-vip-environmental-audit.md` for PLS/VIP environmental indicat
 Use `templates/ecosystem-service-threshold-audit.md` and `templates/ecosystem-service-threshold-schema.csv` for ecosystem-service relationship threshold-management studies.
 Use `templates/air-quality-food-security-audit.md` and `templates/air-quality-food-security-schema.csv` for air-pollution, crop-yield, SIF, and food-security co-benefit studies.
 Use `templates/biodiversity-stability-climate-stress-audit.md` and `templates/biodiversity-stability-climate-stress-schema.csv` for soil biodiversity, aridity, ecosystem-stability, and climate-stress moderation studies.
-Use `templates/soil-fauna-carbon-meta-audit.md` and `templates/soil-fauna-carbon-schema.csv` for ant, termite, earthworm, or other soil-fauna meta-analyses that separate SOC stock, CO2 flux, and organic-matter stability outcomes.
+Use `templates/soil-fauna-carbon-meta-audit.md`, `templates/soil-fauna-carbon-schema.csv`, and `templates/soil-fauna-carbon-method-stack-schema.csv` for ant, termite, earthworm, or other soil-fauna meta-analyses that separate SOC stock, CO2 flux, organic-matter stability outcomes, and method-stack choices such as multilevel meta-analysis, random forest, and PLS-PM/path modeling.
 Use `templates/wetland-methane-scale-audit.md` and `templates/wetland-methane-geospatial-schema.csv` for small-wetland methane and scale-sensitive upscaling studies.
 Use `templates/cryosphere-ground-ice-map-audit.md` and `templates/cryosphere-map-validation-schema.csv` for permafrost, near-surface ground ice, and other cryosphere map products.
 Use `templates/food-environment-bidirectional-audit.md` and `templates/food-environment-pressure-schema.csv` for food-system nexus reviews.
@@ -191,6 +191,8 @@ Include:
 - effect-size family and percent-change interpretation;
 - climate, latitude, baseline SOC, or ecosystem moderators;
 - dependence plan for multiple endpoints per study;
+- whether driver ranking uses random forest or another ML method;
+- whether indirect pathways are organized with PLS-PM, SEM, or another path model;
 - whether "more storage" and "more emissions" are both present and how the paper interprets that pattern.
 
 ### Small-Wetland Methane Scaling Audit

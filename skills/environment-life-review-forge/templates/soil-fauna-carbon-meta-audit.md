@@ -44,13 +44,27 @@
 
 - Multiple endpoints per study:
 - Dependence plan:
+- Random-effects structure:
+- VCV matrix / robust variance / sensitivity plan:
 - Are stock and flux discussed separately:
 - Main joint interpretation:
 - Main overclaim risk:
+
+## Method Stack
+
+- Effect-size families used:
+- Mixed-effects meta-regression:
+- Linear versus nonlinear moderator check:
+- Publication-bias diagnostics:
+- Random forest variable-importance ranking:
+- PLS-PM / SEM-family path model:
+- Whether path language is causal or exploratory:
 
 ## Guardrail Check
 
 - Are stock, flux, and stability outcomes separated?
 - Are trait moderators coded before interpretation?
 - Is climate treated as context rather than automatic mechanism?
+- Is random forest used for ranking rather than causal proof?
+- Is PLS-PM / SEM interpreted within design limits?
 - Is the ecological conclusion narrower than the pooled effect?

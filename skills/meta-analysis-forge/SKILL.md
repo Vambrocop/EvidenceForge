@@ -1,6 +1,6 @@
 ---
 name: meta-analysis-forge
-description: Designs and audits first-order meta-analyses of primary studies. Use for effect-size extraction, effect-size harmonization, fixed/random/multilevel models, robust variance estimation, heterogeneity, prediction intervals, meta-regression, publication-bias diagnostics, sensitivity checks, coding sheets, reproducible meta-analysis reports, ecological meta-analysis, soil-carbon meta-analysis, stock-versus-flux outcome separation, and trait-mediated moderator design.
+description: Designs and audits first-order meta-analyses of primary studies. Use for effect-size extraction, effect-size harmonization, fixed/random/multilevel models, robust variance estimation, heterogeneity, prediction intervals, meta-regression, publication-bias diagnostics, sensitivity checks, coding sheets, reproducible meta-analysis reports, ecological meta-analysis, ecological meta-analysis plus random forest or path modeling, soil-carbon meta-analysis, stock-versus-flux outcome separation, and trait-mediated moderator design.
 ---
 
 # Meta-Analysis Forge
@@ -40,6 +40,7 @@ Load:
 
 - `references/effect-sizes.md` for effect metrics and extraction.
 - `references/soil-fauna-carbon-meta.md` when the project pools ecological effects on both carbon stocks and carbon fluxes and needs trait or climate moderators without collapsing incompatible outcome families.
+- `references/ecological-meta-ml-path-model-paradigm.md` when the project combines meta-analysis, mixed-effects meta-regression, random forest variable ranking, and PLS-PM/SEM-family path modeling.
 - `references/ipd-and-mega-analysis.md` when the task involves individual participant data, multi-site raw/derived data harmonization, small-sample dataset integration, or mega-analysis.
 - `references/synthesis-models.md` for model choice and diagnostics.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.
@@ -126,11 +127,26 @@ Flag:
 - meta-regression overclaiming;
 - publication-bias tests with too few studies.
 
+### Ecological Meta + ML + Path Model
+
+Use `templates/ecological-meta-ml-path-model-audit.md` when a meta-analysis combines pooled effects, moderator testing, machine-learning driver ranking, and a path model or SEM-family diagram.
+
+```text
+Meta-analysis layer:
+ML layer:
+Path-model layer:
+Effect-size families:
+Dependence plan:
+Main reuse lesson:
+Main overclaim risk:
+```
+
 ## Guardrails
 
 - Do not invent effect sizes.
 - Do not pool effects solely because they are numerically available.
 - Do not interpret meta-regression causally unless design supports it.
+- Do not interpret random-forest importance or PLS-PM paths causally unless the design supports it.
 - Do not ignore within-study dependence.
 - Do not treat a high pooled N as proof of high evidence quality.
 - Do not use vote-counting as a substitute for effect-size synthesis.
