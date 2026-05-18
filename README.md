@@ -59,6 +59,7 @@ See:
 - [`docs/method-sources.md`](docs/method-sources.md)
 - [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
 - [`docs/reading-list.md`](docs/reading-list.md)
+- [`docs/high-value-article-paradigm-index.md`](docs/high-value-article-paradigm-index.md)
 - [`docs/gu-baojing-method-extraction.md`](docs/gu-baojing-method-extraction.md)
 - [`docs/journal-figure-format-notes.md`](docs/journal-figure-format-notes.md)
 - [`docs/knowledge-graph-navigation.md`](docs/knowledge-graph-navigation.md)

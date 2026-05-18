@@ -9,7 +9,28 @@
 - Why this paper is worth learning:
 - Verdict: Readable only / Partially reproducible / Workflow reusable / Full reproduction candidate
 
-## 1. File And Repository Inventory
+## 1. Analysis-Form Fit Map
+
+This is the most important section. It records what the paper actually did analytically, and whether each form fits the data.
+
+| Analysis content | Data unit | Outcome family | Statistical/computational form | Why appropriate | Main output | Reuse value | Overclaim risk |
+|---|---|---|---|---|---|---|---|
+| | | | | | | | |
+
+Summary verdict:
+
+- Best-matched analysis form:
+- Analysis form that is useful but exploratory:
+- Analysis form that requires caution:
+- Analysis form missing or underdeveloped:
+
+Reusable rule:
+
+```text
+
+```
+
+## 2. File And Repository Inventory
 
 - Local folder:
 - Main article:
@@ -25,7 +46,7 @@
 - Session info / package versions available:
 - Generated outputs available:
 
-## 2. How The Paper Was Made
+## 3. How The Paper Was Made
 
 - Research question:
 - Treatment/exposure:
@@ -39,7 +60,7 @@
 - Exclusion rules:
 - External covariate sources:
 
-## 3. Data Table Structure
+## 4. Data Table Structure
 
 ### Raw Or Extracted Data Tables
 
@@ -66,7 +87,7 @@ moderators:
 external_covariates:
 ```
 
-## 4. Effect-Size And Uncertainty Logic
+## 5. Effect-Size And Uncertainty Logic
 
 - Effect-size metrics used:
 - Which outcomes use each metric:
@@ -77,7 +98,7 @@ external_covariates:
 - Scale mismatch risks:
 - Stock/flux/process separation:
 
-## 5. `rma.mv` / Meta-Analysis Implementation
+## 6. `rma.mv` / Meta-Analysis Implementation
 
 - R package/version:
 - Main function:
@@ -99,7 +120,7 @@ Relevant code snippets or file paths:
 
 ```
 
-## 6. Random Forest / ML Layer
+## 7. Random Forest / ML Layer
 
 - Package/version:
 - Response variable:
@@ -117,7 +138,7 @@ Relevant code snippets or file paths:
 
 ```
 
-## 7. PLS-PM / SEM-Family Path Model
+## 8. PLS-PM / SEM-Family Path Model
 
 - Package/version:
 - Path-model type:
@@ -136,7 +157,7 @@ Relevant code snippets or file paths:
 
 ```
 
-## 8. Peer-Review Lessons
+## 9. Peer-Review Lessons
 
 - Reviewer-requested method changes:
 - Effect-size corrections:
@@ -146,7 +167,7 @@ Relevant code snippets or file paths:
 - Limitation wording:
 - What to preempt in our own paper:
 
-## 9. Reproducibility Gaps
+## 10. Reproducibility Gaps
 
 - Missing data:
 - Missing code:
@@ -157,7 +178,7 @@ Relevant code snippets or file paths:
 - Outputs not regenerated:
 - What must be checked next:
 
-## 10. Reusable Skill Extraction
+## 11. Reusable Skill Extraction
 
 - What should become a skill rule:
 - What should become a coding-sheet field:
@@ -165,7 +186,7 @@ Relevant code snippets or file paths:
 - What should become a reviewer checklist:
 - What should not be copied blindly:
 
-## 11. Prompts For Future Use
+## 12. Prompts For Future Use
 
 ```text
 Use this paper as a reproducibility template. Extract the data table schema,

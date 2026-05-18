@@ -18,15 +18,66 @@ Trigger this audit when the user says a paper is:
 
 Do not stop at the abstract, conclusions, or pooled effect.
 
-For a reusable article, extract five layers:
+For a reusable article, extract six layers:
 
-1. **Article logic**: research question, outcome families, conceptual framing.
+1. **Analysis-form logic**: what analyses were actually done, and whether each analysis form matches the research question and data structure.
 2. **Data logic**: search, screening, coding sheet, raw data table, derived data table, external covariates.
 3. **Effect-size logic**: formulas, variable scale, uncertainty, shared controls, dependence structure.
 4. **Code logic**: R/Python scripts, package versions, function calls, model objects, output files.
 5. **Reproducibility logic**: README quality, session info, data/code repository, file paths, missing pieces, reviewer comments.
+6. **Reuse logic**: which raw fields, scripts, model forms, tables, and prompts can be reused by the user or by another AI agent.
+
+In this skill, "article logic" does **not** mean a loose narrative summary. It means:
+
+```text
+Research question -> data unit -> outcome family -> analysis form -> model object -> output table/figure -> reusable rule
+```
+
+The most important question is:
+
+```text
+Did the authors use the right analysis form for the type of evidence they had?
+```
+
+Examples:
+
+- treatment-control primary studies -> effect sizes + random/multilevel meta-analysis;
+- many effects from the same paper -> multilevel model, VCV, or robust variance plan;
+- existing meta-analyses as units -> second-order meta-analysis, overlap checks, review quality scoring;
+- many predictors and possible moderators -> meta-regression plus exploratory machine-learning ranking;
+- hypothesized indirect pathways -> PLS-PM/SEM-family path model, with causal-language guardrails;
+- trade-offs among multiple outcomes -> paired outcome table, win/loss categories, multinomial or multicriteria model;
+- spatial/environmental context -> coordinate-linked external covariates and maps.
+
+If the analysis form does not match the data unit, flag it before extracting conclusions.
 
 ## Required Extraction Checklist
+
+### 0. Analysis-Form Fit
+
+Before extracting detailed results, identify the analysis forms and judge whether they fit the evidence structure.
+
+Record:
+
+- primary data unit: primary study, effect size, review-level estimate, site, grid cell, time series, sample, or scenario;
+- outcome families: stock, flux, process, trait, service, economic, risk, stability, or prediction target;
+- analysis forms used: meta-analysis, second-order meta-analysis, meta-regression, multilevel model, VCV, random forest, BRT, PLS-PM/SEM, spatial model, scenario model, optimization, ML prediction, causal ML;
+- whether each analysis form is necessary, optional, or mismatched;
+- what each form contributes: estimation, uncertainty, heterogeneity, driver ranking, mechanism structure, prediction, scenario comparison, or policy trade-off;
+- what each form cannot prove.
+
+Use this compact map:
+
+```text
+Analysis content:
+Data unit:
+Outcome family:
+Statistical form:
+Why this form is appropriate:
+Main output:
+Reuse value:
+Overclaim risk:
+```
 
 ### 1. Data And Repository Inventory
 
@@ -210,16 +261,17 @@ These are often the most useful lessons for writing a reviewer-proof meta-analys
 For a high-value paper, produce an audit report with:
 
 ```text
-1. File/repository inventory
-2. How the paper was made
-3. Data table structure
-4. Effect-size and uncertainty logic
-5. rma.mv / model implementation
-6. Random forest implementation
-7. PLS-PM or path-model implementation
-8. Reproducibility gaps
-9. What can be reused as a skill
-10. Prompts/templates for future use
+1. Analysis-form fit map
+2. File/repository inventory
+3. How the paper was made
+4. Data table structure
+5. Effect-size and uncertainty logic
+6. rma.mv / model implementation
+7. Random forest implementation
+8. PLS-PM or path-model implementation
+9. Reproducibility gaps
+10. What can be reused as a skill
+11. Prompts/templates for future use
 ```
 
 ## Minimum Verdict Categories
@@ -238,3 +290,4 @@ Use these labels:
 - Do not merge article reading with code reproduction; record what came from the paper and what came from code.
 - Do not call random forest, SHAP, or PLS-PM causal without design justification.
 - Do not hide missing files. Missing code/data is a finding, not a failure.
+- Do not call a paper a reusable paradigm until the analysis form has been checked against the data unit and outcome family.
