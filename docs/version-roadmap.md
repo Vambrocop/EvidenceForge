@@ -87,9 +87,17 @@ Meaning: the project is no longer only an experimental scaffold.
 
 ## Current Direction
 
-EvidenceForge is moving from v0.2 toward v0.4:
+EvidenceForge is currently best described as **v0.35 / v0.4-alpha**:
 
 - it now has schemas, validators, golden examples, a minimal R script, effect-size helpers, and a PRISMA-style flow generator;
 - it also has an IPD/mega-analysis reference and audit templates inspired by small-sample multi-site synthesis workflows;
 - it is expanding the environmental branch with PLS/VIP environmental indicator audits, ecosystem-service relationship threshold ML audits, air-quality food-security co-benefit audits, biodiversity-stability climate-stress audits, soil-fauna carbon meta-analysis templates, urban heat DML, spatial causal-inference guardrails, agricultural irrigation optimization templates, and cryosphere ground-ice map-product audits;
+- it now has high-value article reproducibility audits that prioritize analysis-form fit, data-table structure, `rma.mv`, random forest/BRT, PLS-PM/SEM-family models, peer-review lessons, and reusable skill extraction;
+- it has a local meta-literature inventory with several strong case candidates, including Nature Communications potassium fertilization, ant-mediated soil carbon, agricultural diversification second-order meta-analysis, a Nature Medicine mega-analysis, and a Communications Psychology Bayesian meta-analysis;
 - it still needs richer effect-size conversion, robust/multilevel model templates, PRISMA/report export polish, and real case studies before v1.0.
+
+To reach **v0.5**, at least two or three representative case studies should be runnable or auditable end to end:
+
+- one first-order treatment-control meta-analysis with open CSV/R code;
+- one ecological meta-analysis with multilevel dependence, ML ranking, and path modeling;
+- one second-order meta-analysis with overlap, quality, duration, and trade-off modeling.

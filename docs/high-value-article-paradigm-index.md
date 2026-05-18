@@ -28,6 +28,9 @@ This is different from a normal literature note. A paradigm note should help a h
 | Baojing Gu-related system synthesis examples | Nature-family / Science-family | system-hub framing; pressure-source-sink-impact pathway; policy portfolio and safe-boundary logic | multi-source system indicators, regional/national estimates, policy scenarios | conceptual and workflow seed; each paper needs separate code/data audit before reproducibility claims | `docs/gu-baojing-method-extraction.md`; `skills/environment-life-review-forge/references/system-hub-policy-synthesis.md` |
 | Liu et al., air quality and China's food security | Nature Food | satellite/statistical model; flexible functional forms; counterfactual food-production gains; open code link | crop-by-region observations and pollution/climate covariates | workflow seed; code link captured, full script audit not yet complete | `skills/environment-life-review-forge/references/air-quality-food-security.md` |
 | Mogollon et al., food production and environment bidirectional effects | Nature Reviews Earth & Environment | bidirectional pressure synthesis; food-system/environment nexus map | review-level evidence categories | synthesis framing seed; not a direct code-reproduction target | `skills/environment-life-review-forge/references/food-system-bidirectional-nexus.md` |
+| Girn et al., psychedelic drug effects on brain circuit function | Nature Medicine | international mega-analysis; harmonized preprocessing; Bayesian hierarchical modeling | multi-site resting-state fMRI derived data | local PDF exists; GitHub supplement/code should be audited | `docs/local-meta-literature-reproducibility-inventory.md`; `docs/reading-list.md` |
+| Garrett et al., acute physical activity and cognition | Communications Psychology | systematic review plus Bayesian hierarchical meta-analysis | study-level cognitive-task effects | local PDF exists; OSF/GitHub and Bayesian model code should be audited | `docs/local-meta-literature-reproducibility-inventory.md` |
+| Wu et al., organic amendment effects in cotton fields | field journal meta-analysis | cotton-specific organic amendment meta-analysis; random forest driver ranking | treatment-control soil/crop-yield effects | local PDF exists; public data/code not yet identified | `docs/local-meta-literature-reproducibility-inventory.md` |
 
 ## What Counts As "Analysis Content"
 
@@ -99,6 +102,8 @@ When a new good article is added, especially a Nature Communications article, do
 - Potassium fertilization NC: full Zenodo/Mendeley code audit can be deepened into a complete package walkthrough.
 - Ant-mediated soil carbon NC: Figshare data/code should be downloaded and checked for table schema, VCV construction, `rma.mv`, `ranger`, and `plspm` scripts.
 - Agricultural diversification NC: OSF script order and model objects can be mapped into a full second-order reproduction guide.
+- Psychedelic Nature Medicine mega-analysis: GitHub supplement should be inspected for preprocessing, harmonized data structure, and Bayesian hierarchical model scripts.
+- Communications Psychology Bayesian meta-analysis: OSF/GitHub materials should be inspected for priors, model specification, posterior summaries, and sensitivity checks.
 - Baojing Gu Nature-family papers: need paper-by-paper code/data audit before turning them into reproducibility templates.
 - Nature Food air-quality/food-security paper: public GitHub code should be scanned for data pipeline, model formulas, figure scripts, and counterfactual assumptions.
 
