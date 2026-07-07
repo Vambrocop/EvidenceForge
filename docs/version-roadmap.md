@@ -87,7 +87,7 @@ Meaning: the project is no longer only an experimental scaffold.
 
 ## Current Direction
 
-EvidenceForge is currently best described as **v0.35 / v0.4-alpha**:
+EvidenceForge is currently best described as **v0.4** — the v0.3 validation layer and v0.4 reporting utilities are now complete:
 
 - it now has schemas, validators, golden examples, a minimal R script, effect-size helpers, and a PRISMA-style flow generator;
 - it also has an IPD/mega-analysis reference and audit templates inspired by small-sample multi-site synthesis workflows;

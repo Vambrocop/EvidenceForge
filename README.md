@@ -254,9 +254,9 @@ EvidenceForge is still a method-grounded skill toolkit, not a fully automated me
 
 The deterministic script is intentionally narrow. It demonstrates how to connect a validated coding sheet to a reproducible analysis output, while keeping effect conversion, dependence handling, risk of bias, and certainty assessment under explicit human review.
 
-## v0.3/v0.4 Direction
+## v0.3 / v0.4 — Delivered
 
-The current repository now also includes:
+The v0.3 validation layer and v0.4 reporting utilities are now complete in-repo:
 
 - coding-sheet validator;
 - screening-log validator;
@@ -319,4 +319,6 @@ They are companion projects: one helps produce empirical research, the other hel
 
 ## Status
 
-Early scaffold with executable resources. The current version includes skills, references, templates, machine-readable schemas, validators, golden examples, a minimal `metafor` R script, effect-size helper functions, IPD/mega-analysis templates, and a PRISMA-style flow generator. Future deterministic scripts can add robust or multilevel synthesis, richer effect-size conversion, and full report generation.
+**v0.4 — a working, method-grounded toolkit** (past the early-scaffold stage). Five installable agent skills with references, machine-readable schemas, Python + R validators, golden-test examples under CI, a minimal `metafor` R script, effect-size helper functions, IPD/mega-analysis templates, a PRISMA-style flow generator, and a broad library of environmental/agricultural audit templates. The v0.2 executable spine, v0.3 validation layer, and v0.4 reporting utilities are all delivered.
+
+Toward **v0.5 (usability release)**: two or three representative case studies runnable end to end, basic release notes, and platform-tested install. Toward **v1.0**: stable skill interfaces, tested deterministic scripts, and reproducible example workflows. EvidenceForge stays a method-grounded toolkit that keeps effect conversion, dependence handling, risk of bias, and certainty assessment under explicit human review — it does not pretend to be a fully automated meta-analysis system.
