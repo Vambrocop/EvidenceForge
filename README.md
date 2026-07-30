@@ -134,6 +134,8 @@ skills/
 │   ├── references/
 │   │   ├── effect-sizes.md
 │   │   ├── ipd-and-mega-analysis.md
+│   │   ├── ml-moderator-analysis.md
+│   │   ├── network-meta-analysis.md
 │   │   └── synthesis-models.md
 │   ├── scripts/
 │   │   ├── effect_size_helpers.R
@@ -231,7 +233,7 @@ skills/
 Recent additions also support system-hub environmental evidence patterns: papers that use nitrogen, carbon, water, air pollution, biodiversity pressure, or another focal variable to connect environmental burdens with food, health, welfare, SDGs, or policy portfolios. See `skills/environment-life-review-forge/references/system-hub-policy-synthesis.md` and the paired `system-hub-variable-*` templates.
 
 - `evidence-synthesis-forge`: the general orchestrator for systematic reviews, scoping reviews, rapid reviews, evidence maps, and synthesis reports.
-- `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, a minimal `metafor` R script template, and stock-versus-flux ecological meta-analysis guardrails.
+- `meta-analysis-forge`: first-order meta-analysis, IPD/mega-analysis planning, effect-size extraction, random/multilevel models, heterogeneity, publication bias, sensitivity checks, machine-readable coding sheets, validators, effect-size helper functions, a minimal `metafor` R script template, stock-versus-flux ecological meta-analysis guardrails, frequentist network meta-analysis with node-splitting inconsistency and an explicit ranking-trust check, and exploratory interpretable-ML moderator analysis (MetaForest/SHAP/EBM/GAM) with small-k honesty guardrails.
 - `umbrella-review-skeptic`: umbrella review and second-order meta-analysis, focusing on overlap, duplicate evidence, review quality, temporal second-order meta-regression, ecosystem-service trade-offs, and whether statistical pooling is defensible.
 - `meta-ml-screener`: machine-learning assisted search, screening, extraction, classification, and moderator exploration with transparent human verification, machine-readable screening logs, and a screening-log validator.
 - `environment-life-review-forge`: PECO/PICO-oriented workflows for environmental, ecological, biomedical, and life-science evidence synthesis, including PLS/VIP environmental indicator audits, ecosystem-service relationship threshold ML audits, air-quality food-security co-benefit audits, biodiversity-stability climate-stress audits, soil-fauna carbon meta-analysis, wetland methane scaling, small-patch geospatial upscaling, cryosphere and permafrost map-product audits, food-system environmental nexus reviews, food-waste geospatial ML forecasting, agroecosystem nutrient meta-analysis, crop-yield ML prediction, environmental causal ML, urban heat DML, genotype-environment modeling, agricultural irrigation optimization, brackish-water irrigation trade-offs, scenario-model audits, land-use optimization, Pareto-frontier trade-offs, spatial extrapolation, and implementation-sensitive policy claims.
