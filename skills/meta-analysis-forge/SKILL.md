@@ -44,6 +44,8 @@ Load:
 - `references/high-value-paper-reproducibility-audit.md` when a strong published meta-analysis should become a reusable template and the task requires checking code, data-table structure, `rma.mv`, random forest, PLS-PM/SEM-family modeling, and reproducibility.
 - `references/ipd-and-mega-analysis.md` when the task involves individual participant data, multi-site raw/derived data harmonization, small-sample dataset integration, or mega-analysis.
 - `references/synthesis-models.md` for model choice and diagnostics.
+- `references/network-meta-analysis.md` when comparing three or more treatments across a connected evidence network (frequentist NMA, P-score ranking, and node-splitting inconsistency with an explicit trust check).
+- `references/ml-moderator-analysis.md` for exploratory interpretable-ML moderator analysis (MetaForest/SHAP/EBM/GAM) with the small-k honesty guardrails — complements, never replaces, pre-specified meta-regression.
 - `references/meta-analysis-quality-gates.md` for pre-pooling checks.
 - `templates/coding-schema.csv` and `templates/validation-rules.md` for machine-readable coding-sheet structure and validation.
 - `scripts/validate_coding_sheet.py` before statistical execution.
