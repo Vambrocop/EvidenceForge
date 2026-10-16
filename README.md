@@ -56,6 +56,7 @@ EvidenceForge is grounded in established evidence-synthesis guidance rather than
 
 See:
 
+- [`docs/soil-meta-analysis-editorial-standards.md`](docs/soil-meta-analysis-editorial-standards.md) — what soil-journal editors check in a meta-analysis, and the operational checks needed to satisfy it
 - [`docs/method-sources.md`](docs/method-sources.md)
 - [`docs/source-crosswalk.md`](docs/source-crosswalk.md)
 - [`docs/reading-list.md`](docs/reading-list.md)
